@@ -131,7 +131,7 @@ bookmarkHeart.addEventListener('click', function (e) {
 
 //NOTE LOGIN  USER
 const form1 = document.querySelector('#form1');
-if (!form1) return;
+if (!form1)
 form1.addEventListener('submit', (e) => {
   e.preventDefault();
   const email = document.getElementById('email').value;

@@ -6,7 +6,7 @@ export const updateSettings = async (name, email, country, home_tel, mobile_tel)
   try {
     const res = await axios({
       method: 'PATCH',
-      url: 'http://localhost:4000/api/v1/users/updateMe',
+      url: '/api/v1/users/updateMe',
       data: {
         name,
         email,

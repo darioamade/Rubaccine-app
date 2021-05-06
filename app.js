@@ -13,6 +13,7 @@ const MongoDbStore = require('connect-mongo')(session);
 const mongoose = require('mongoose');
 const flash = require('connect-flash');
 // const cors = require('cors');
+const compression = require('compression');
 
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controllers/errorController');
@@ -116,12 +117,11 @@ app.use(
     secret: process.env.COOKIE_SECRET,
     resave: false,
     saveUninitialized: false,
-    store: new MongoDbStore({ mongooseConnection: mongoose.connection}),//make sure not to open a new connection
+    store: new MongoDbStore({ mongooseConnection: mongoose.connection }), //make sure not to open a new connection
     cookie: { maxAge: 1000 * 60 * 60 * 24 }, // 24hours
   })
 );
 app.use(flash());
-
 
 app.use(function (req, res, next) {
   res.locals.session = req.session; //NOTE make the session available in the templates
@@ -167,6 +167,8 @@ app.use(
     ],
   })
 );
+
+app.use(compression());
 
 // Test middleware
 app.use((req, res, next) => {
@@ -286,10 +288,7 @@ TEMP Fix. you must remove current mongoose version
 (I was on 5.11.13), and downgrade to mongoose@5.11.15, to resolve it.
 */
 
-
-
 /* https://github.com/darioamade/rubaccine-app */
-
 
 /*  npm run watch:js
 

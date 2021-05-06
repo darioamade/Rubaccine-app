@@ -197,11 +197,11 @@ girlsSchema.pre(/^find/, function (next) {
   });
   next();
 });
-girlsSchema.post(/^find/, function (docs, next) {
-  // eslint-disable-next-line no-console
-  console.log(`Query took ${Date.now() - this.start} milliseconds`);
-  next();
-});
+// girlsSchema.post(/^find/, function (docs, next) {
+//   // eslint-disable-next-line no-console
+//   console.log(`Query took ${Date.now() - this.start} milliseconds`);
+//   next();
+// });
 
 // AGREGATION MIDDLEWARE
 /* menSchema.pre('aggregate', function (next) {
