@@ -1,0 +1,162 @@
+extends base
+
+block append head
+    //- script(src='/js/mapbox.js')
+
+block content
+    .new-hero
+        .section-4.section-4-bg 
+            .campaign-heading.lockup
+                p.campaign-title.campaign-left Hope
+                p.campaign-title.campaign-right Springs
+                p.campaign-title.campaign-center Infernal
+            .campaign-btn
+                a.as_cta--button(href=`/men/new`)
+                    button.button SHOP NEW SEASON
+                a.as_cta--button(href=`/collections`)
+                    button.button EXPLORE THE CAMPAIGN
+        .slider-wrapper
+            .slider.slider__contain.slider__hidden.slider__content--3.slider__contain-active
+                .slider-container
+                    .slider-img
+                        a(href='men/new')
+                            img.slider-image(src='/img/men-27-2.jpg' alt='outlet')
+                        //-  p.slider-img-name OUTLET
+                    .slider-title
+                        ul.slider-link
+                            li.slider-link-item
+                                a(href='men/new') NEW ARRIVALS 
+                p.vl1
+                .slider-container
+                    .slider-img
+                        a(href='/men/best-seller')
+                            img.slider-image(src='/img/pic-7.jpg' alt='outlet')
+                    .slider-title
+                        ul.slider-link
+                            li.slider-link-item
+                                a(href='/men/best-seller') LOUNGEWEAR
+                p.vl1
+                .slider-container
+                    .slider-img
+                        a(href='men/best-seller')
+                            img.slider-image(src='/img/men-12-4.jpg' alt='outlet')
+                    .slider-title
+                        ul.slider-link
+                            li.slider-link-item
+                                a(href='men/best-seller') BEST SELLERS
+                p.vl1
+                .slider-container
+                    .slider-img
+                        a(href='/men/boots&shoes')
+                            img.slider-image(src='/img/men-26-4.jpg' alt='outlet')
+                    .slider-title
+                        ul.slider-link
+                            li.slider-link-item
+                                a(href='/men/boots&shoes') FOOTWEAR
+                p.vl1
+                .slider-container
+                    .slider-img
+                        a(href='men/outlet')
+                            img.slider-image(src='/img/pic-43.jpg' alt='outlet')
+                        a(href='men/outlet')
+                            p.slider-img-name  OUTLET
+                    .slider-title
+                        ul.slider-link
+                            li.slider-link-item
+                                a(href='men/outlet') OUTLET
+            .be-back
+                .be-back-container
+                    .be-back-left
+                        img.back-image(src='/img/back2.jpg' alt='outlet')
+                    .be-back-right
+                        p.text-main
+                            | It's Good To Be Back
+                        p
+                            | Stores in England, Scotland & Wales
+                            | are now open. We’re excited to welcome
+                            | you back, our new collection is waiting.
+                        ul.nav__list-bottom
+                            li.nav__item-bottom.outmore
+                                a(href='/store-reopening-safety') GUIDE TO REOPENING
+                            li.nav__item-bottom.outmore
+                                a(href='/store-locator') FIND YOUR NEAREST STORE
+        //- .section-2b
+        //-     p.text-main New Now
+        //- .section-2
+        //-     .section-2-video
+        //-         .video-bg
+        //-             .video-content
+        //-                 .player
+        //-                     video.video(src='/img/production ID_5102955.mp4' autoplay='' loop='' playsinline='')
+        //-                         .show-controls
+        //-                             .controls-container
+        //-                                 .progress-range(title='Seek')
+        //-                                     .progress-bar
+        //-                                 .control-group
+        //-                                     .controls-left
+        //-                                         .play-controls
+        //-                                             i#play-btn.fas.fa-play(title='Play')
+        //-                                         .time
+        //-                                             span.time-elapsed 00:00 / 
+        //-                                             span.time-duration 02:49
+        //-                                     .controls-right
+        //-                                         .volume
+        //-                                             .volume-icon
+        //-                                                 i#volume-icon.fas.fa-volume-up(title='Mute')
+        //-                                             .volume-range(title='Change Volume')
+        //-                                                 .volume-bar
+        //-                                         .fullscreen
+        //-                                             i.fas.fa-expand
+        //-                                         .fullscreen
+        //-                                             i.fas.fa-ellipsis-v
+        //-     .section-2-description
+        //-         p.text-main.text-main-hidden New Now
+        //-         ul.nav__list-preview
+        //-             li.nav__item-preview
+        //-                 a(href='/men/new' style='color: black')  New Arrivals
+        //-             li.nav__item-preview
+        //-                 a(href='/men/shirt' style='color: black') Shirts
+        //-             li.nav__item-preview
+        //-                 a(href='/men/jeans' style='color: black') Jeans
+        //-             li.nav__item-preview
+        //-                 a(href='/men/boots&shoes' style='color: black') Footwear
+        //-         //- p.text-commit Latest Arrivals
+        //-         //- p.text-commit Leathers
+        //-         //- p.text-commit Shirts
+        //-         //- p.text-commit Loungewear
+        //-         //- p.text-commit Footwear
+        //- .section-3
+        //-     .section-3-item.grid-item-1
+        //-         .section-3-item-img
+        //-             a(href='/men/new')
+        //-                 img.spring-img(src='/img/pic-59.jpg' alt='spring-colection')
+        //-         .section-3-item-title
+        //-             p.text-main Still Wearing Them
+        //-             ul.nav__list
+        //-                 li.nav__item
+        //-                     a(href='/men/jeans')
+        //-                         button.nav__btn.nav__btn--add-recipe(data-tab='2')
+        //-                             span.signin.sale__tab_3  SHOP JEANS 
+        //-     .section-3-item.grid-item-2
+        //-         .section-3-item-img
+        //-             a(href='/men/new')
+        //-                 img.spring-img(src='/img/pic-62.jpg' alt='spring-colection')
+        //-         .section-3-item-title
+        //-             p.text-main For Future Plans
+        //-             ul.nav__list
+        //-                 li.nav__item
+        //-                     a(href='/men/new')
+        //-                         button.nav__btn.nav__btn--add-recipe(data-tab='2')
+        //-                             span.signin.sale__tab_3 SHOP NEW ARRIVALS
+        //-     .section-3-item.grid-item-3
+        //-         .section-3-item-img
+        //-             a(href='/men/new')
+        //-                 img.spring-img(src='/img/pic-61.jpg' alt='spring-colection')
+        //-         .section-3-item-title
+        //-             p.text-main Checks Over Things
+        //-             ul.nav__list
+        //-                 li.nav__item
+        //-                     a(href='/men/t-shirt')
+        //-                         button.nav__btn.nav__btn--add-recipe(data-tab='2')
+        //-                             span.signin.sale__tab_3 SHOP T-SHIRTS 
+

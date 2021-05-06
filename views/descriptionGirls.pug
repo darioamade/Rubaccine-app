@@ -1,0 +1,293 @@
+extends base
+
+block append head
+    //- script(src='/js/mapbox.js')
+
+block content 
+    .showcase-loads
+        .btn-add-wide
+            a(href=`/add-to-cart2/${girls.id} `)
+                button.btn-add-wide__btn#btnAddToBag2  ADD TO BAG  
+        .btn-size-option
+            .btn-size-option-close
+                p SELECT YOUR SIZE.
+                svg.icon-page
+                    use(href='/img/sprite.svg#icon-close')
+            //- each sizex in men.size
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p=`UK ${sizex}`
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        // <p><u>NOTIFY ME</u></p>
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 2
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 4
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 6
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 8
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 10
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 12
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 14
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+        .showcase-loads-container
+            .showcase-loads-container-nav
+                .showcase-loads-container-nav-left
+                    .description
+                        p=`${girls.category}`  
+                        p=`/ ${girls.subCategory}` 
+                        p=`/ ${girls.categoryType}` 
+                        p=`/ ${girls.name}`
+                    .loader-text
+                        span FREE DELIVERY ON ORDERS OVER &pound;150
+                        // <span>FREE RETURNS ON ALL UK ORDERS</span>
+                .showcase-loads-container-nav-right
+                    .showcase-loads-container-nav-right-prev
+                        .previous
+                            svg.icon-page
+                                use(href='/img/sprite.svg#icon-keyboard_arrow_left')
+                            p Previous
+                        .line
+                            p.vline
+                    .showcase-loads-container-nav-right-back
+                        a(href='/women/new')
+                            p=` Back to ${girls.category}  New Arrivals` 
+
+                    .showcase-loads-container-nav-right-next
+                        .previous
+                            p(style='cursor: pointer;') Next
+                            svg.icon-page.icon-page-color.color-active
+                                use(href='/img/sprite.svg#icon-keyboard_arrow_right')
+                        .line
+                            p.vline
+            .showcase-loads-container-gallery
+                .showcase-loads-container-gallery-left
+                    //- +overviewBox()
+                    each img, i in girls.images
+                        .showcase-loads-container-gallery-left-content
+                            img.image-gallery-left(src=`/img/${img}` alt=`${i + 1}`)
+                .showcase-loads-container-gallery-right
+                    .showcase-loads-container-gallery-right-details
+                        p.new=girls.status
+                        p.new-desc=girls.name
+                        p.new-price
+                            span(style='color: #000;')=`£${girls.price.toFixed(2)}  `
+                            //- span(style='color: #a90808;')=`£${girls.price.toFixed(2)}  `
+                            //- span  was
+                            //- span=` £${girls.priceOld.toFixed(2)} `
+                            //- span=` £${girls.priceOld.toFixed(2)} `
+
+                        .box-img-prev
+                            span.small-img
+                                img.size-img-prev(src=`/img/${girls.imageCover}` alt='clothing')
+                            span.small-img
+                                each colors, i in girls.color
+                                    p.text-color=`${colors}`
+                                        //- p.text-color=` ${men.color} `
+                    .showcase-loads-container-gallery-right-sizes
+                        .boxes-sizes
+                            each sizes in girls.size
+                                //- .box-items-sizes.crossed UK 4
+                                .box-items-sizes.borderBlack=`${sizes}`
+                            //-     - if (!sizes ) ? .box-items-sizes.crossed=` UK ${sizes} ` : .box-items-sizes.borderBlack=` UK ${sizes} `
+                            //-     //- .box-items-sizes.crossed=` UK ${sizes} `
+
+
+                            // NOTES switch between crossed and border for avalibite
+                        p.underline is your size out of stock?
+                        if session.cart
+                            p.text-color=`Make 3 payments of £${(session.cart.totalPrice.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})/ 3).toFixed(2)}. Klarna. No fees.`
+                                a.popupKlarna(href) Learn more
+                        else
+                            p.text-color
+                            | Make 3 payments with Klarna. No fees. 
+                            a.popupKlarna(href) Learn more
+                        
+   
+                        .btn-and-like
+                            //- - const prod= JSON.stringify(girls)
+                            //- button.btn-add.btn-not-clear#btnAddToBag1(data-girls=`${prod}`) ADD TO BAG
+                                //-     - const prod= JSON.stringify(girls)
+                                //- button.btn-hidden#btnAddToBag(data-girls=`${prod}`)  ADD TO BAG     
+                            a(href=`/add-to-cart2/${girls.id} `)
+                                button.btn-add.btn-not-clear#btnAddToBag2  ADD TO BAG  
+    
+                            span.btn-like
+                    .showcase-loads-container-gallery-right-notes
+                        .showcase-loads-container-gallery-right-notes-box
+                            .box-top
+                                .showcase-loads-container-gallery-right-notes-box-title
+                                    p NOTES
+                                .showcase-loads-container-gallery-right-notes-box-icon
+                                    span
+                            .slide-box.showMe
+                                p=`${girls.summary}`  
+                                
+                                each description in girls.description
+                                    p=`${description}` 
+                               
+                        .showcase-loads-container-gallery-right-notes-box
+                            .box-top
+                                .showcase-loads-container-gallery-right-notes-box-title
+                                    p DETAILS 
+                                #details.showcase-loads-container-gallery-right-notes-box-icon
+                                    span
+                            .slide-box1.showMe
+                                each detailsProduct in girls.detailsProduct
+                                    p=`${detailsProduct}` 
+                        .sizeguide
+                            p SIZE GUIDE
+                        .share
+                            p SHARE 
+                            .share-icons
+                                svg.icon-footer
+                                    use(href='/img/sprite.svg#icon-social-facebook')
+                                svg.icon-footer
+                                    use(href='/img/sprite.svg#icon-social-twitter')
+                                svg.icon-footer
+                                    use(href='/img/sprite.svg#icon-pinterest')
+                    .showcase-loads-container-gallery-right-shares
+                        .showcase-loads-container-gallery-right-shares-pictures
+                            //- img.shares-pictures(src='/img/pic-31.jpg' alt='clothing')
+                            //- img.shares-pictures(src='/img/pic-32.jpg' alt='clothing')
+                            img.shares-pictures(src='/img/Women-3-1.jpg' alt='clothing')
+                            img.shares-pictures(src='/img/Women-4-3.jpg' alt='clothing')
+                        .showcase-loads-container-gallery-right-shares-content
+                            p.new-desc SHOW US YOUR STYLE
+                            p.new-desc1
+                                | Share your Rubaccine look and mention @Rubaccine in the caption,
+                                | or upload here to be featured on rubaccine.com
+                            p.new-desc2  #RUBACCINE
+                    hr.hr8
+            .showcase-loads-container-alsoLike
+                .showcase-loads-container-alsoLike-title
+                    p YOU MAY ALSO LIKE
+                    span.showIconMinus
+                .showcase-loads-container-alsoLike-gallery
+                    .showcase-loads-container-alsoLike-gallery-content
+                        .showcase-loads-container-alsoLike-gallery-content-img
+                            img.alsoLike-img(src='/img/women-7-1.jpg' alt='clothing')
+                            .description
+                                p.heading-title SHERINGHAM LEATHER SHOULDER BAG
+                                p.cl5.text-read.view-prod-text
+                                    | Our iconic best-seller. 
+                                    br
+                                    |  A bag worth talking about. 
+                                    br
+                                    |   The Sheringham 
+                                p.read#readMore5 Read more
+                                .details-hidden.vph#showMore5
+                                    p.text-read.view-prod-text
+                                        | Shoulder Bag looks great with any outfit. Crafted from our premium leather. With gold-tone hardware and a pin closure.
+                                        a(href='/girls/sheringham-leather-shoulder-bag')
+                                            button.btn-view-prod VIEW PRODUCT
+                    .showcase-loads-container-alsoLike-gallery-content-img
+                        img.alsoLike-img(src='/img/women-16-1.jpg' alt='clothing')
+                        .description
+                            p.heading-title BARDI RIB TOP
+                            p.cl6.text-read.view-prod-text
+                                | Our iconic best-seller. 
+                                br
+                                |   Dress is up or down,
+                                br
+                                |  it's easy. 
+                            p.read#readMore6 Read more
+                            .details-hidden.vph#showMore6
+                                p.text-read.view-prod-text
+                                    |  The Bardi Top is cut to a bodycon silhouette. With skinny ribbed detailing and square neckline.
+                                    a(href='/girls/bardi-rib-top')
+                                        button.btn-view-prod VIEW PRODUCT
+                    .showcase-loads-container-alsoLike-gallery-content-img
+                        img.alsoLike-img(src='/img/women-15-3.jpg' alt='clothing')
+                        .description
+                            p.heading-title NOLA MERINO WOOL CARDIGAN
+                            p.cl6.text-read.view-prod-text
+                                | Our iconic best-seller. 
+                                br
+                                |   Inspired by our favourite coat.
+                                br
+                                |  The Nola Cardigan 
+                            p.read#readMore7 Read more
+                            .details-hidden.vph#showMore7
+                                p.text-read.view-prod-text
+                                    |  features a twist lock closure on the chest. Crafted from merino wool - it's a warm one for Spring.
+                                    a(href='/girls/nola-merino-wool-cardigan')
+                                        button.btn-view-prod VIEW PRODUCT
+                    .showcase-loads-container-alsoLike-gallery-content-img
+                        img.alsoLike-img(src='/img/women-1-2.jpg' alt='clothing')
+                        .description
+                            p.heading-title FERN LEATHER BIKER JACKET
+                            p.cl6.text-read.view-prod-text
+                                | Our iconic best-seller. 
+                                br
+                                |   Classic biker jackets. 
+                                br
+                                |  They're in our DNA.
+                            p.read#readMore8 Read more
+                            .details-hidden.vph#showMore8
+                                p.text-read.view-prod-text
+                                    |  The Fern. It's new. Inspired by our most loved Balfern Biker. With traditional metal hardware. And recycled materials.
+                                    a(href='/girls/fern-leather-biker-jacket')
+                                        button.btn-view-prod VIEW PRODUCT
+                    hr.hr8
+            //- .showcase-loads-container-alsoLike
+            //-     .showcase-loads-container-alsoLike-title
+            //-         p RECENTLY VIEWED
+            //-         span.showIconMinus
+            //-     .showcase-loads-container-alsoLike-gallery.gallery-four.gallery-active
+            //-         .showcase-loads-container-alsoLike-gallery-content
+            //-             .showcase-loads-container-alsoLike-gallery-content-img
+            //-                 img.alsoLike-img2(src='/img/pic-34.jpg' alt='clothing')
+            //-         .showcase-loads-container-alsoLike-gallery-content-img
+            //-             img.alsoLike-img2(src='/img/pic-33.jpg' alt='clothing')
+            //-         .showcase-loads-container-alsoLike-gallery-content-img
+            //-             img.alsoLike-img2(src='/img/pic-36.jpg' alt='clothing')
+            //-         .showcase-loads-container-alsoLike-gallery-content-img
+            //-             img.alsoLike-img2(src='/img/pic-37.jpg' alt='clothing')

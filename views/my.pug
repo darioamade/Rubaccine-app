@@ -1,0 +1,87 @@
+extends base
+
+block content
+    .logout-user
+        p.text-main MY ACCOUNT
+        .logout-user-wrapper
+            ul
+                li.login-selected
+                    a(href='/account/details/') My Account Details
+                li.account-navigation--wishlist
+                    a(href='/account/wishlist/') My Wishlist
+                li
+                    a.link-active(href='/account/orders/') My Orders
+                li
+                    a(href='/account/address-book/')  Address Book
+                li.logout
+                    a#logout-clicked.logout-link.link-active(href='') logout
+        //- p.text-main ACCOUNT INFORMATION
+        p.fine-secondary RECENT ORDERS
+        if user
+        each data in men
+            .orders-wrapper
+                .wrap-id
+                    p.order-id ID
+                    p.order-date DATE
+                    p.order-cost COST
+                    p.order-id
+                .wrap-orders
+                    p.order-id=`${data.id}`
+                        - const future = new Date
+                        - const d =(Date.now() + '').slice(-10);
+                        - var today = new Date();
+                        - var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+                    p.order-date=`${date}`
+                    p.order-cost=`${data.price}`
+                    span.order-id
+                        button.view-order View this order
+                .wrap-replace
+                    p.wrap-replace-dark  Order Number
+                    p.wrap-replace-title  8430707
+                    p.wrap-replace-dark  Date Ordered
+                    p.wrap-replace-title=`${future.getDate()}  ${future.getMonth() + 1}`
+                    p.wrap-replace-dark  Change Currency
+                    p.wrap-replace-title  GBP
+                    p.wrap-replace-dark  Order Type
+                    p.wrap-replace-title  Delivery
+            .prod-description
+                .prod-description-title
+                    p Product Description
+                    p PRICE
+                    p Quantity
+                    p Shipped
+                    p Sub Total
+                    p Refund/Exchange
+                .prod-description-content
+                    p=`${data.name}`
+                        - const price = data.price / data.price
+                    p=`${data.price.toFixed(2)}`
+                    p=`${price}`
+                    p Requested
+                    p=`${data.price.toFixed(2)}`
+                    p X
+                .prod-description-shipping
+                    p &#x9;&nbsp;
+                    p &#x9;&nbsp;
+                    p &#x9;&nbsp;
+                    p &#x9;&nbsp;
+                    p -0.00
+                    p Shipping
+                .prod-description-discount
+                    p &#x9;&nbsp;
+                    p &#x9;&nbsp;
+                    p &#x9;&nbsp;
+                    p &#x9;&nbsp;
+                    p -0.00
+                    p Discount
+                .prod-description-total
+                    p &#x9;&nbsp;
+                    p &#x9;&nbsp;
+                    p &#x9;&nbsp;
+                    p &#x9;&nbsp;
+                    p=`${data.price.toFixed(2)}`
+                    p Total
+        else
+            p.fine-secondary No orders have been placed
+            .extra-stuffs 
+

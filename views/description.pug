@@ -1,0 +1,308 @@
+extends base
+
+block append head
+    //- script(src='/js/mapbox.js')
+mixin overviewBox(imageCover, name, summary)
+    each collection in men.imageCover
+        .showcase-loads-container-alsoLike-gallery-content-img
+            img.alsoLike-img(src=`/img/${imageCover}`  alt='clothing')
+            .description
+                p.heading-title= name
+                p.text-read= summary
+                p.read Read more
+                .details-hidden = summary
+                a(href='/men')
+                    button.btn-view-prod VIEW PRODUCT
+//- mixin overviewBox(description, text, icon)
+//-     showcase-loads-container-gallery-left-content
+//-         img.image-gallery-left(src=`/img/${men.images}` alt=`${men.name}`)
+
+block content 
+    .showcase-loads
+        .btn-add-wide
+            a(href=`/add-to-cart/${men.id}`)
+                button.btn-add-wide__btn#btnAddToBag2  ADD TO BAG 
+            //-button.btn-add-wide__btn ADD TO BAG
+            //- a(href=`/add-to-cart/${collection.id}`)
+            //-     button.btn-add-wide__btn#btnAddToBag  ADD TO BAG  
+        .btn-size-option
+            .btn-size-option-close
+                p SELECT YOUR SIZE.
+                svg.icon-page
+                    use(href='/img/sprite.svg#icon-close')
+            //- each sizex in men.size
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p=`UK ${sizex}`
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        // <p><u>NOTIFY ME</u></p>
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 2
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 4
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 6
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 8
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 10
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 12
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 14
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+        .showcase-loads-container
+            .showcase-loads-container-nav
+                .showcase-loads-container-nav-left
+                    .description
+                        p=`${men.category}`  
+                        p=`/ ${men.subCategory}` 
+                        a(href=`/men/${men.categoryType}`)
+                            p=`/ ${men.categoryType}` 
+                        p=`/ ${men.name}`
+                    .loader-text
+                        span FREE DELIVERY ON ORDERS OVER &pound;150
+                        // <span>FREE RETURNS ON ALL UK ORDERS</span>
+                .showcase-loads-container-nav-right
+                    .showcase-loads-container-nav-right-prev
+                        .previous
+                            svg.icon-page
+                                use(href='/img/sprite.svg#icon-keyboard_arrow_left')
+                            p Previous
+                        .line
+                            p.vline
+                    .showcase-loads-container-nav-right-back
+                        a(href='/men/new')
+                            p=` Back to ${men.category}  New Arrivals` 
+
+                    .showcase-loads-container-nav-right-next
+                        .previous
+                            p(style='cursor: pointer;') Next
+                            svg.icon-page.icon-page-color.color-active
+                                use(href='/img/sprite.svg#icon-keyboard_arrow_right')
+                        .line
+                            p.vline
+            .showcase-loads-container-gallery
+                .showcase-loads-container-gallery-left
+                    //- +overviewBox()
+                    each img, i in men.images
+                        .showcase-loads-container-gallery-left-content
+                            img.image-gallery-left(src=`/img/${img}` alt=`${i + 1}`)
+                .showcase-loads-container-gallery-right
+                    .showcase-loads-container-gallery-right-details
+                        p.new=men.status
+                        p.new-desc=men.name
+                        p.new-price
+                            span(style='color: #000;')=`£${men.price.toFixed(2)}  `
+                            //- span(style='color: #a90808;')=`£${men.price.toFixed(2)}  `
+                            //- span  was
+                            //- span=` £${men.priceOld.toFixed(2)} `
+                        .box-img-prev
+                            span.small-img
+                                img.size-img-prev(src=`/img/${men.imageCover}` alt='clothing')
+                            span.small-img
+                                each colors, i in men.color
+                                    p.text-color=`${colors}`
+                                        //- p.text-color=` ${men.color} `
+                    .showcase-loads-container-gallery-right-sizes
+                        .boxes-sizes
+                            each sizes in men.size
+                                //- .box-items-sizes.crossed UK 4
+                                .box-items-sizes.borderBlack=`${sizes}`
+                            //-     - if (!sizes ) ? .box-items-sizes.crossed=` UK ${sizes} ` : .box-items-sizes.borderBlack=` UK ${sizes} `
+                            //-     //- .box-items-sizes.crossed=` UK ${sizes} `
+
+                                
+                            // NOTES switch between crossed and border for avalibite
+                        p.underline is your size out of stock?
+                        if session.cart
+                            p.text-color=`Make 3 payments of £${(session.cart.totalPrice.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})/ 3).toFixed(2)}. Klarna. No fees.`
+                                a.popupKlarna(href) Learn more
+                        else
+                            p.text-color
+                            | Make 3 payments with Klarna. No fees. 
+                            a.popupKlarna(href) Learn more
+                            .btn-and-like
+                                //- - const prod= JSON.stringify(men)
+                                //- button.btn-add.btn-not-clear#btnAddToBag1(data-men=`${prod}`) ADD TO BAG
+                                //- const prod= JSON.stringify(men)
+                                //-button.btn-add.btn-not-clear#btnAddToBag2(data-men=`${prod}`) ADD TO BAG
+                                a(href=`/add-to-cart/${men.id}`)
+                                    button.btn-add.btn-not-clear#btnAddToBag2  ADD TO BAG  
+                                span.btn-like
+                    .showcase-loads-container-gallery-right-notes
+                        .showcase-loads-container-gallery-right-notes-box
+                            .box-top
+                                .showcase-loads-container-gallery-right-notes-box-title
+                                    p NOTES
+                                .showcase-loads-container-gallery-right-notes-box-icon
+                                    span
+                            .slide-box.showMe
+                                p=`${men.summary}`  
+                                
+                                each description in men.description
+                                    p=`${description}` 
+                               
+                        .showcase-loads-container-gallery-right-notes-box
+                            .box-top
+                                .showcase-loads-container-gallery-right-notes-box-title
+                                    p DETAILS 
+                                #details.showcase-loads-container-gallery-right-notes-box-icon
+                                    span
+                            .slide-box1.showMe
+                                each detailsProduct in men.detailsProduct
+                                    p=`${detailsProduct}` 
+                        .sizeguide
+                            p SIZE GUIDE
+                        .share
+                            p SHARE 
+                            .share-icons
+                                svg.icon-footer
+                                    use(href='/img/sprite.svg#icon-social-facebook')
+                                svg.icon-footer
+                                    use(href='/img/sprite.svg#icon-social-twitter')
+                                svg.icon-footer
+                                    use(href='/img/sprite.svg#icon-pinterest')
+                    .showcase-loads-container-gallery-right-shares
+                        .showcase-loads-container-gallery-right-shares-pictures
+                            //- img.shares-pictures(src='/img/pic-31.jpg' alt='clothing')
+                            //- img.shares-pictures(src='/img/pic-32.jpg' alt='clothing')
+                            img.shares-pictures(src='/img/men-4-cover.jpg' alt='clothing')
+                            img.shares-pictures(src='/img/men-5-cover.jpg' alt='clothing')
+                        .showcase-loads-container-gallery-right-shares-content
+                            p.new-desc SHOW US YOUR STYLE
+                            p.new-desc1
+                                | Share your Rubaccine look and mention @Rubaccine in the caption,
+                                | or upload here to be featured on rubaccine.com
+                            p.new-desc2  #RUBACCINE
+                    hr.hr8
+            .showcase-loads-container-alsoLike
+                .showcase-loads-container-alsoLike-title
+                    p YOU MAY ALSO LIKE
+                    span.showIconMinus
+                .showcase-loads-container-alsoLike-gallery
+                    //- +overviewBox(`${men.imageCover}`, `${men.name}`,`${men.summary}`)
+                    //- +overviewBox(`${men.imageCover}`, `${men.name}`,`${men.summary}`)
+                    //- +overviewBox(`${men.imageCover}`, `${men.name}`,`${men.summary}`)
+                    //- +overviewBox(`${men.imageCover}`, `${men.name}`,`${men.summary}`)
+                    .showcase-loads-container-alsoLike-gallery-content
+                        .showcase-loads-container-alsoLike-gallery-content-img
+                            img.alsoLike-img(src='/img/men-2-cover.jpg' alt='clothing')
+                            .description
+                                p.heading-title MORTON SHERPA-LINED DENIM JACKET
+                                p.cl1.text-read.view-prod-text
+                                    | Our iconic best-seller. 
+                                    br
+                                    |  This is the Morton,   a new
+ 
+                                p.read#readMore1 Read more
+                                .details-hidden.vph#showMore1
+                                    p.text-read.view-prod-text
+                                        | trucker jacket shaped to a relaxed fit. Sherpa lining, it'll keep you warm. The body is black with light distressing throughout.
+                                      
+                                    a(href='/men/morton-sherpa-lined-denim-jacket')
+                                        button.btn-view-prod VIEW PRODUCT
+                    .showcase-loads-container-alsoLike-gallery-content-img
+                        img.alsoLike-img(src='/img/men-6-cover.jpg' alt='clothing')
+                        .description
+                            p.heading-title MODE MERINO HENLEY
+                            p.cl2.text-read.view-prod-text
+                                | Our iconic best-seller. 
+                                br
+                                |   Henley. But not as you know it. 
+                                br
+                                |   The Mode ...
+                            p.read#readMore2 Read more
+                            .details-hidden.vph#showMore2
+                                p
+                                 | Merino Henley T-Shirt. Featuring a three button placket. And our hallmark Ramskull embroidered on the chest.
+                                a(href='/men/mode-merino-henley')
+                                    button.btn-view-prod VIEW PRODUCT
+                    .showcase-loads-container-alsoLike-gallery-content-img
+                        img.alsoLike-img(src='/img/men-5-cover.jpg' alt='clothing')
+                        .description
+                            p.heading-title SURVEY LEATHER BLAZER
+                            p.cl3.text-read.view-prod-text
+                                | Our iconic best-seller. 
+                                br
+                                | The Survey Leather Blazer 
+                                br
+                                |   takes instant styling into its
+                            p.read#readMore3 Read more
+                            .details-hidden.vph#showMore3
+                                p
+                                 | own hands - two layers worked into one means no styling is necessary. Rugged, waxed goat  | suede contrasts the woolen double layer perfectly.
+                                a(href='/men/survey-leather-blazer')
+                                    button.btn-view-prod VIEW PRODUCT
+                    .showcase-loads-container-alsoLike-gallery-content-img
+                        img.alsoLike-img(src='/img/men-17-cover.jpg' alt='clothing')
+                        .description
+                            p.heading-title HAWTHORNE STRETCH FIT SHIRT
+                            p.cl4.text-read.view-prod-text
+                                | The Hawthorne Shirt.
+                                br
+                                |                                                                                                                     The  It doesn't get more classic. 
+                            p.read#readMore4 Read more
+                            .details-hidden.vph#showMore4
+                                p
+                                    | Crafted from a stretch cotton fabric. In a slim fit. Our signature Ramskull sits on the chest. It's embroidered.
+                                a(href='/men/hawthorne-stretch-fit-shirt')
+                                    button.btn-view-prod VIEW PRODUCT
+                hr.hr8
+            //- .showcase-loads-container-alsoLike
+            //-     .showcase-loads-container-alsoLike-title
+            //-         p RECENTLY VIEWED
+            //-         span.showIconMinus
+            //-     .showcase-loads-container-alsoLike-gallery.gallery-four.gallery-active
+            //-         .showcase-loads-container-alsoLike-gallery-content
+            //-             .showcase-loads-container-alsoLike-gallery-content-img
+            //-                 img.alsoLike-img2(src='/img/pic-34.jpg' alt='clothing')
+            //-         .showcase-loads-container-alsoLike-gallery-content-img
+            //-             img.alsoLike-img2(src='/img/pic-33.jpg' alt='clothing')
+            //-         .showcase-loads-container-alsoLike-gallery-content-img
+            //-             img.alsoLike-img2(src='/img/pic-36.jpg' alt='clothing')
+            //-         .showcase-loads-container-alsoLike-gallery-content-img
+            //-             img.alsoLike-img2(src='/img/pic-37.jpg' alt='clothing')

@@ -1,0 +1,649 @@
+[
+  {
+    "id": 0,
+    "name": "DALBY LEATHER BIKER JACKET",
+    "category": "Women ",
+    "subCategory": "CLOTHING",
+    "categoryType": "Leather Jackets ",
+    "price": 229,
+    "stock": 50,
+    "color": ["Black"],
+    "status": "BEST SELLER",
+    "summary": "No fuss leathers. The Dalby Biker Jacket. It's minimalist. Crafted from leather. With shiny gunmetal trims. You can come back to it again and again.",
+    "description": [
+      "Long sleeve",
+      "Leather zip pulls",
+      "Two lower pockets",
+      "Shiny gunmetal popper fastenings",
+      "Fully lined",
+      "Recycled fabrics",
+      "Chrome free tanning",
+
+      "Model is 177cm and wears size UK 10"
+    ],
+    "detailsProduct": [
+      "   Slim fit",
+      "Shell: 100% lamb leather",
+      "Lining: 100% recycled polyester",
+      "UK Size 10 measurements: chest: 44.5cm, waist: 42.5cm, sleeve length: 60.5cm, shoulder to shoulder: 38.5cm",
+      "Specialist leather clean only",
+
+      "Made in: India"
+    ],
+    "imageCover": "women-0-cover.jpg",
+    "images": [
+      "women-0-1.jpg",
+      "women-0-2.jpg",
+      "women-0-3.jpg",
+      "women-0-4.jpg",
+      "women-0-5.jpg"
+    ],
+    "size": ["UK 6", "UK 8", "UK 12"]
+  },
+  {
+    "id": 1,
+    "name": "FERN LEATHER BIKER JACKET",
+    "category": "Women ",
+    "subCategory": "CLOTHING",
+    "categoryType": " Leather Jackets  ",
+    "price": 319,
+    "stock": 50,
+    "color": ["lint blue"],
+    "status": "BEST SELLER",
+    "summary": "Classic biker jackets. They're in our DNA. The Fern. It's new. Inspired by our most loved Balfern Biker. With traditional metal hardware. And recycled materials.",
+    "description": [
+      "  Zip closure",
+      "Long sleeve",
+      "Dull nickel zips",
+      "Zipped cuffs",
+      "Three lower pockets",
+      "Lightly washed and tumbled",
+      "Recycled fabrics",
+      "    60% of wastewater is reused during the processing of the leather used to make this style",
+      "Model is 5'9 / 177cm and is wearing size UK 10"
+    ],
+    "detailsProduct": [
+      "   Regular fit",
+      "100% sheep leather",
+      "Lining: 100% recycled polyester",
+      "Specialist leather clean only",
+
+      "Made in: India"
+    ],
+
+    "imageCover": "women-1-cover.jpg",
+    "images": [
+      "women-1-1.jpg",
+      "women-1-2.jpg",
+      "women-1-3.jpg",
+      "women-1-4.jpg",
+      "women-1-5.jpg"
+    ],
+    "size": ["UK 2", "UK 4", "UK 6", "UK 8", "UK 10", "UK 12", "UK 14"]
+  },
+  {
+    "id": 2,
+    "name": "BALFERN LEATHER BIKER JACKET",
+    "category": "Women ",
+    "subCategory": "CLOTHING",
+    "categoryType": "Leather Jackets ",
+    "price": 229,
+    "stock": 100,
+    "color": ["black", "grtey"],
+    "status": "BEST SELLER",
+    "summary": "Vintage leather vibes. The Cargo biker is crafted from leather, heavily distressed for a finish unique to each jacket. Diamond-quilted shoulder panels and zip cuffs offer classic biker detailing.",
+    "description": [
+      "     Metal hardware",
+      "Quilting to the shoulders",
+      "Creased finish",
+      "Due to the distressed nature each jacket will be unique",
+      "Delivered rolled for a unique creased finish",
+      "Model is 5'9 / 177cm wearing size UK 10"
+    ],
+    "detailsProduct": [
+      "   Regular fit",
+      "UK size 10 measurements:",
+      "Chest: 44.5cm",
+      "Waist: 43cm",
+      "Shoulder to shoulder: 38.5cm",
+      "Sleeve length: 63cm",
+      "100% sheep leather",
+      "Body lining: 62% viscose, 38% cotton",
+      "Sleeve lining: 100% polyester",
+      "Specialist leather dry clean only",
+
+      "Made in: India"
+    ],
+    "imageCover": "women-2-cover.jpg",
+    "images": [
+      "women-2-1.jpg",
+      "women-2-2.jpg",
+      "women-2-3.jpg",
+      "women-2-4.jpg",
+      "women-2-5.jpg"
+    ],
+    "size": ["UK 2", "UK 4", "UK 6", "UK 8", "UK 10", "UK 12", "UK 14"]
+  },
+  {
+    "id": 3,
+    "name": "FOREVER TIGER ANNA T-SHIRT",
+    "category": "Women ",
+    "subCategory": "CLOTHING",
+    "categoryType": "T-SHIRT",
+    "price": 59,
+    "stock": 100,
+    "color": ["optic white"],
+    "status": "BEST SELLER",
+    "summary": "An easy piece. The Anna T-Shirt. Crafted from soft cotton. Shaped to a regular silhouette. Featuring turned-up cuffs. And our new Rubaccine graphic on the chest.",
+    "description": [
+      "     Pullover",
+      "Crew neck",
+      "Short sleeve",
+      "Turned up cuffs",
+      "Rubaccine tiger graphic",
+      "ALLSAINTS cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+      "Model is 5'10.5 /179cm and is wearing size UK 10"
+    ],
+    "detailsProduct": [
+      "    Regular fit",
+      "100% cotton",
+      "Machine wash inside out.",
+
+      "Made in: Portugal"
+    ],
+    "imageCover": "women-3-cover.jpg",
+    "images": [
+      "women-3-1.jpg",
+      "women-3-2.jpg",
+      "women-3-3.jpg",
+      "women-3-4.jpg",
+      "women-3-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "LX"]
+  },
+  {
+    "id": 4,
+    "name": "FRANCESCO RITA T-SHIRT",
+    "category": "Women ",
+    "subCategory": "CLOTHING",
+    "categoryType": " T-SHIRT ",
+    "price": 54,
+    "priceOld": 109,
+    "stock": 100,
+    "color": ["T-SHIRT"],
+    "status": "BEST SELLER",
+    "summary": "Good with jeans. The Francesco T-Shirt. As easy to throw on, as it is to wear. It's got long sleeves. And a round neckline. Crafted from a semi-sheer fabric. With our Ramskull on the chest.",
+    "description": [
+      "Pullover",
+      "Semi sheer",
+      "Long sleeve",
+      "Round neck",
+      "Ramskull embroidery",
+      "Sustainable modal fabric",
+      "Model is 5'9 / 177cm and is wearing size Medium"
+    ],
+    "detailsProduct": [
+      "Oversized fit",
+      "100% modal",
+      "Hand wash inside out",
+      "Made in: Portugal"
+    ],
+    "imageCover": "women-4-cover.jpg",
+    "images": [
+      "women-4-1.jpg",
+      "women-4-2.jpg",
+      "women-4-3.jpg",
+      "women-4-4.jpg",
+      "women-4-5.jpg"
+    ],
+    "size": ["ONE SIZE"]
+  },
+  {
+    "id": 5,
+    "name": "PINA TIGER JUMPER",
+    "category": "Women ",
+    "subCategory": "CLOTHING",
+    "categoryType": "Knitwear ",
+    "price": 139,
+    "stock": 100,
+    "color": ["cream/pale", " blue"],
+    "status": "BEST SELLER",
+    "summary": "The Pina Jumper. It's crafted from an alpaca-wool blend fabric. With your favourite tiger stripes all over - they're blue and white.",
+    "description": [
+      "Pullover",
+      "Crew neck",
+      "Long sleeve",
+      "Dropped shoulders",
+      "Tiger stripes",
+      "Ribbed trims",
+      "Recycled fabrics",
+      "The manufacturing process of the yarn used to make this style uses 40% less water than conventional methods",
+      "RWS certified wool (CU 870616). The Responsible Wool Standard (RWS) is an industry tool that ensures the wool comes from farms where the land ,has been managed and the sheep have been treated responsibly - find out more",
+      "Model is 5'9 /177cm and is wearing size Medium"
+    ],
+    "detailsProduct": [
+      "Relaxed fit",
+      "33% acrylic, 28% alpaca, 26% recycled polyamide, 13% wool",
+      "Hand wash inside out",
+      "Made in: China"
+    ],
+    "imageCover": "women-5-cover.jpg",
+    "images": [
+      "women-5-1.jpg",
+      "women-5-2.jpg",
+      "women-5-3.jpg",
+      "women-5-4.jpg",
+      "women-5-5.jpg"
+    ],
+    "size": ["UK 2", "UK 4", "UK 8", "UK 10", "UK 12", "UK 14"]
+  },
+  {
+    "id": 6,
+    "name": "FINA SNAKE DRESS",
+    "category": "Women ",
+    "subCategory": "CLOTHING",
+    "categoryType": "Knitwear",
+    "price": 239,
+    "stock": 100,
+    "color": ["grey mari "],
+    "status": "BEST SELLER",
+    "summary": "Henley. But not as you know it. The Mode Merino Henley T-Shirt. Featuring a three button placket. And our hallmark Ramskull embroidered on the chest.",
+    "description": [
+      "Crew neck",
+      "Long sleeve",
+      "Ribbed trims",
+      "Three button placket",
+      "Ramskull embroidery",
+      "The dyeing process of the yarn used to make this style uses 40% less water than conventional methods",
+      "RWS certified wool (CU 870616). The Responsible Wool Standard (RWS) is an industry tool that ensures the wool comes from farms where the land has been managed and the sheep have been treated responsibly - find out more",
+      "Model is 6'2.5/188cm and is wearing size Medium"
+    ],
+    "detailsProduct": [
+      "   Relaxed fit",
+      "100% merino wool",
+      "Hand wash inside out",
+      "Made in: China"
+    ],
+    "imageCover": "women-6-cover.jpg",
+    "images": [
+      "women-6-1.jpg",
+      "women-6-2.jpg",
+      "women-6-3.jpg",
+      "women-6-4.jpg",
+      "women-6-5.jpg"
+    ],
+    "size": ["UK 2", "UK 4", "UK 8", "UK 8", "UK 10", "UK 12", "UK 14"]
+  },
+  {
+    "id": 7,
+    "name": "SHERINGHAM LEATHER SHOULDER BAG",
+    "category": "Women ",
+    "subCategory": " Handbags",
+    "categoryType": " SHOES & ACCESSORIES ",
+    "price": 120,
+    "stock": 10,
+    "color": ["squid ink blue "],
+    "status": "NEW",
+    "summary": "A bag worth talking about. The Sheringham Shoulder Bag looks great with any outfit. Crafted from our premium leather. With gold-tone hardware and a pin closure.",
+    "description": [
+      "  Zip closure",
+      "Pin closure",
+      "Adjustable strap",
+      "Gold-tone hardware",
+      "Two pockets",
+      "One interior slip pocket",
+      "One Interior zip pocket",
+      "Will fit any generation iPhone"
+    ],
+    "detailsProduct": [
+      "   Body: 100% cow leather",
+      "Panel: 100% cow leather",
+      "Trim: 100% calf leather (split)",
+      "Lining: 100% cotton",
+      "Weight: 0.6kg",
+      "Handle drop: 32cm",
+      "Height: 32cm, width: 22cm, depth: 5cm",
+      "Comes with an Rubaccine dust bag",
+      "How to care for your bag",
+
+      "Made in: Vietnam"
+    ],
+    "imageCover": "women-7-cover.jpg",
+    "images": [
+      "women-7-1.jpg",
+      "women-7-2.jpg",
+      "women-7-3.jpg",
+      "women-7-4.jpg",
+      "women-7-5.jpg"
+    ],
+    "size": ["ONE SIZE"]
+  },
+  {
+    "id": 8,
+    "name": "CORA LEATHER METALIC JACKET",
+    "category": "Women ",
+    "subCategory": "CLOTHING",
+    "categoryType": "Leather Jackets ",
+    "price": 131,
+    "stock": 10,
+    "color": ["JET BLACK"],
+    "status": "BEST SELLER",
+    "summary": "Traditional bomber jackets. Classic biker details. The Cora Jacket. It's a fusion. Crafted from soft leather. With minimalist detailing on the body and arms.",
+    "description": [
+      "Zip closure",
+      "Side zip pockets",
+      "Snap back collar",
+      "Shoulder panel detailing",
+      "Two interior slip pockets",
+      "Inspired by vintage members-only bomber jackets",
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more"
+    ],
+    "detailsProduct": [
+      "  Upper: 100% cow leather",
+      "Lining: 100% cow leather",
+      "Sole: 100% rubber",
+      "Made in:  United Kingdom"
+    ],
+    "imageCover": "women-8-cover.jpg",
+    "images": [
+      "women-8-1.jpg",
+      "women-8-2.jpg",
+      "women-8-3.jpg",
+      "women-8-4.jpg",
+      "women-8-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "LX", "XXL"]
+  },
+  {
+    "id": 9,
+    "name": "CONI ORGANIC COTTON TANK DRESS",
+    "category": "Women ",
+    "subCategory": "CLOTHING",
+    "categoryType": " Dresses ",
+    "price": 669,
+    "stock": 10,
+    "color": ["acid washed black"],
+    "status": "BEST SELLER",
+    "summary": "Arms out. The Coni Tank. A crew neck, sleeveless dress. With shoulder pads. Crafted from soft cotton. In all-over washed black. It's shaped to a comfortable, relaxed fit.",
+    "description": [
+      "Pullover",
+      "Crew neck",
+      "Sleeveless",
+      "Shoulder pads",
+      "Wardrobe staple",
+      "Organic cotton",
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+      "Model is 5'10.5 /179cm and is wearing size Medium"
+    ],
+    "detailsProduct": [
+      "     Relaxed fit",
+      "100% organic cotton",
+      "Machine wash inside out",
+      "Made in:  Portugal"
+    ],
+    "imageCover": "women-9-cover.jpg",
+    "images": [
+      "women-9-1.jpg",
+      "women-9-2.jpg",
+      "women-9-3.jpg",
+      "women-9-4.jpg",
+      "women-9-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "LX"]
+  },
+  {
+    "id": 10,
+    "name": "KOTA NOLINA SILK-BLEND DRESS",
+    "category": "Women ",
+    "subCategory": "CLOTHING",
+    "categoryType": "Dresses ",
+    "price": 169,
+    "stock": 10,
+    "color": [" black"],
+    "status": "BEST SELLER",
+    "summary": "Easy spring styling. The Kota Dress features this season's new Nolina print. Bold florals on a dark base. Crafted from a silk-blend fabric in a mini-dress silhouette.",
+    "description": [
+      "     Side zip closure",
+      "Short length",
+      "Buttoned front",
+      "V-neckline",
+      "New season Nolina print",
+      "Model is 5'9 / 177cm and is wearing size UK 10"
+    ],
+    "detailsProduct": [
+      "Relaxed fit",
+      "100% organic cotton",
+      "Machine wash inside out",
+      "Made in:  Portugal"
+    ],
+    "imageCover": "women-10-cover.jpg",
+    "images": [
+      "women-10-1.jpg",
+      "women-10-2.jpg",
+      "women-10-3.jpg",
+      "women-10-4.jpg",
+      "women-10-5.jpg"
+    ],
+    "size": ["UK 2", "UK 4", "UK 6", "UK 8", "UK 10", "UK 12", "UK 14"]
+  },
+  {
+    "id": 11,
+    "name": "ALLINGTON LEATHER EAST WEST TOTE BAG",
+    "category": "Women ",
+    "subCategory": " Handbags",
+    "categoryType": " SHOES & ACCESSORIES ",
+    "price": 230,
+    "stock": 10,
+    "color": ["black "],
+    "status": "NEW",
+    "summary": "For carrying more than the essentials. A large and spacious silhouette, the Allington East West Tote Bag is ideal for days out. Crafted from smooth leather with gold-tone hardware and a detachable zip pouch.",
+    "description": [
+      "   Magnetic closure",
+      "Dual handle",
+      "Detachable pouch",
+      "Gold-tone hardware",
+      "Unlined",
+      "Will fit a laptop"
+    ],
+    "detailsProduct": [
+      "   Handmade",
+      "Lightweight",
+      "Shell: 100% cow leather",
+      "Lining: 100% polyamide",
+      "Bottom lining: 100% polyurethane",
+      "Weight: 1.2kg",
+      "Handle drop: short: 12cm, long: 28cm",
+      "Height: 54cm, width: 33cm, depth: 19cm",
+      "Comes with an Rubaccine dust bag",
+      "How to care for your bag",
+
+      "Made in: China"
+    ],
+    "imageCover": "women-11-cover.jpg",
+    "images": [
+      "women-11-1.jpg",
+      "women-11-2.jpg",
+      "women-11-3.jpg",
+      "women-11-4.jpg",
+      "women-11-5.jpg"
+    ],
+    "size": ["ONE SIZE"]
+  },
+  {
+    "id": 12,
+    "name": "COHEN LEATHER BOOTS",
+    "category": "Women ",
+    "subCategory": "All Shoes ",
+    "categoryType": "SHOES & ACCESSORIES ",
+    "price": 299,
+    "stock": 100,
+    "color": ["white "],
+    "status": "BEST SELLER",
+    "summary": "You can wear these just about anywhere. The Cohen Boots. They're crafted from leather. With a zip closure. Pointed toe. And stacked heel.",
+    "description": [
+      "  Ankle boot",
+      "Side zip",
+      "Pointed toe",
+      "Smooth black leather",
+      "Chunky stacked sole"
+    ],
+    "detailsProduct": [
+      "  Heel height: 7.5cm",
+      "Upper: 100% cow leather",
+      "Lining: 100% goat leather",
+
+      "Made in: Portugal"
+    ],
+    "imageCover": "women-12-cover.jpg",
+    "images": [
+      "women-12-1.jpg",
+      "women-12-2.jpg",
+      "women-12-3.jpg",
+      "women-12-4.jpg",
+      "women-12-5.jpg"
+    ],
+    "size": ["UK 8", "UK 8", "UK 10"]
+  },
+  {
+    "id": 13,
+    "name": "SHEER LEATHER TRAINERS",
+    "category": "Women ",
+    "subCategory": "All Shoes ",
+    "categoryType": "SHOES & ACCESSORIES ",
+    "price": 139,
+    "stock": 100,
+    "color": ["white "],
+    "status": "BEST SELLER",
+    "summary": "The Sheer Trainers. Crafted from leather. With a touch of distressing. They'e a little bit retro.",
+    "description": [
+      "Low top trainers",
+      "Vintage-inspired",
+      "Distressed finish",
+      "Contrasting ankle panel"
+    ],
+    "detailsProduct": [
+      "Sole height: 25mm",
+      "Upper: 100% cow leather",
+      "Lining: 100% goat leather",
+      "Made in: Portugal"
+    ],
+    "imageCover": "women-13-cover.jpg",
+    "images": [
+      "women-13-1.jpg",
+      "women-13-2.jpg",
+      "women-13-3.jpg",
+      "women-13-4.jpg",
+      "women-13-5.jpg"
+    ],
+    "size": ["UK 2", "UK 4", "UK 8", "UK 8", "UK 10"]
+  },
+  {
+    "id": 14,
+    "name": "HATTI LONG SLEEVE T-SHIRT",
+    "category": "Women ",
+    "subCategory": "CLOTHING",
+    "categoryType": " T-SHIRT ",
+    "price": 54,
+    "stock": 100,
+    "color": [" dock blue"],
+    "status": "BEST SELLER",
+    "summary": "Minimal effort required. The Hattie T-Shirt is our new go-to for effortless dressing. Crafted from a stretch fabric with functional AllSaints poppers down the side - create flattering ruching unique to you.",
+    "description": [
+      "Pullover",
+      "Crew neck",
+      "Long sleeve",
+      "Functional poppers",
+      "Asymmetric hem",
+      "Model is 5'10.5 /179cm and is wearing size UK 10"
+    ],
+    "detailsProduct": [
+      "Slim fit",
+      "64% lyocell, 32% cotton, 4% elastane",
+      "Machine wash inside out",
+
+      "Made in: Portugal"
+    ],
+    "imageCover": "women-14-cover.jpg",
+    "images": [
+      "women-14-1.jpg",
+      "women-14-2.jpg",
+      "women-14-3.jpg",
+      "women-14-4.jpg",
+      "women-14-5.jpg"
+    ],
+    "size": ["UK 2", "UK 4", "UK 8", "UK 8", "UK 10"]
+  },
+  {
+    "id": 15,
+    "name": "NOLA MERINO WOOL CARDIGAN",
+    "category": "Women ",
+    "subCategory": "CLOTHING",
+    "categoryType": " Knitwear ",
+    "price": 239,
+    "stock": 100,
+    "color": [" grey mari"],
+    "status": "BEST SELLER",
+    "summary": "Inspired by our favourite coat. The Nola Cardigan features a twist lock closure on the chest. Crafted from merino wool - it's a warm one for Spring.",
+    "description": [
+      "High neck",
+      "Twist lock closure",
+      "Waterfall neckline",
+      "Long sleeve",
+      "Inspired by the Monument Coat",
+      "RWS certified wool (CU 870616). The Responsible Wool Standard (RWS) is an industry tool that ensures the wool comes from farms where the land has been managed and the sheep have been treated responsibly ",
+      "Model is 5'10.5 /179cm and wears size Medium"
+    ],
+    "detailsProduct": [
+      "   Relaxed fit",
+      "100% merino wool",
+      "Hand wash inside out",
+
+      "Made in: China"
+    ],
+    "imageCover": "women-15-cover.jpg",
+    "images": [
+      "women-15-1.jpg",
+      "women-15-2.jpg",
+      "women-15-3.jpg",
+      "women-15-4.jpg",
+      "women-15-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L"]
+  },
+  {
+    "id": 16,
+    "name": "BARDI RIB TOP",
+    "category": "Women ",
+    "subCategory": "CLOTHING",
+    "categoryType": " Knitwear ",
+    "price": 239,
+    "stock": 100,
+    "color": [" black"],
+    "status": "BEST SELLER",
+    "summary": "Dress is up or down, it's easy. The Bardi Top is cut to a bodycon silhouette. With skinny ribbed detailing and square neckline.",
+    "description": [
+      "    Bodycon",
+      "Pull over",
+      "Skinny ribbed finish",
+      "Square neckline",
+      "Long sleeve",
+      "Sustainable Lenzing viscose",
+      "Model is 5'9 / 177cm and wears a size Medium"
+    ],
+    "detailsProduct": [
+      "  Slim fit",
+      "Body: 72% Lenzing viscose, 28% polyester",
+      "Machine wash inside out",
+      "Made in: China"
+    ],
+    "imageCover": "women-16-cover.jpg",
+    "images": [
+      "women-16-1.jpg",
+      "women-16-2.jpg",
+      "women-16-3.jpg",
+      "women-16-4.jpg",
+      "women-16-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L"]
+  }
+]

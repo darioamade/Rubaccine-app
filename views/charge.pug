@@ -1,0 +1,17 @@
+extends base
+
+block content 
+        .container
+        .proccess-payment
+            .proccess-pay-top
+            h1 Payment Types
+            .proccess-pay-bottom
+<<<<<<< HEAD
+            form(action='/purchase' method='POST')
+                script.stripe-button(src='https://checkout.stripe.com/checkout.js' data-key='pk_test_51HACkREfGR7liRCLzNuKl9ISNsXTiTF6DuHgE6GkUdjDKa8l3wsjAyB9XvvMRcP1Pju46TzjCglWdM3WiVnm8V1b000RkM7x7D' data-name='Custom t-shirt' data-description='Your custom designed t-shirt' data-amount='{{ORDER_AMOUNT}}' data-currency='gbp').
+=======
+            form(action='/charge' method='POST')
+                script.stripe-button(src='https://checkout.stripe.com/checkout.js' data-key='pk_test_51IWNL3JMGciq6dxqMnbSC6S7Sa15oelmIKAEPuQ3E31c7rHhpzJVSMvZsIDcFksrPb8KN3aDnYamqoe46bIlVnMW00nC7lvWaY' data-name='Custom t-shirt' data-description='Dario logo t-shirt' data-amount='2500' data-currency='gbp').
+>>>>>>> dev
+                
+                

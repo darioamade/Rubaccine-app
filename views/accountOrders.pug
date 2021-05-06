@@ -1,0 +1,45 @@
+extends base
+
+block content
+    .logout-user
+        p.text-main MY ACCOUNT
+        .logout-user-wrapper
+            ul
+                li.login-selected
+                    a(href='/account/details/') My Account Details
+                li.account-navigation--wishlist
+                    a(href='/account/wishlist/') My Wishlist
+                li
+                    a.link-active(href='/account/orders/') My Orders
+                li
+                    a(href='/account/address-book/')  Address Book
+                li.logout
+                    a#logout-clicked.logout-link.link-active(href='') logout
+        //- p.text-main ACCOUNT INFORMATION
+        p.fine-secondary RECENT ORDERS
+        if user
+            .orders-wrapper
+                .wrap-id
+                    p.order-id ID
+                    p.order-date DATE
+                    p.order-cost COST
+                    p.order-id
+                .wrap-orders
+                    p.order-id
+                    p.order-date DATE
+                    p.order-cost
+                    span.order-id
+                        button.view-order View this order
+                .wrap-replace
+                    p.wrap-replace-dark  Order Number
+                    p.wrap-replace-title  8430707
+                    p.wrap-replace-dark  Date Ordered
+                    p.wrap-replace-title  19 Feb, 2021
+                    p.wrap-replace-dark  Change Currency
+                    p.wrap-replace-title  GBP
+                    p.wrap-replace-dark  Order Type
+                    p.wrap-replace-title  Delivery
+        else
+            p.fine-secondary No orders have been placed
+            .extra-stuffs 
+

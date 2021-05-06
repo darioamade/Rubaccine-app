@@ -1,0 +1,46 @@
+extends base
+
+mixin cartviewBox(imageCover, name, price,size, quantity)
+    .shopping-container-middle-item
+        .shopping-container-middle-item-description
+            p
+            .title
+                p Balfern Leather Biker Jacket
+                p   &pound;318.00
+            .sizes
+                span SIZE: UK 2
+                span QUANTITY: 1
+            .button-chart
+                button.btn-cart-remove REMOVE
+        .shopping-container-middle-item-img
+            img.img-chart(src='/img/pic-33.jpg' alt='clothing')
+block content 
+    .shopping
+        .shopping-container.shopping-bag--opened
+            .shopping-container-top
+                .shopping-container-top-descrip
+                    p.descrip-title Shopping Bag (1)
+                .shopping-container-top-close
+                    svg.icon-page.bag__close__icon(style='fill: rgb(0, 0, 0);')
+                        use(href='/img/sprite.svg#icon-close')
+            .shopping-container-middle
+                +cartviewBox
+            .shopping-container-bottom
+                .shopping-container-bottom-total
+                    p Total
+                    span#cartItemTotal &pound;318
+                    //- if user
+                    //-     .shopping-container-bottom-checkout
+                    //-         a(href='/basket')
+                    //-             button.btn-checkout CHECKOUT
+                    //- else
+                    //- .shopping-container-bottom-checkout
+                    //-         a(href='/loginTest')
+                    //-             button.btn-checkout CHECKOUT
+                .shopping-container-bottom-checkout
+                    a(href='/basket')
+                        button.btn-checkout CHECKOUT
+
+                .shopping-container-bottom-contShop
+                    a(href='/men/new')
+                        button.btn-checkout CONTINUE SHOPPING

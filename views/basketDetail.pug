@@ -1,0 +1,70 @@
+extends base
+
+block content 
+        .information
+            .information-content
+                p.the-title Rubaccine
+            .secure-email-back
+                svg.icon-title
+                    use(href='/img/sprite.svg#icon-arrow_back_ios')
+                a(href='/basket')
+                    p.sub-title BACK TO SHOP
+            .information-content-details
+                .information-content-details-boxs
+                    #checkout-progress(style='display: block;')
+                        ul
+                            li#progress-details.progress-details.actived(data-stage='details')
+                                .progress-box.progress-box-with-bg-black
+                                span Your details
+                            li#progress-delivery(data-stage='delivery')
+                                .progress-transition
+                                .progress-box
+                                span Delivery 
+                            li#progress-review(data-stage='review')
+                                .progress-transition
+                                .progress-box
+                                span Review
+                            li#progress-payment(data-stage='payment')
+                                .progress-transition
+                                .progress-box
+                                span Payment
+
+            .information-content-personal-info-title.firstHidden
+                p PERSONAL INFORMATION
+            .information-content-personal-info-sub-title.firstHidden
+                        p WELCOME NEW CUSTOMER
+            .information-content-personal-info-form.firstHidden
+                .information-content-personal-info-form-name
+                    .information-content-personal-info-form-name-single
+                        label.form(for='Name') Name*
+                        input.form__input.firstName(type='email' placeholder='First Name' required value=`${user.name}`)
+                    //- .information-content-personal-info-form-name-single
+                    //-     label.form(for='Last Name') Last Name*
+                    //-     input.form__input.lastName(type='email' placeholder='Last Name' required ,value=`${user.name.split(' ')[1]}`)
+                    .information-content-personal-info-form-name-single
+                        label.form(for='email') Email*
+                        input.form__input.emailAddress(type='email' placeholder='Email' required, value=`${user.email}`)
+                    .information-content-personal-info-form-name-single
+                        label.form(for='Telephone') Telephone*
+                        input.form__input.phoneNumber(type='email' placeholder='Telephone' required, value=`${user.mobile_tel || ' '}`)
+                    .information-content-personal-info-form-name-single
+                        label.form(for='email')  
+                        span.form__input(type='email' placeholder='Telephone' required)
+                            p You will receive updates on your order via Email. Privacy Policy
+                    .information-content-personal-info-form-name-single
+                        label.form(for='email')  
+                        span.form__input(type='email' placeholder='Telephone' required)
+                            a(href=`/checkout/delivery`)
+                                button.btn-green-delivery.btnGreenDev1 DELIVERY >
+                    .information-content-personal-info-form-name-single
+                        label.form(for='email')  
+                        span.form__input(type='email' placeholder='Telephone' required)
+                            p Continue and complete checkout with Rubaccine
+                    .information-content-personal-info-form-name-single
+                        label.form(for='email')  
+                        span.form__input(type='email' placeholder='Telephone' required)
+                            img.amazonpay-button-inner-image#OffAmazonPaymentsWidgets0(style='cursor:pointer; max-height:45px;' alt='AmazonPay' src='https://d23yuld0pofhhw.cloudfront.net/default/uk/live/lwa/gold/medium/PwA.png' tabindex='0')
+                    .information-content-personal-info-form-name-single
+                        label.form(for='email')  
+                        span.form__input(type='email' placeholder='Telephone' required)
+                            p Continue and complete checkout by using your Amazon shipping and payment information

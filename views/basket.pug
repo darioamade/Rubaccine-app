@@ -1,0 +1,126 @@
+
+extends base
+
+block content
+
+    .container
+        .checkout-page-2-container
+            .checkout-page-2-container-title
+                p.the-title YOUR SHOPPING BAG
+            .checkout-page-2-container-back
+                svg.icon-title
+                    use(href='/img/sprite.svg#icon-arrow_back_ios')
+                a(href='/')
+                    p  BACK TO SHOP
+            .checkout-page-2-container-item
+                .checkout-page-2-container-item-header
+                    .checkout-page-2-container-item-header-img
+                        p ITEM
+                    .checkout-page-2-container-item-header-colour
+                    .checkout-page-2-container-item-header-size
+                        p COLOUR
+                    .checkout-page-2-container-item-header-quatity
+                        p   SIZE
+                    .checkout-page-2-container-item-header-price
+                        p QUANTITY
+                    .checkout-page-2-container-item-header-close
+                        p PRICE
+                each data in Object.values(session.cart.items)
+                    .checkout-page-2-container-item-product
+                        .checkout-page-2-container-item-product-img
+                            img.img(src=`/img/${data.item.imageCover}` alt='clothing')
+                        .checkout-page-2-container-item-product-colour
+                            p.sub-title=`${data.item.name.split(' ',2)}`
+                                //-p.cartIds(data-men-id=`${data.item.id}`)
+                        .checkout-page-2-container-item-product-size
+                            img.img-square(src=`/img/${data.item.imageCover}` alt=`${data.item.name.split(' ',1)}`)
+                            p.sub-title-prim=`${data.item.color[0]}`
+                        .checkout-page-2-container-item-product-quatity
+                            p.sub-title-prim=`SIZE: ${data.item.size[1]}`
+                        .checkout-page-2-container-item-product-price
+                            td.basket-item-quantity
+                                //-span.decrement-basket-item.decrement-disabled(tabindex='-1' role='button' aria-label='Remove 1 from quantity' rel='24663215') -
+                                label.item-quantity(aria-live='polite' tabindex='0' aria-label='1')=`${data.qty}`  
+                                    //-span.increment-basket-item.increment-disabled(tabindex='0' role='button' aria-label='Add 1 to quantity' rel='#') +
+                        .checkout-page-2-container-item-product-close
+                            p.sub-title=`£${(data.item.price.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}))*(data.qty)}`
+
+            .checkout-page-2-container-gift
+                .checkout-page-2-container-gift-container
+                .checkout-page-2-container-gift-container
+                    .checkout-page-2-container-gift-container-value
+                        p.sub-title ADD A GIFT CARD
+                        span.icons-plus +
+                    .checkout-page-2-container-gift-container-btn
+                        button.btn-card-price &pound;150
+                        button.btn-card-price &pound;100
+                        button.btn-card-price &pound;150
+                        button.btn-card-price &pound;200
+                        button.btn-card-price &pound;500
+                        .selected-gift
+                            #giftcard-error.error(role='region' aria-live='assertive' tabindex='0') Minimum purchase value is &pound;20.
+                            // <label for="amount" class="hideLabel">amount</label>
+                            input#amount(type='number' name='amount' autofocus='' placeholder='Enter the amount here' value='' style='padding: 5px;')
+                        button.btn-card-add ADD TO BAG
+            .checkout-page-2-container-gift
+                .checkout-page-2-container-gift-container
+                .checkout-page-2-container-gift-container
+                    .checkout-page-2-container-gift-container-value
+                        p.sub-title PROMOTIONAL CODE:
+                        span.icons-plus +
+                    .checkout-page-2-container-gift-container-btn
+                        #giftcard-error.error1(role='region' aria-live='assertive' tabindex='0') Sorry, these items are not available for this promotion.
+                        .selected-gift
+                            // <label for="amount" class="hideLabel">amount</label>
+                            input#amount(type='text' name='text' autofocus='' placeholder='Enter your code here' value='' style='padding: 5px;')
+                        button.btn-card-add APPLY
+            .checkout-page-2-container-gift
+                .checkout-page-2-container-gift-container
+                .checkout-page-2-container-gift-container.last
+                    .checkout-page-2-container-gift-container-value
+                        p.sub-title TOTAL
+                        p.icons-plus-price=`£${session.cart.totalPrice.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`
+            .checkout-page-2-container-gift
+                .checkout-page-2-container-gift-container
+                .checkout-page-2-container-gift-container.proceed-checkout
+                    .content-checkout
+                        p=`Make 3 payments of £${(session.cart.totalPrice/3).toFixed(2)}. Klarna. No fees. `
+                            a.popupKlarna(href='')  Learn more
+                        //- if user
+                        //-     //-data.item.id
+                        //-     each data in Object.values(session.cart.items)
+                        //-         button.btn-proceed#book-men(data-men-id=`${data.item.id}`) proceed to checkout
+                        //- else
+                        //-     a(href='/signup')
+                        //-         button.btn-proceed proceed to checkout
+                        a(href='/checkout/details')
+                                button.btn-proceed proceed to checkout
+               
+            //- .proccess-payment
+            //-     .proccess-pay-top
+            //-         h1 Payment Types
+            //-     .proccess-pay-bottom
+            //-         form(action='/charge' method='POST')
+            //-             script.stripe-button(src='https://checkout.stripe.com/checkout.js' data-key='pk_test_51IWNL3JMGciq6dxqMnbSC6S7Sa15oelmIKAEPuQ3E31c7rHhpzJVSMvZsIDcFksrPb8KN3aDnYamqoe46bIlVnMW00nC7lvWaY' data-name='Name t-shirt' data-description='Dario loog t-shirt' data-amount=`${(session.cart.totalPrice)*100}` data-currency='gbp').
+
+            hr.hr7
+            .checkout-page-2-container-support
+                .checkout-page-2-container-support-title
+                    p.title-support QUESTION OR SUPPORT?
+                    p.sub-support
+                        | Send us an email to: 
+                        b ask@rubaccine.com
+                    p.sub-support(style='margin-bottom: 0rem;') Where a member of our Customer Experience team will be happy to assist you.
+                    p.sub-support-1 We are open 9am-11pm BST Monday to Friday.
+                .checkout-page-2-container-support-methods
+                    img.pay-icon(src='/img/visa-logo@logotyp.us.svg' alt='icons')
+                    img.pay-icon(src='/img/mastercard-maestro-logo@logotyp.us.svg' alt='icons')
+                    img.pay-icon(src='/img/american-express-logo@logotyp.us.svg' alt='icons')
+                    img.pay-icon(src='/img/paypal-logo@logotyp.us.svg' alt='icons')
+                    img.pay-icon(src='/img/mastercard-4.svg' alt='icons')
+                    img.pay-icon6(src='/img/klarna 1.svg' alt='icons')
+            hr.hr5
+
+
+          
+            

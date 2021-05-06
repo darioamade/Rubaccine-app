@@ -1,0 +1,593 @@
+
+
+.hidden#consent-popup
+    //- p
+    //-     | By using this site you agree to our 
+    //-     a(href='#') Terms and conditions
+    //-     | . Please 
+    //-     a#accept(href='#') Accept
+    //-     |  these before using our site.
+    p 
+        | We use cookies to personalise content, analyse traffic and for advertising. Click 
+        a(href='') here 
+        | for more information.
+        a#accept(href='#') Accept cookies
+.popup-auto.hidden
+    .popup-auto-content
+        .close-popup-auto X
+        .popup-auto-content-container
+            p.text-main 15% off your first order.
+            p.text-sub
+                | New to Rubaccine? Sign up for 15% off
+                | full-price styles in your first order.
+            .form
+                .email-parent
+                    input#footer-newsletter-email1.footer-newsletter-form__input.styling(style='width: 100%;' type='text' value='' name='email' aria-describedby='footer-disclaimer' placeholder='Email Address' aria-label='Enter email address' data-mailcheck='Did you mean' data-prev-value='' autofocus='')
+                    .parent-bottom
+                        a.input-email-parent(href='#') WOMENWEAR
+                        a.input-email-parent(href='#') MANWEAR
+.shopping.active
+    .shopping-container.shopping-bag--opened
+        .shopping-container-top
+            .shopping-container-top-descrip
+                p.descrip-title=`Shopping Bag (${session.cart ? session.cart.totalQty : ''})`
+            .shopping-container-top-close
+                svg.icon-page.bag__close__icon(style='fill: rgb(0, 0, 0);')
+                    use(href='/img/sprite.svg#icon-close')
+        if (session.cart)
+            .shopping-container-middle
+                each data in Object.values(session.cart.items)
+                    .shopping-container-middle-item
+                        .shopping-container-middle-item-description
+                            p
+                            .title
+                                p=`${data.item.name.split(' ',1)}`
+                                p=`£${data.item.price.toFixed(2)}`
+                            .sizes
+                                span= `SIZE: ${data.item.size[1]}`
+                                span=`${data.qty}`
+                            .button-chart
+                                form(action='/delete-cart' method='POST')
+                                    input(type='hidden' name='prodId' id=`${data.item.id}`)
+                                    button.btn-cart-remove(type='=submit') REMOVE
+                                //-button.btn-cart-remove REMOVE
+                        .shopping-container-middle-item-img
+                            img.img-chart(src=`/img/${data.item.imageCover}` alt='clothing')
+            
+        
+            .shopping-container-bottom
+                .shopping-container-bottom-total
+                    p Total
+                    span#cartItemTotal=`£${session.cart.totalPrice.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`
+                    //- if user
+                    //-     .shopping-container-bottom-checkout
+                    //-         a(href='/basket')
+                    //-             button.btn-checkout CHECKOUT
+                    //- else
+                    //- .shopping-container-bottom-checkout
+                    //-         a(href='/loginTest')
+                    //-             button.btn-checkout CHECKOUT
+                
+                .shopping-container-bottom-checkout
+                    if user
+                        a(href='/basket')
+                            button.btn-checkout CHECKOUT
+                    else
+                        a(href='/signup')
+                            button.btn-checkout CHECKOUT
+                                    
+                .shopping-container-bottom-contShop
+                    a(href='/men/new')
+                        button.btn-checkout CONTINUE SHOPPING
+        else
+            .shopping-container-middle
+                .shopping-container-middle-item
+                    .shopping-container-middle-item-description
+                        .text-empty-cart 
+                            p Your Bag is Empty
+   
+.overlayer-2
+.signin-account
+    .signin-account-container
+        .signin-account-container-left
+            p.text-main Sign In
+            form#form1
+                .form1__group
+                    label.form1__label(for='email') &nbsp
+                    input#email.form1__input(type='email', placeholder='Enter your email address', required)
+                .form1__group.ma-bt-md
+                    label.form1__label(for='password') &nbsp
+                    input#password.form1__input(type='password', placeholder='Enter Password', required, minlength='8')
+                .form1__group
+                    ul.nav__list
+                        li.nav__item
+                            a(href='/')
+                                button.nav__btn
+                                    span.signin.sale__tab_3  Login
+            //- p.text-normal Forgotten your password?
+            //- .create
+            //-     a(href='/account/details')
+            //-         p LOGIN
+            //- p.text-main Amazon Login
+            //- .amazon-svg
+            //-     img.amazon-login-btn(src='https://images-na.ssl-images-amazon.com/images/G/01/lwa/btnLWA_gry_156x132.png' alt='amazon btn')
+            //-     img.prime-svg(src='/img/Amazon_Prime_Logo.svg' alt='prime-svg')
+        .signin-account-container-right
+            svg.icon-close-signin
+                use(href='/img/sprite.svg#icon-close')
+            p.text-main New Customer
+            p.text-normal
+                | Customers who have checked out as a guest will receive their
+                | tracking number in the order dispatch confirmation.
+            p.text-normal Sign up to:
+            .checks
+                p.text-normal - Check out faster
+                p.text-normal - View your orders
+                p.text-normal - Edit account details
+            .create
+                ul.nav__list
+                    li.nav__item
+                        a(href='/signup')
+                            button.nav__btn.nav__btn--add-recipe
+                                span.signin.sale__tab_3 CREATE ACCOUNT
+                    li.nav__item
+                        a(href='/')
+                            button.nav__btn.nav__btn--add-recipe
+                                span.signin.sale__tab_3 CHECKOUT AS GUEST
+            
+                    //- ul.nav__list-preview
+                    //-     li.nav__item-preview
+                    //-         a(href='' )  CREATE ACCOUNT
+                    //-     li.nav__item-preview
+                    //-         a(href='/' )  CHECKOUT AS GUEST
+                                    
+                    //- a(href='/men')
+                    //-     p.text-normal CREATE ACCOUNT
+                    //- a(href='/')
+                    //-     p.text-normal CHECKOUT AS GUEST
+.menu-bar-icon
+    .close-menu-bar.close-menu__icon
+        svg.icon-close
+            use#icon-close__menu(href='/img/sprite.svg#icon-close')
+    .menu-bar-icon-container
+        .menu-bar-icon-container-search
+            input.search__field(type='text' placeholder='Search Here')
+            button.btn.search__btn
+                img.icon-test.icon-test_space.hidden-icons(src='/img/glass-4.svg' alt='icon')
+        hr.hr-menu
+        .menu-bar-icon-container-colections
+            .menu-bar-icon-container-colections-img
+                .menu-bar-icon-container-colections-img-content
+                    span.img-3 &nbsp;
+                    a(href='/')
+                        p(style='color: #444444;') WOMEN
+            .menu-bar-icon-container-colections-img
+                .menu-bar-icon-container-colections-img-content
+                    span.img-4 &nbsp;
+                    a(href='/men')
+                        p(style='color: #444444;') MEN
+            .menu-bar-icon-container-colections-img
+                .menu-bar-icon-container-colections-img-content
+                    span.img-5 &nbsp;
+                    a(href='/sustainability-information')
+                        p(style='color: #444444;')
+                            | A CONSCIOUS 
+            .menu-bar-icon-container-colections-img
+                .menu-bar-icon-container-colections-img-content
+                    span.img-6 &nbsp;
+                    a(href='/collections')
+                        p(style='color: #444444;') THE CAMPAIGN
+        hr.hr-menu
+        .menu-bar-icon-container-signin
+            if user
+                a(href='/')
+                    p ENGLISH (&pound;)
+                a(href='/account')
+                    p MY ACCOUNT
+            else
+                a(href='/')
+                    p ENGLISH (&pound;)
+                a(href='/signup')
+                    p SIGN IN
+header.header
+    nav.nav.nav__container
+        ul.nav__list
+            img.icon-test.nav__bar__icon.hidden-icons(src='/img/menu-4.svg' alt='icon' style='height: 1.5rem;margin-top: 2.2rem;')
+            li.nav__item.select-target
+                a.nav__item(href='/women')
+                    button.nav__btn.nav__btn--add-recipe(data-tab='1')
+                        span.signin.hidden-icons-text.drop-select.sale__tab_1 Women
+                                //- img.icon-test.nav__bar__icon.hidden-icons(src='/img/menu-4.svg' alt='icon' style='height: 1.5rem;')
+            li.nav__item
+                a.nav__item(href='/men')
+                    button.nav__btn.nav__btn--add-recipe(data-tab='2')
+                        span.signin.hidden-icons-text.drop-select.sale__tab_2 Men
+            li.nav__item#newSearch
+                a.nav__item
+                    //- //-button.nav__btn.nav__btn--add-recipe.tag1
+                    button.nav__btn.nav__btn--add-recipe(data-tab='3')
+                        img.icon-test.icon-test_space.hidden-icons(src='/img/glass-4.svg' alt='icon')
+                        span.hidden-icons-text.drop-select.sale__tab_3 Search
+                            //-span.signin.hoveruv.hidden-icons-text.drop-select.sale__tab_3 Search
+    form.search
+        .search-overlay
+        .search-overlay-content
+            input.search-overlay-content__field( type='search' name='Search' placeholder='Search Here' autocomplete='off' aria-label='Quick Search' aria-describedby='initInstr' aria-autocomplete='list' spellcheck='false' dir='auto' style='position: relative; vertical-align: top; background-color:\
+            ;' data-placeholder='Search Here' data-prev-value='')
+            button.btn.search-overlay-content__btn(type='submit' value='Search' data-tab='3')
+                span.closeX X
+    .nav-link-preview.hero__tab__hidden.hero-sale__content--2.sale__tab_2_box.hidden
+        .nav-link-preview-container-left
+            ul.nav__list-preview
+                li.nav__item-preview.bold-title
+                    a#nav__item-preview-title(href='#') SHOP
+                li.nav__item-preview
+                    a(href='/men/new' style='color: black')  New Arrivals
+                li.nav__item-preview
+                    a(href='/men/best-seller' style='color: black') Best Sellers
+                li.nav__item-preview
+                    a(href='/men/best-seller' style='color: black') Limited Edition
+                li.nav__item-preview
+                    a(href='/men/t-shirt' style='color: black') Loungewear
+                li.nav__item-preview
+                    a(href='/men/t-shirt' style='color: black') Ramskul
+                li.nav__item-preview
+                    a(href='/women/accessories' style='color: black') Gifts for Her
+                li.nav__item-preview
+                    a(href='/men/jeans' style='color: black') Gifts for Him
+                li.nav__item-preview
+                    a(href='/men/jeans' style='color: black') Gift Cards
+                li.nav__item-preview
+                    a(href='/men/jeans' style='color: black') &nbsp;
+                li.nav__item-preview
+                    a(href='/men/outlet' style='color: #9b3232') Sale
+                li.nav__item-preview
+                    a(href='/men/outlet' style='color: #9b3232')  Outlet
+            ul.nav__list-preview
+                li.nav__item-preview
+                    a#nav__item-preview-title(href='#') CLOTHING
+                li.nav__item-preview
+                    a(href='/men/t-shirt' style='color: black') T-Shirts
+                li.nav__item-preview
+                    a(href='/men/shirt' style='color: black') Sweatshirts &amp; Hoodies
+                li.nav__item-preview
+                    a(href='/men/tailoring' style='color: black') Knitwear
+                li.nav__item-preview
+                    a(href='/men/jacket' style='color: black') Leather Jackets
+                li.nav__item-preview
+                    a(href='/men/jacket' style='color: black') Coats &amp; Jackets
+                li.nav__item-preview
+                    a(href='/men/shirt' style='color: black') Shirts
+                li.nav__item-preview
+                    a(href='/men/best-seller' style='color: black') Polos
+                li.nav__item-preview
+                    a(href='/men/jeans' style='color: black') Jeans
+                li.nav__item-preview
+                    a(href='/men/tailoring' style='color: black') Trousers 
+                li.nav__item-preview
+                    a(href='/men/best-seller' style='color: black')  Shorts
+            ul.nav__list-preview
+                li.nav__item-preview.bold-title
+                    a#nav__item-preview-title(href='#') SHOES &amp; ACCESSORIES
+                li.nav__item-preview
+                    a(href='/men/boots&shoes' style='color: black') All Shoes
+                li.nav__item-preview
+                    a(href='/men/best-seller' style='color: black')  All Accessories
+                li.nav__item-preview
+                    a(href='/men/best-seller' style='color: black') Handbags
+                li.nav__item-preview
+                    a(href='/men/best-seller') Watches 50% OFF
+                li.nav__item-preview
+                    a(href='/men/best-seller' style='color: black') Jewellery
+                li.nav__item-preview
+                    a(href='/men/best-seller' style='color: black') Belts
+                li.nav__item-preview
+                    a(href='/men/best-seller' style='color: black') Face Masks
+                li.nav__item-preview
+                    a(href='/men/best-seller' style='color: black') Scarves
+                li.nav__item-preview
+                    a(href='/men/best-seller' style='color: black') Hats &amp; Beanies
+                li.nav__item-preview
+                    a(href='/men/best-seller' style='color: black') Gloves
+                li.nav__item-preview
+                    a(href='/men/best-seller' style='color: black') Wallets
+                li.nav__item-preview
+                    a(href='/men/best-seller' style='color: black') Fragrance
+            ul.nav__list-preview
+                li.nav__item-preview
+                    a#nav__item-preview-title(href='#') STORIES
+                li.nav__item-preview
+                    a(href='/men/new' style='color: black') All Stories
+                li.nav__item-preview
+                    a(href='/men/new' style='color: black') Feature: Leather
+                li.nav__item-preview
+                    a(href='/men/new' style='color: black') Feature: Cold Weather
+                li.nav__item-preview
+                    a(href='/men/new' style='color: black')
+                        | Campaign: Hope Springs Infernal  
+                    span.textUp NEW
+                li.nav__item-preview
+                    a(href='/men/new' style='color: black') A Conscious Commitment
+                li.nav__item-preview
+                    a(href='/men/new' style='color: black') Edit: Logo
+                li.nav__item-preview
+                    a(href='/men/new' style='color: black') Edit: Prints
+                li.nav__item-preview
+                    a(href='/men/new' style='color: black') @Rubaccine 
+                li.nav__item-preview
+                    a(href='/men/new' style='color: black') Not For Sale
+            ul.nav__list-preview
+                .nav__list-preview-with-bg
+                    .nav__list-preview-with-bg-top
+                        p.spring-title Hope Springs Infernal
+                    .nav__list-preview-with-bg-botton
+                         a(href='/' style='color: black')
+                            .springs-title
+                            | Shop Now
+
+        p.text-free
+            | Free UK Delivery on orders over &pound;150 &amp; UK Returns
+    .nav-link-preview.hero__tab__hidden.hero-sale__content--1.sale__tab_1_box.hidden
+        .nav-link-preview-container-left
+            ul.nav__list-preview
+                li.nav__item-preview.bold-title
+                    a#nav__item-preview-title(href='#') SHOP
+                li.nav__item-preview
+                    a(href='/women/new' style='color: black')  New Arrivals
+                li.nav__item-preview
+                    a(href='/women/best-seller' style='color: black') Best Sellers
+                li.nav__item-preview
+                    a(href='/women/best-seller' style='color: black') Limited Edition
+                li.nav__item-preview
+                    a(href='/women/t-shirt' style='color: black') Loungewear
+                li.nav__item-preview
+                    a(href='/women/knitwear' style='color: black') Knitwear
+                li.nav__item-preview
+                    a(href='/women/dresses' style='color: black') Gifts for Her
+                li.nav__item-preview
+                    a(href='/men/new' style='color: black') Gifts for Him
+                li.nav__item-preview
+                    a(href='/women/dresses' style='color: black') Gift Cards
+                li.nav__item-preview
+                    a(href='#' style='color: black') &nbsp;
+                li.nav__item-preview
+                    a(href='/women/outlet' style='color: #9b3232') Sale
+                li.nav__item-preview
+                    a(href='/women/outlet' style='color: #9b3232')  Outlet
+            ul.nav__list-preview
+                li.nav__item-preview
+                    a#nav__item-preview-title(href='#') CLOTHING
+                li.nav__item-preview
+                    a(href='/women/dresses' style='color: black') Dresses
+                li.nav__item-preview
+                    a(href='/women/knitwear' style='color: black') Knitwear
+                li.nav__item-preview
+                    a(href='/women/jacket' style='color: black') Leather Jackets
+                li.nav__item-preview
+                    a(href='/women/dresses' style='color: black') Sweatshirts &amp; Hoodies
+                li.nav__item-preview
+                    a(href='/women/t-shirt' style='color: black') Tops &amp; Shirts
+                li.nav__item-preview
+                    a(href='/women/t-shirt' style='color: black') T-Shirts
+                li.nav__item-preview
+                    a(href='/women/dresses' style='color: black') Jeans
+                li.nav__item-preview
+                    a(href='/women/best-seller' style='color: black') Trousers &amp; Leggings
+                li.nav__item-preview
+                    a(href='/women/best-seller' style='color: black') Skirts &amp; Shorts
+                li.nav__item-preview
+                    a(href='/women/knitwear' style='color: black') Co-ords 
+                li.nav__item-preview
+                    a(href='/women/knitwear' style='color: black') Tailoring
+            ul.nav__list-preview
+                li.nav__item-preview.bold-title
+                    a#nav__item-preview-title(href='#') SHOES &amp; ACCESSORIES
+                li.nav__item-preview
+                    a(href='/women/all-shoes' style='color: black') All Shoes
+                li.nav__item-preview
+                    a(href='/women/accessories' style='color: black')  All Accessories
+                li.nav__item-preview
+                    a(href='/women/accessories' style='color: black') Handbags
+                li.nav__item-preview
+                    a(href='/women/accessories') Watches 50% OFF
+                li.nav__item-preview
+                    a(href='/women/accessories' style='color: black') Jewellery
+                li.nav__item-preview
+                    a(href='/women/accessories' style='color: black') Belts
+                li.nav__item-preview
+                    a(href='/women/accessories' style='color: black') Face Masks
+                li.nav__item-preview
+                    a(href='/women/accessories' style='color: black') Scarves
+                li.nav__item-preview
+                    a(href='/women/accessories' style='color: black') Hats &amp; Beanies
+                li.nav__item-preview
+                    a(href='/women/accessories' style='color: black') Gloves
+                li.nav__item-preview
+                    a(href='/women/accessories' style='color: black') Wallets
+                li.nav__item-preview
+                    a(href='/women/accessories' style='color: black') Fragrance
+            ul.nav__list-preview
+                li.nav__item-preview
+                    a#nav__item-preview-title(href='#') STORIES
+                li.nav__item-preview
+                    a(href='/women/best-seller' style='color: black') All Stories
+                li.nav__item-preview
+                    a(href='/women/best-seller' style='color: black') Feature: Leather
+                li.nav__item-preview
+                    a(href='/women/best-seller' style='color: black') Feature: Cold Weather
+                li.nav__item-preview
+                    a(href='/women/best-seller' style='color: black')
+                        | Campaign: Hope Springs Infernal  
+                    span.textUp NEW
+                li.nav__item-preview
+                    a(href='/women/best-seller' style='color: black') A Conscious Commitment
+                li.nav__item-preview
+                    a(href='/women/best-seller' style='color: black') Edit: Logo
+                li.nav__item-preview
+                    a(href='/women/best-seller' style='color: black') Edit: Prints
+                li.nav__item-preview
+                    a(href='/women/best-seller' style='color: black') @Rubaccine 
+                li.nav__item-preview
+                    a(href='/women/best-seller' style='color: black') Not For Sale
+            ul.nav__list-preview
+                .nav__list-preview-with-bg
+                    .nav__list-preview-with-bg-top.top-bg
+                        p.spring-title Hope Springs Infernal
+                    .nav__list-preview-with-bg-botton
+                        a(href='/' style='color: black')
+                            .springs-title
+                            | Shop Now
+        p.text-free
+            | Free UK Delivery on orders over &pound;150 &amp; UK Returns
+    .nav-link-preview.hero__tab__hidden.hero-sale__content--3.sale__tab_3_box.hidden
+        .nav-link-preview-container-left.empty
+            ul.nav__list-preview
+                li.nav__item-preview.bold-title
+                    a#nav__item-preview-title(href='#') SHOP
+                li.nav__item-preview
+                    a(href='/women/new' style='color: black')  New Arrivals
+                li.nav__item-preview
+                    a(href='#' style='color: black') Best Sellers
+                li.nav__item-preview
+                    a(href='#' style='color: black') Limited Edition
+                li.nav__item-preview
+                    a(href='#' style='color: black') Loungewear
+                li.nav__item-preview
+                    a(href='#' style='color: black') Knitwear
+                li.nav__item-preview
+                    a(href='#' style='color: black') Gifts for Her
+                li.nav__item-preview
+                    a(href='#' style='color: black') Gifts for Him
+                li.nav__item-preview
+                    a(href='#' style='color: black') Gift Cards
+                li.nav__item-preview
+                    a(href='#' style='color: black') &nbsp;
+                li.nav__item-preview
+                    a(href='#') Sale
+                li.nav__item-preview
+                    a(href='#') Outlet
+            ul.nav__list-preview
+                li.nav__item-preview
+                    a#nav__item-preview-title(href='#') CLOTHING
+                li.nav__item-preview
+                    a(href='#' style='color: black') Dresses
+                li.nav__item-preview
+                    a(href='#' style='color: black') Knitwear
+                li.nav__item-preview
+                    a(href='#' style='color: black') Leather Jackets
+                li.nav__item-preview
+                    a(href='#' style='color: black') Sweatshirts &amp; Hoodies
+                li.nav__item-preview
+                    a(href='#' style='color: black') Tops &amp; Shirts
+                li.nav__item-preview
+                    a(href='#' style='color: black') T-Shirts
+                li.nav__item-preview
+                    a(href='#' style='color: black') Jeans
+                li.nav__item-preview
+                    a(href='#' style='color: black') Trousers &amp; Leggings
+                li.nav__item-preview
+                    a(href='#' style='color: black') Skirts &amp; Shorts
+                li.nav__item-preview
+                    a(href='#' style='color: black') Co-ords 
+                li.nav__item-preview
+                    a(href='#' style='color: black') Tailoring
+            ul.nav__list-preview
+                li.nav__item-preview.bold-title
+                    a#nav__item-preview-title(href='#') SHOES &amp; ACCESSORIES
+                li.nav__item-preview
+                    a(href='#' style='color: black') All Shoes
+                li.nav__item-preview
+                    a(href='#' style='color: black')  All Accessories
+                li.nav__item-preview
+                    a(href='#' style='color: black') Handbags
+                li.nav__item-preview
+                    a(href='#') Watches 50% OFF
+                li.nav__item-preview
+                    a(href='#' style='color: black') Jewellery
+                li.nav__item-preview
+                    a(href='#' style='color: black') Belts
+                li.nav__item-preview
+                    a(href='#' style='color: black') Face Masks
+                li.nav__item-preview
+                    a(href='#' style='color: black') Scarves
+                li.nav__item-preview
+                    a(href='#' style='color: black') Hats &amp; Beanies
+                li.nav__item-preview
+                    a(href='#' style='color: black') Gloves
+                li.nav__item-preview
+                    a(href='#' style='color: black') Wallets
+                li.nav__item-preview
+                    a(href='#' style='color: black') Fragrance
+            ul.nav__list-preview
+            ul.nav__list-preview
+                li.nav__item-preview
+                    a#nav__item-preview-title(href='#') STORIES
+                li.nav__item-preview
+                    a(href='#' style='color: black') All Stories
+                li.nav__item-preview
+                    a(href='#' style='color: black') Feature: Leather
+                li.nav__item-preview
+                    a(href='#' style='color: black') Feature: Cold Weather
+                li.nav__item-preview
+                    a(href='#' style='color: black')
+                        | Campaign: Hope Springs Infernal  
+                    span.textUp NEW
+                li.nav__item-preview
+                    a(href='#' style='color: black') A Conscious Commitment
+                li.nav__item-preview
+                    a(href='#' style='color: black') Edit: Logo
+                li.nav__item-preview
+                    a(href='#' style='color: black') Edit: Prints
+                li.nav__item-preview
+                    a(href='#' style='color: black') @Rubaccine 
+                li.nav__item-preview
+                    a(href='#' style='color: black') Not For Sale
+        p.text-free
+            | Free UK Delivery on orders over &pound;150 &amp; UK Returns
+    .header__logo
+        a.p(href='/women') RUBACCINE
+    nav.nav
+        ul.nav__list
+            //- li.nav__item
+            //-     button.nav__btn.nav__btn--add-recipe
+            //-         span.signin.currency.hidden-icons-text Currency
+            if user
+                li.nav__item
+                    button.nav__btn.nav__btn--add-recipe
+                        a#logout__btn.span.hidden-icons-text(href='/account/details') My Account
+            else
+                li.nav__item
+                    button.nav__btn.nav__btn--add-recipe
+                        span.signin.sign__In.hidden-icons-text Sign in  
+                //- li.nav__item
+                //-     a(href='/shopping-cart')
+                //-         button.nav__btn.nav__btn--add-recipe
+                //-             span.sign__In.hidden-icons-text TEST 
+            li.nav__item
+                a.nav__item(href='/account')
+                    button.nav__btn.nav__btn--bookmarks.tag2
+                        svg.icon-test_space-1.hidden-icons.icon__heart__whishlist
+                            use(href='/img/icons.svg#icon-heart')
+                        span.hidden-icons-text.whishlist__form
+                            | WISHLIST
+            li.nav__item
+                button.nav__btn.nav__btn--add-recipe
+                    img.icon-test.icon_bag__icon__small.hoveruv.hidden-icons(src='/img/cart.svg' alt='icon')
+                    span.icon-test-name.bag__icon__cart.hidden-icons-text
+                        | bag (
+                        //- p.cart-counter=`${session.cart ? session.cart.totalQty : ''}`
+                        p.cart-counter=`${session.cart ? session.cart.totalQty : ''}`
+                        | )
+
+                        
+                //- if typeof cart !== 'undefined'
+                //-     li.nav__item
+                //-         button.nav__btn.nav__btn--add-recipe
+                //-             img.icon-test.icon_bag__icon__small.hoveruv.hidden-icons(src='/img/cart.svg' alt='icon')
+                //-             span.icon-test-name.bag__icon__cart.hidden-icons-text=` bag( ${cart.length})`
+                //- else
+                //-     li.nav__item
+                //-         button.nav__btn.nav__btn--add-recipe
+                //-             img.icon-test.icon_bag__icon__small.hoveruv.hidden-icons(src='/img/cart.svg' alt='icon')
+                //-             span.icon-test-name.bag__icon__cart.hidden-icons-text
+                //-                 | bag (0)

@@ -1,0 +1,261 @@
+extends base
+
+block content
+    .logout-user
+        p.text-main MY ACCOUNT
+        .logout-user-wrapper
+            ul
+                li.login-selected
+                    a(href='/account/details/') My Account Details
+                li.account-navigation--wishlist
+                    a.link-active(href='/account/wishlist/') My Wishlist
+                li
+                    a(href='/account/orders/') My Orders
+                li
+                    a(href='/account/address-book/')  Address Book
+                li.logout
+                    a#logout-clicked.logout-link.link-active(href='') logout
+        //- p.text-main  MY WISHLIST
+        //- p.fine-secondary There are currently no items in your wishlist
+        .whishlist.whislist-hig
+        .whishlist-container
+            .whishlist-container-title
+                .whishlist-container-title-content
+                    p.text-main MY WISHLIST
+                    p.text-error.errorMsgWhishlist
+                        | Your wishlist will be lost at the
+                        | end of your browsing session. Please sign in or register
+                        | in order to save your wishlist.
+                    p.text-error.errorMsgWhishlist There are currently no items in your wishlist
+            //-     .whishlist-container-title-grid
+            //-         #img--1.whishlist-img
+            //-             .whishlist-img-stock
+            //-                 p IN STOCK
+            //-                 .whishlist-img-stock-close
+            //-                     svg.icon-close.icon-close__menu
+            //-                         use(href='/img/sprite.svg#icon-close')
+            //-             .whishlist-img-content
+            //-                 .whishlist-img-content-image
+            //-                     img.whishlist-img(src='/img/pic-6.jpg' alt='whishlist-img')
+            //-                 .whishlist-img-content-size
+            //-                     p.text-clothes-description Coni Shimmer Tank 
+            //-                     p.text-clothes-description   &pound;24.00
+            //-                     .whishlist-img-content-size-color-list
+            //-                         .whishlist-img-content-size-color-list-twoSquares
+            //-                             .wishlist-product-list(style='border: none;')
+            //-                                 ul.squares
+            //-                                     li.square
+            //-                                         img.swatch(alt='brown' title='brown' data-original='/img/pic-6.jpg' src='/img/pic-6.jpg')
+            //-                             .wishlist-product-list
+            //-                                 span.text-list.same-size XS
+            //-                         p.text-list SELECT SIZE
+            //-                         p.text-list-u EDIT DETAILS
+            //-             .whishlist-img-btn
+            //-                 .whishlist-img-content-size-clothes-form
+            //-                     .select-box
+            //-                         .options-container
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') XS
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') S
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') M
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') L
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') LX
+            //-                         .selected
+            //-                             | -
+            //-                 p.text-list-u.size-guide SIZE GUIDE 
+            //-                 button.btn-add.btn-not-clear ADD TO BAG
+            //-         #img--2.whishlist-img
+            //-             .whishlist-img-stock
+            //-                 p IN STOCK
+            //-                 .whishlist-img-stock-close
+            //-                     svg.icon-close.icon-close__menu
+            //-                         use(href='/img/sprite.svg#icon-close')
+            //-             .whishlist-img-content
+            //-                 .whishlist-img-content-image
+            //-                     img.whishlist-img(src='/img/pic-6.jpg' alt='whishlist-img')
+            //-                 .whishlist-img-content-size
+            //-                     p.text-clothes-description Coni Shimmer Tank 
+            //-                     p.text-clothes-description   &pound;24.00
+            //-                     .whishlist-img-content-size-color-list
+            //-                         .whishlist-img-content-size-color-list-twoSquares
+            //-                             .wishlist-product-list(style='border: none;')
+            //-                                 ul.squares
+            //-                                     li.square
+            //-                                         img.swatch(alt='brown' title='brown' data-original='/img/pic-6.jpg' src='/img/pic-6.jpg')
+            //-                             .wishlist-product-list
+            //-                                 span.text-list.same-size XS
+            //-                         p.text-list SELECT SIZE
+            //-                         p.text-list-u EDIT DETAILS
+            //-             .whishlist-img-btn
+            //-                 .whishlist-img-content-size-clothes-form
+            //-                     .select-box
+            //-                         .options-container
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') XS
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') S
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') M
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') L
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') LX
+            //-                         .selected
+            //-                             | -
+            //-                 p.text-list-u.size-guide SIZE GUIDE 
+            //-                 button.btn-add.btn-not-clear ADD TO BAG
+            //-         #img--3.whishlist-img
+            //-             .whishlist-img-stock
+            //-                 p IN STOCK
+            //-                 .whishlist-img-stock-close
+            //-                     svg.icon-close.icon-close__menu
+            //-                         use(href='/img/sprite.svg#icon-close')
+            //-             .whishlist-img-content
+            //-                 .whishlist-img-content-image
+            //-                     img.whishlist-img(src='/img/pic-6.jpg' alt='whishlist-img')
+            //-                 .whishlist-img-content-size
+            //-                     p.text-clothes-description Coni Shimmer Tank 
+            //-                     p.text-clothes-description   &pound;24.00
+            //-                     .whishlist-img-content-size-color-list
+            //-                         .whishlist-img-content-size-color-list-twoSquares
+            //-                             .wishlist-product-list(style='border: none;')
+            //-                                 ul.squares
+            //-                                     li.square
+            //-                                         img.swatch(alt='brown' title='brown' data-original='/img/pic-6.jpg' src='/img/pic-6.jpg')
+            //-                             .wishlist-product-list
+            //-                                 span.text-list.same-size XS
+            //-                         p.text-list SELECT SIZE
+            //-                         p.text-list-u EDIT DETAILS
+            //-             .whishlist-img-btn
+            //-                 .whishlist-img-content-size-clothes-form
+            //-                     .select-box
+            //-                         .options-container
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') XS
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') S
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') M
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') L
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') LX
+            //-                         .selected
+            //-                             | -
+            //-                 p.text-list-u.size-guide SIZE GUIDE 
+            //-                 button.btn-add.btn-not-clear ADD TO BAG
+            //-         #img--4.whishlist-img
+            //-             .whishlist-img-stock
+            //-                 p IN STOCK
+            //-                 .whishlist-img-stock-close
+            //-                     svg.icon-close.icon-close__menu
+            //-                         use(href='/img/sprite.svg#icon-close')
+            //-             .whishlist-img-content
+            //-                 .whishlist-img-content-image
+            //-                     img.whishlist-img(src='/img/pic-6.jpg' alt='whishlist-img')
+            //-                 .whishlist-img-content-size
+            //-                     p.text-clothes-description Coni Shimmer Tank 
+            //-                     p.text-clothes-description   &pound;24.00
+            //-                     .whishlist-img-content-size-color-list
+            //-                         .whishlist-img-content-size-color-list-twoSquares
+            //-                             .wishlist-product-list(style='border: none;')
+            //-                                 ul.squares
+            //-                                     li.square
+            //-                                         img.swatch(alt='brown' title='brown' data-original='/img/pic-6.jpg' src='/img/pic-6.jpg')
+            //-                             .wishlist-product-list
+            //-                                 span.text-list.same-size XS
+            //-                         p.text-list SELECT SIZE
+            //-                         p.text-list-u EDIT DETAILS
+            //-             .whishlist-img-btn
+            //-                 .whishlist-img-content-size-clothes-form
+            //-                     .select-box
+            //-                         .options-container
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') XS
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') S
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') M
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') L
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') LX
+            //-                         .selected
+            //-                             | -
+            //-                 p.text-list-u.size-guide SIZE GUIDE 
+            //-                 button.btn-add.btn-not-clear ADD TO BAG
+            //-         #img--5.whishlist-img
+            //-             .whishlist-img-stock
+            //-                 p IN STOCK
+            //-                 .whishlist-img-stock-close
+            //-                     svg.icon-close.icon-close__menu
+            //-                         use(href='/img/sprite.svg#icon-close')
+            //-             .whishlist-img-content
+            //-                 .whishlist-img-content-image
+            //-                     img.whishlist-img(src='/img/pic-6.jpg' alt='whishlist-img')
+            //-                 .whishlist-img-content-size
+            //-                     p.text-clothes-description Coni Shimmer Tank 
+            //-                     p.text-clothes-description   &pound;24.00
+            //-                     .whishlist-img-content-size-color-list
+            //-                         .whishlist-img-content-size-color-list-twoSquares
+            //-                             .wishlist-product-list(style='border: none;')
+            //-                                 ul.squares
+            //-                                     li.square
+            //-                                         img.swatch(alt='brown' title='brown' data-original='/img/pic-6.jpg' src='/img/pic-6.jpg')
+            //-                             .wishlist-product-list
+            //-                                 span.text-list.same-size XS
+            //-                         p.text-list SELECT SIZE
+            //-                         p.text-list-u EDIT DETAILS
+            //-             .whishlist-img-btn
+            //-                 .whishlist-img-content-size-clothes-form
+            //-                     .select-box
+            //-                         .options-container
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') XS
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') S
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') M
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') L
+            //-                             .option
+            //-                                 input#clothersSize.radio(type='radio' name='category')
+            //-                                 label(for='clothersSize') LX
+            //-                         .selected
+            //-                             | -
+            //-                 p.text-list-u.size-guide SIZE GUIDE 
+            //-                 button.btn-add.btn-not-clear ADD TO BAG
+            //- .whishlist-container-title-btn-black
+            //-     button.btn-add.btn-add-all-to-bag.active ADD ALL TO BAG
+
+
+
+

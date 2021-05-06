@@ -1,0 +1,234 @@
+extends base
+
+block content 
+    .showcase
+        .showcase-container
+            .showcase-container-title
+                p.text-main Men&apos;s New Arrivals
+                //- p.text-main=`${men.category} New Arrivals` BUG
+                p.text-list
+                    | Men's new arrivals.
+                    | Updated weekly with your new favourites. Leather jackets.
+                    | Ramskull shirts. Graphic t-shirts. Jeans. And plenty more. Shop them here first.
+
+                    
+                     
+                .showcase-container-title-category
+                    ul.nav__list-preview
+                        li.nav__item-preview
+                            a.removeUnderline(href='#' style='color: black;') SHIRTS
+                        li.nav__item-preview
+                            a.removeUnderline(href='#' style='color: black;') LEATHERS 
+                        li.nav__item-preview
+                            a.removeUnderline(href='#' style='color: black;') T-SHIRTS 
+                        li.nav__item-preview
+                            a.removeUnderline(href='#' style='color: black;') RAMSKULL
+                        li.nav__item-preview
+                            a.removeUnderline(href='#' style='color: black;') JEANS
+                        li.nav__item-preview
+                            a.removeUnderline(href='#' style='color: black;') BOOTS & SHOES
+                        li.nav__item-preview
+                            a.removeUnderline(href='#' style='color: black;') WATCHES
+            hr.hr5
+            .showcase-container-filter
+                .category-page-filter-list
+                    .category-page-filter-list-selectors
+                        .options-box
+                            .option
+                                input#clothersSize(type='checkbox')
+                                label.text-radio(for='clothersSize') Coats &amp; Jackets
+                            .option
+                                input.radio(type='checkbox' id='Leather Jackets' name='category')
+                                label.text-radio(for='Leather Jackets') Leather Jackets
+                            .option
+                                input#Clothing.radio(type='checkbox' name='category')
+                                label.text-radio(for='Clothing') Clothing
+                            .option
+                                input#Knitwear.radio(type='checkbox' name='category')
+                                label.text-radio(for='Knitwear') Knitwear
+                            .option
+                                input.radio(type='checkbox' id='Trousers & Leggings' name='category')
+                                label.text-radio(for='Trousers & Leggings') Trousers &amp; Leggings
+                            .option
+                                input#Handbags.radio(type='checkbox' name='category')
+                                label.text-radio(for='Handbags') Handbags
+                            .option
+                                input.radio(type='checkbox' id='Playsuits & Jumpsuits' name='category')
+                                label.text-radio(for='Playsuits & Jumpsuits') Playsuits &amp; Jumpsuits
+                            .option
+                                input.radio(type='checkbox' id='Tops & Shirts' name='category')
+                                label.text-radio(for='Tops & Shirts') Tops &amp; Shirts
+                        .options-content
+                            .option
+                                input#Dresses.radio(type='checkbox' name='category')
+                                label.text-radio(for='Dresses') Dresses
+                            .option
+                                input#Shirts.radio(type='checkbox' name='category')
+                                label.text-radio(for='Shirts') Shirts
+                            .option
+                                input#Accessories.radio(type='checkbox' name='category')
+                                label.text-radio(for='Accessories') Accessories
+                            .option
+                                input#Wallets.radio(type='checkbox' name='category')
+                                label.text-radio(for='Wallets') Wallets
+                            .option
+                                input#Cardholders.radio(type='checkbox' name='category')
+                                label.text-radio(for='Cardholders') Cardholders
+                            .option
+                                input.radio(type='checkbox' id='Skirts & Shorts' name='category')
+                                label.text-radio(for='Skirts & Shorts') Skirts &amp; Shorts
+                    hr.hr5
+                    .category-page-filter-list-clear
+                        .category-page-filter-list-clear-left
+                            span.text-filter CLEAR ALL
+                    p.vl2
+                        .category-page-filter-list-clear-right
+                            span.text-filter CLOSE
+                        hr.hr7
+                .showcase-container-filter-filters
+                    .showcase-container-filter-filters-category
+                        .showcase-container-filter-filters-category-item
+                            span.text-filter(style='border-bottom: none;') FILTERS:
+                        .showcase-container-filter-filters-category-item.invisble
+                            .selected-sort
+                                span.text-filter category
+                        .showcase-container-filter-filters-category-item.invisble
+                            .selected-sort
+                                span.text-filter Colour
+                        .showcase-container-filter-filters-category-item.invisble
+                            .selected-sort
+                                span.text-filter Size 
+                        .showcase-container-filter-filters-category-item.invisble(style='width: 12rem;')
+                            .selected-sort
+                                span.text-filter Price Range
+                    p.vl2
+                        .showcase-container-filter-filters-sort
+                            .showcase-container-filter-filters-category-item
+                                span.text-filter
+                                | SORT BY
+                hr.hr6
+                .showcase-container-filter-pagination
+                    .showcase-container-filter-pagination-icons
+                        p.text-list VIEW:
+                        svg.icon-page.switch-single-page
+                            use(href='/img/sprite.svg#icon-stop2')
+                        svg.icon-page.switch-double-page
+                            use(href='/img/sprite.svg#icon-pause2')
+                    .showcase-container-filter-pagination-pages
+                        button.btn--pag.underline.agination__btn--prev
+                            span 1
+                        button.btn--pag.pagination__btn--next
+                            span 2
+                        button.btn--pag.pagination__btn--next
+                            span 3
+                        button.btn--pag.pagination__btn--next-all
+                            span VIEW ALL
+            .showcase-container-gallery
+            .showcase-container-gallery-grid
+
+                each collection in men
+                    .showcase-container-gallery-grid-item
+                        .showcase-container-gallery-grid-item-img
+                            .size-slider
+                                #one.size-slider-title
+                                    p.text-bag Quick Add To Bag
+                                .size-slider-num
+                                    each sizex in collection.size
+                                        p.text-size-uk=`${sizex}`
+                            .round-display
+                                | 70% OFF
+                            a(href=`/men/${collection.slug}`)
+                                img.clothing-img(src=`/img/${collection.imageCover}` alt=`${collection.name}`)
+                        .showcase-container-gallery-grid-item-description
+                            .whishlist-icon
+                                p.text-with-background 70% OFF - 1 WEEK ONLY
+                                svg.icon-page-increase
+                                    use(href='/img/sprite.svg#icon-heart')
+                            p.text-descrip= collection.name
+                            p.text-descrip1
+                                del= `£ ${collection.priceOld.toFixed(2)}`
+                            span(style='color: red;font-size: 18px;')= `£ ${collection.price.toFixed(2)}`
+                                //-p.text-thinny.colorDisplay=`${collection.color.length} COLOR`
+                            p.one-color.hidden
+                                span.thinny-square
+                                    img.clothing-img(src=`/img/${collection.imageCover}` alt='Clothing')
+                                span.text-thinny=collection.color
+                            button.btn-hidden ADD TO BAG      
+            .showcase-container-social
+                .showcase-container-social-title
+                    p.text-main Wear It Your Way
+                .showcase-container-social-grid
+                    .sliderer
+                        .slidex
+                            img(src='/img/pic-39.jpg' alt='Photo 1')
+                            .slidex-overlay
+                            img.insta-icon(src='/img/instagram.svg' alt='')
+                            p @LUCY_93
+                        .slidex
+                            .slidex-container
+                                .slidex-container-img
+                                    img.img(src='/img/pic-48.jpg' alt='Photo 3')
+                                    .slidex-container-img-overlay
+                                        img.insta-icon(src='/img/instagram.svg' alt='')
+                                        p @BIATRIZ
+                                .slidex-container-title
+                                    p.text-main(style='letter-spacing: 0px;')
+                                        | &#xFF03;Rubaccine
+                                    p.text-rub
+                                        | Share how you&apos;re styling your @RUBACCINE
+                                        | to be featured. Mention @Rubaccine or upload - make your mark.
+                                    button.nav__btn.nav__btn--add-recipe
+                                        span.signin.hidden-icons-text.sale__tab_3 SHARE YOUR STYLE
+                        .slidex
+                            img(src='/img/pic-41.jpg' alt='Photo 2')
+                            .slidex-overlay
+                                img.insta-icon(src='/img/instagram.svg' alt='')
+                                p @JOE_RAMOS
+                        .slidex
+                            .slidex-container
+                                .slidex-container-img(style='flex: 0 0 50%;')
+                                    img.img(src='/img/pic-18.jpg' alt='Photo 3')
+                                    .slidex-container-img-overlay
+                                        img.insta-icon(src='/img/instagram.svg' alt='')
+                                        p @SASAHA
+                            .slidex-container-title(style='flex: 0 0 50%;')
+                        .slidex
+                            img(src='/img/pic-32.jpg' alt='Photo 1')
+                            .slidex-overlay
+                                img.insta-icon(src='img/instagram.svg' alt='')
+                                p @MEGAN
+                        .slidex
+                            .slidex-container
+                                .slidex-container-img
+                                    img.img(src='/img/pic-44.jpg' alt='Photo 3')
+                                    .slidex-container-img-overlay
+                                        img.insta-icon(src='/img/instagram.svg' alt='')
+                                        p @JIMMY-XU
+                                .slidex-container-title
+                        .slidex
+                            img(src='/img/pic-8.jpg' alt='Photo 2')
+                            .slidex-overlay
+                                img.insta-icon(src='/img/instagram.svg' alt='')
+                                p @MCGREGOR
+                        .slidex
+                            .slidex-container
+                                .slidex-container-img(style='flex: 0 0 70%;')
+                                    img.img(src='/img/pic-23.jpg' alt='Photo 3')
+                                    .slidex-container-img-overlay
+                                        img.insta-icon(src='/img/instagram.svg' alt='')
+                                        p @JOHN_BUZZER
+                                .slidex-container-title(style='flex: 0 0 30%;')
+                    button.slider__btn.slider__btn--left
+                        svg.icon-title-slider
+                            use(href='/img/sprite.svg#icon-arrow_back_ios')
+                    button.slider__btn.slider__btn--right
+                        svg.icon-title-slider
+                            use(href='/img/sprite.svg#icon-arrow_forward_ios')
+                .showcase-container-social-btn
+                    p.text-main Looking for more?
+                    .showcase-container-social-btn-conatiner
+                        ul.nav__list-preview
+                            li.nav__item-preview
+                                a.removeUnderline(href='#' style='color: black;') SHOP SHIRTS
+                            li.nav__item-preview
+                                a.removeUnderline(href='#' style='color: black;') SHOP GIFT CARDS 

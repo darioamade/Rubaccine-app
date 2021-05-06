@@ -1,0 +1,75 @@
+doctype html
+html
+    head
+        block head
+            meta(charset='UTF-8')
+            meta(name='viewport' content='width=device-width, initial-scale=1.0')
+            meta(http-equiv='X-UA-Compatible' content='ie=edge')
+            link(rel='stylesheet' href='/css/style.css')
+            link(rel='shortcut icon' type='image/x-icon' href='/img/apple-touch-icon.png')
+            link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700')
+            link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' integrity='sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=='  crossorigin='anonymous')
+            link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' integrity='sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==' crossorigin='anonymous')
+            title RUBACCINE UK | #{title}
+
+
+    body
+        .container
+
+        block content
+
+            .secure
+                .secure-email
+                    .header__logo
+                        a.p(href='/women') RUBACCINE
+                    .secure-email-back
+                        svg.icon-title
+                            use(href='/img/sprite.svg#icon-arrow_back_ios')
+                        a(href='/')
+                            p.sub-title BACK TO SHOP
+                    .secure-email-field
+                        p.the-title SECURE CHECKOUT
+                        form.secure-email-field-box
+                            .secure-email-field-box-form
+                                label.control-label(for='login-email') Enter your email address
+                                input#login-email.form-control(type='email', placeholder='Enter your email address', required autocomplete='off')
+                                p.form-secure-email.error-email-val
+                                    | Please enter a valid email address
+                            .secure-email-field-box-form.quote
+                                // desactive
+                                label.control-label(for='login-email') Password
+                                input#login-password.form-control(type='password', placeholder='Enter Password', required, minlength='8')
+                                p.form-secure-email.error-email-val
+                                    | Please enter a valid password
+                                .loader.hidden
+                                    img.loading-svg(src='/img/Spinner-1s-50px.svg' alt='loading')
+                            .secure-email-field-box-btn
+                                a(href='/men')
+                                    button.btn-continue-field CONTINUE
+                                // add this class colorGreen
+                        p.sub-title(style='padding-top: 10px') OR
+                        #AmazonPayButton.amazon-button-wrapper
+                            img#OffAmazonPaymentsWidgets0.amazonpay-button-inner-image(style='cursor: pointer; max-height: 45px' alt='AmazonPay' src='https://d23yuld0pofhhw.cloudfront.net/default/uk/live/lwa/gold/medium/PwA.png' tabindex='0')
+                        img.prime-svg(src='/img/amazon-prime-seeklogo.com.svg' alt='svg')
+                .secure-suppurt
+                    .checkout-page-2-container-support
+                        .checkout-page-2-container-support-title
+                            p.title-support QUESTION OR SUPPORT?
+                            p.sub-support
+                                | Send us an email to: 
+                                b ask@rubaccine.com
+                            p.sub-support(style='margin-bottom: 0rem')
+                                | Where a member of our Customer Experience team will be happy to
+                                | assist you.
+                            p.sub-support-1
+                                | We are open 9am-11pm BST Monday to Friday.
+                        .checkout-page-2-container-support-methods
+                            img.pay-icon(src='/img/visa-logo@logotyp.us.svg' alt='icons')
+                            img.pay-icon(src='/img/mastercard-maestro-logo@logotyp.us.svg' alt='icons')
+                            img.pay-icon(src='/img/american-express-logo@logotyp.us.svg' alt='icons')
+                            img.pay-icon(src='/img/paypal-logo@logotyp.us.svg' alt='icons')
+                            img.pay-icon(src='/img/mastercard-4.svg' alt='icons')
+                            img.pay-icon6(src='/img/klarna 1.svg' alt='icons')
+        
+
+    script(src='/js/bundle.js')

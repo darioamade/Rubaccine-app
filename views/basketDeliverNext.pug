@@ -1,0 +1,420 @@
+extends base
+
+
+block content
+    .information
+        .information-content
+            p.the-title Rubaccine
+            .secure-email-back
+                svg.icon-title
+                    use(href='/img/sprite.svg#icon-arrow_back_ios')
+                a(href='/checkout/details')
+                p.sub-title  BACK TO SHOP
+            .information-content-details
+                .information-content-details-boxs
+                    #checkout-progress(style='display: block;')
+                        ul
+                            // Still have to add active class to the squares💥💥💥💥💥 to progress-details
+                            li#progress-details.progress-details.activ(data-stage='details')
+                                .progress-box.progress-box-with-bg-black
+                                span Your details
+                            li#progress-delivery(data-stage='delivery')
+                                .progress-transition
+                                .progress-box
+                                span Delivery 
+                            li#progress-review(data-stage='review')
+                                .progress-transition
+                                .progress-box
+                                span Review
+                            li#progress-payment(data-stage='payment')
+                                .progress-transition
+                                .progress-box
+                                span Payment
+            .information-content-personal-info
+                // 💥    💥    💥   111 💥    💥
+                .deliver-to-address.mid.deliverHidden
+                    .deliver-to-address-wrapper
+                        .deliver-to-address-wrapper-head
+                            .deliver-to-address-wrapper-head-left
+                                svg.icon-test
+                                    use(href='/img/sprite.svg#icon-home2')
+                                p
+                                    | DELIVERY TO AN ADDRESS
+                            .deliver-to-address-wrapper-head-right
+                                svg.icon-test
+                                    use(href='/img/sprite.svg#icon-map-pin-fill')
+                                p  DPD PICK UP
+                        .deliver-to-address-wrapper-content
+                            p.empty-title.emptyTitleSmall  Your address book is currently empty.
+                            .deliver-to-address-wrapper-content-form.form__address__1
+                                .close-form
+                                    p ENTER ADDRESS MANUALLY
+                                    svg.icon-test.icon_form_close
+                                        use(href='/img/sprite.svg#icon-close')
+                                .information-content-personal-info-form
+                                    .information-content-personal-info-form-name
+                                        .information-content-personal-info-form-name-single.inforContPersnSingle
+                                            label.form(for='First Name') First Name*
+                                            input.form__input(type='email' placeholder='First Name' required='')
+                                        .information-content-personal-info-form-name-single.inforContPersnSingle
+                                            label.form(for='Last Name') Last Name*
+                                            input.form__input(type='email' placeholder='Last Name' required='')
+                                        .information-content-personal-info-form-name-single.inforContPersnSingle
+                                            label.form(for='email') Address Line 1
+                                            input.form__input(type='email' placeholder='Address Line 1' required='')
+                                        .information-content-personal-info-form-name-single.inforContPersnSingle
+                                            label.form(for='email' style='color: a94442\
+                                            ;') Address Line 1
+                                            input.form__input(type='email' placeholder='Address Line 2' required='')
+                                        .information-content-personal-info-form-name-single.inforContPersnSingle
+                                            label.form(for='Telephone') Town
+                                            input.form__input(type='email' placeholder='Town' required='')
+                                        .information-content-personal-info-form-name-single.inforContPersnSingle
+                                            label.form(for='Telephone') Country/Province
+                                            input.form__input(type='email' placeholder='Country/Province' required='')
+                                        .information-content-personal-info-form-name-single.inforContPersnSingle
+                                            label.form(for='Telephone') Postcode
+                                            input.form__input(type='email' placeholder='Postcode' required='')
+                                        .information-content-personal-info-form-name-single.inforContPersnSingle
+                                            label.form(for='Telephone') Country
+                                            input.form__input(type='email' placeholder='Country' required='')
+                                        .information-content-personal-info-form-name-single.inforContPersnSingle
+                                            label.form(for='email') &nbsp;
+                                            span.form__input(style='margin-top: 0rem;' type='email' placeholder='Telephone' required='')
+                                                p United Kingdom | (Change country)
+                                                .bill-address
+                                                    input(type='checkbox' name='billAdress' value='billAdress')
+                                                    label(for='billAdress') Use as my billing address
+                                                    br
+                                    .btn-bottons
+                                        button.search-again
+                                            | &lt; SEARCH AGAIN
+                                        button.search-again.confirm__address CONFIRM ADDRESS &gt;
+                            button.btn-add-address.btnGreenDev2 + ADD A NEW ADDRESS
+                .deliver-options-due.deliverHidden.active
+                    .deliver-options-due-wrapper
+                        span
+                            p
+                                | DELIVERY OPTIONS - DELIVERY OUTSIDE OF THE UK MAY BE
+                                | DELAYED DUE TO EU WITHDRAWAL
+                        p
+                            | Please select your delivery destination
+                            | for available shipping options.
+                        .deliver-options-title-btn
+                            button.search-again
+                                | &lt; BACK
+                            button.search-again REVIEW &gt;
+            .deliver.deliver__to__address
+                .deliver-to-address
+                    .deliver-to-address-wrapper
+                        .deliver-to-address-wrapper-head
+                            .deliver-to-address-wrapper-head-left
+                                svg.icon-test
+                                    use(href='/img/sprite.svg#icon-home2')
+                                p
+                                    | DELIVERY TO AN ADDRESS
+                            .deliver-to-address-wrapper-head-right
+                                svg.icon-test
+                                    use(href='/img/sprite.svg#icon-map-pin-fill')
+                                p  DPD PICK UP
+                        .deliver-to-address-wrapper-content
+                            .deliver-to-address-wrapper-content-address-save
+                                .deliver-to-address-wrapper-content-address-save-left
+                                    address=`${user.name}`
+                                        |
+                                        br
+                                        |                             33
+                                        br
+                                        |                             Broxholm Road
+                                        br
+                                        |                             London
+                                        br
+                                        |                             London
+                                        br
+                                        |                             GB
+                                        br
+                                        |                             SE27 0NA
+                                        br
+                                        span#email.form__input(type='email' placeholder='Telephone' required='')
+                                            .bill-address
+                                                input(type='checkbox' name='billAdress' value='billAdress')
+                                                label(for='billAdress') Use as my billing address
+                                                br
+                                .deliver-to-address-wrapper-content-address-save-right
+                        .deliver-to-address-wrapper-content-form.form__address
+                            .close-form
+                                p ENTER ADDRESS MANUALLY
+                                svg.icon-test.icon_form_close
+                                    use(href='/img/sprite.svg#icon-close')
+                            .information-content-personal-info-form
+                                .information-content-personal-info-form-name
+                                    .information-content-personal-info-form-name-single
+                                        label.form(for='First Name') First Name*
+                                        input.form__input(type='email' placeholder='First Name' required='')
+                                    .information-content-personal-info-form-name-single
+                                        label.form(for='Last Name') Last Name*
+                                        input.form__input(type='email' placeholder='Last Name' required='')
+                                    .information-content-personal-info-form-name-single
+                                        label.form(for='email') Address Line 1
+                                        input.form__input(type='email' placeholder='Address Line 1' required='')
+                                    .information-content-personal-info-form-name-single
+                                        label.form(for='email' style='color: a94442\
+                                        ;') Address Line 1
+                                        input.form__input(type='email' placeholder='Address Line 2' required='')
+                                    .information-content-personal-info-form-name-single
+                                        label.form(for='Telephone') Town
+                                        input.form__input(type='email' placeholder='Town' required='')
+                                    .information-content-personal-info-form-name-single
+                                        label.form(for='Telephone') Country/Province
+                                        input.form__input(type='email' placeholder='Country/Province' required='')
+                                    .information-content-personal-info-form-name-single
+                                        label.form(for='Telephone') Postcode
+                                        input.form__input(type='email' placeholder='Postcode' required='')
+                                    .information-content-personal-info-form-name-single
+                                        label.form(for='Telephone') Country
+                                        input.form__input(type='email' placeholder='Country' required='')
+                                    .information-content-personal-info-form-name-single
+                                        label.form(for='email') &nbsp;
+                                        span.form__input(style='margin-top: 0rem;' type='email' placeholder='Telephone' required='')
+                                            p United Kingdom | (Change country)
+                                            .bill-address
+                                                input(type='checkbox' name='billAdress' value='billAdress')
+                                                label(for='billAdress') Use as my billing address
+                                                br
+                                .btn-bottons
+                                    button.search-again
+                                        | &lt; SEARCH AGAIN
+                                    button.search-again.confirm__address CONFIRM ADDRESS &gt;
+                        button.btn-add-address.btn__add__address + ADD A NEW ADDRESS
+                    .deliver-options
+                        .deliver-options-title
+                            p.title-deliver
+                                | DELIVERY OPTIONS - DELIVERY OUTSIDE OF THE UK MAY BE DELAYED
+                                | DUE TO EU WITHDRAWAL
+                        .deliver-options-title.color-active
+                            .deliver-options-title-top
+                                .bill-address
+                                    input(type='checkbox' name='billAdress' value='billAdress' checked='')
+                                    label(for='billAdress') NEXT BUSINESS DAY DELIVERY - ORDER BEFORE 2PM
+                                    br
+                                span FREE
+                            .deliver-options-title-bottom
+                                p
+                                    | Order by 2pm for next business day delivery. Orders placed after
+                                    | 2pm Thurs and before 3pm Sat will be delivered on Mon. All
+                                    | orders delivered Mon to Fri only, excl public holidays.
+                        .deliver-options-title
+                            .deliver-options-title-top
+                                .bill-address
+                                    input(type='checkbox' name='billAdress' value='billAdress')
+                                    label(for='billAdress') STANDARD DELIVERY - DELIVERED WITHIN 5-7 WORKING DAYS
+                                    br
+                                span FREE
+                            .deliver-options-title-bottom
+                                p
+                                    | Orders delivered between Mon and Fri within 5-7 working days, excl
+                                    | public holidays. Outlying areas may take longer. We do not deliver
+                                    | to APO, FPO or PO box addresses. Expect delivery delays over our
+                                    | busy promotional period. European returns are not free. Orders
+                                    | delivered outside of the UK may be delayed due to withdrawal
+                                    | from the EU and customs clearance.
+                        .deliver-options-title
+                            .deliver-options-title-top
+                                .bill-address
+                                    input(type='checkbox' name='billAdress' value='billAdress')
+                                    label(for='billAdress') SATURDAY DELIVERY - ORDER BEFORE 2PM FRIDAY
+                                    br
+                                span FREE
+                            .deliver-options-title-bottom
+                                p
+                                    | Order up until 2pm Fri for Saturday delivery. Orders placed after 2pm Friday will be delivered the following Saturday.
+                        .deliver-options-title
+                            .deliver-options-title-top
+                                .bill-address
+                                    input(type='checkbox' name='billAdress' value='billAdress')
+                                    label(for='billAdress') SUNDAY DELIVERY - ORDER BEFORE 2PM SATURDAY
+                                    br
+                                span FREE
+                            .deliver-options-title-bottom
+                                p
+                                    | Orders placed up until 2pm on Saturday for our Sunday service. Order after 2pm on Saturday and you&apos;ll receive your order the following Sunday.
+                        .deliver-options-title
+                            .deliver-options-title-btn
+                                a(href='/checkout/details')
+                                    button.search-again.review-proceed-grey
+                                        | &lt; BACK
+                                button.search-again.review-proceed-green REVIEW &gt;
+        .product-review.active
+            .product-review-content
+                .product-review-content-product
+                    .checkout-page-2-container-item
+                        .checkout-page-2-container-item-header
+                            .checkout-page-2-container-item-header-img(style='justify-content: flex-start;')
+                                p Product
+                            .checkout-page-2-container-item-header-colour
+                            .checkout-page-2-container-item-header-size
+                                p SIZE
+                            .checkout-page-2-container-item-header-quatity
+                                p COLOUR  
+                            .checkout-page-2-container-item-header-price
+                                p Quatity
+                            .checkout-page-2-container-item-header-close
+                                p PRICE
+                        p.vl6
+                        // 
+                        .checkout-page-2-container-item-product
+                            .checkout-page-2-container-item-product-img
+                                img.img(='/img/pic-33.jpg' alt='clothing')
+                            .checkout-page-2-container-item-product-colour
+                                p.sub-title LORI SILK BLEND STRIPE DRESS
+                            .checkout-page-2-container-item-product-quatity
+                                p.sub-title-prim Size UK 2
+                            .checkout-page-2-container-item-product-quatity
+                                p.sub-title-prim Chalk White
+                            .checkout-page-2-container-item-product-price
+                                td.basket-item-quantity
+                                    label.item-quantity(aria-live='polite' tabindex='0' aria-label='1') &nbsp; 1 &nbsp;
+                            .checkout-page-2-container-item-product-close
+                                p.sub-title &pound;94.00
+                        // 💪 gift card code
+                        .checkout-page-2-container-item-product(style='height: 8rem;')
+                            .checkout-page-2-container-item-product-img
+                            .checkout-page-2-container-item-product-colour
+                            .checkout-page-2-container-item-product-size
+                            .checkout-page-2-container-item-product-quatity
+                            .checkout-page-2-container-item-product-price
+                                p.sub-title SUBTOTAL
+                            .checkout-page-2-container-item-product-close
+                                p.sub-title &pound;94.00
+                .product-review-content-details
+                    .product-review-content-details-square
+                        .product-review-content-details-square-title
+                            p.title-deliver YOUR DETAILS
+                        .product-review-content-details-square-description
+                            .product-review-content-details-square-description-name
+                                .product-review-content-details-square-description-name-full
+                                    span Name
+                                    p Dario Amade
+                                    span Email
+                                    p dario@outlook.com
+                                    span Telephone
+                                    p 07542644694
+                                .product-review-content-details-square-description-name-order
+                                    span Email
+                                    p dario@outlook.com
+                            .product-review-content-details-square-description-btn
+                                button.btn-edit YOUR DETAILS
+                    .product-review-content-details-square
+                        .product-review-content-details-square-title
+                            p.title-deliver DELIVERY
+                        .product-review-content-details-square-description
+                            .product-review-content-details-square-description-name
+                                .product-review-content-details-square-description-name-full
+                                    span Delivery Address
+                                    p Dario Amade
+                                    br
+                                    p 33
+                                    p Broxholm Road
+                                    p London
+                                    p London
+                                    p GB
+                                    p SE27 0NA
+                                .product-review-content-details-square-description-name-order
+                                    span Delivery Method
+                                    p NEXT BUSINESS DAY DELIVERY - ORDER BEFORE 2PM
+                            .product-review-content-details-square-description-btn
+                                button.btn-edit EDIT DELIVERY
+                .product-review-content-total
+                    .product-review-content-total-grid1
+                        .product-review-content-total-grid1-box
+                            .product-review-content-total-grid1-box-left
+                                .product-review-content-total-grid1-box-left-box-1
+                                    p(style='margin: 2rem 0rem;') SUBTOTAL
+                                    p NEXT BUSINESS DAY DELIVERY - ORDER BEFORE 2PM
+                                .product-review-content-total-grid1-box-left-box-2
+                                    p(style='margin: 2rem 0rem;') &pound;222.00
+                                    p &pound;0
+                            .product-review-content-total-grid1-box-right
+                                .product-review-content-total-grid1-box-right-box-1
+                                    span TOTAL
+                                    tg VAT
+                                .product-review-content-total-grid1-box-right-box-2
+                                    span &pound;222.00
+                                    tg &pound;37.00
+                    .product-review-content-total-grid2
+                        .product-review-content-total-grid2-btn
+                            .btn-contanier
+                                button.search-again
+                                    | &lt; BACK
+                            .bill-address
+                                input(type='checkbox' name='billAdress' value='billAdress' checked='')
+                                label(for='billAdress')
+                                    | BY COMPLETING YOUR ORDER YOU AGREE TO THE ALLSAINTS 
+                                    u Terms and Conditions and relevant tax and duties
+                                br
+                        p.text-color(style='margin: 1rem 0 2rem 0;')
+                            b Make 3
+                            |  payments of &pound;38.00. 
+                            b Klarna
+                            | .
+                            |                             No fees. 
+                            u Learn more
+                        button.btn-reusable.purchaseSecurely PURCHASE SECURELY
+        .payment-methods.active
+            .payment-methods-content
+                .payment-methods-content-card
+                    p GIFT CARDS
+                .payment-methods-content-gift-card
+                    p.text-thinny You have not added any gift cards.
+                    button.btn-redeem + REDEEM A GIFT CARD
+                .payment-methods-content-card
+                    p PAYMENTS OPTIONS
+                .payment-methods-content-pay-types
+                    .payment-methods-content-pay-types-item
+                        .payment-methods-content-pay-types-item-single
+                            p.text-thinny How would you like to pay?
+                            span.text-thinny Order total &pound;222.00
+                        .payment-methods-content-pay-types-item-single1
+                            .payment-methods-content-pay-types-item-single1-item1
+                                // <img ="https://upload.wikimedia.org/wikipedia/commons/3/39/PayPal_logo.svg" alt="" class="pay-visa">
+                                img.pay-visa(='/img/pngegg.png' alt='')
+                                p.text-thinny Pay using a credit/debit card
+                            .payment-methods-content-pay-types-item-single1-item3
+                                // BUG paypal link
+                                button.btn-black-pay(onclick='https:www.paypal.com/uk/signin') PAY WITH PAYPAL
+                        .payment-methods-content-pay-types-item-single1
+                            .payment-methods-content-pay-types-item-single1-item1
+                                img.pay-visa(='/img/all.svg' alt='')
+                                p.text-thinny &#x9;Pay using a credit/debit card
+                            .payment-methods-content-pay-types-item-single1-item3
+                                button.btn-black-pay PAY WITH PAYPAL
+                        .payment-methods-content-pay-types-item-single1
+                            .payment-methods-content-pay-types-item-single1-item1
+                                img.pay-visa(='/img/theeone.svg' alt='')
+                                p.text-thinny 3 interest-free instalments
+                            .payment-methods-content-pay-types-item-single1-item3
+                                button.btn-black-pay PAY WITH KLARNA
+                        .payment-methods-content-pay-types-item-single1
+                            .payment-methods-content-pay-types-item-single1-item1
+                                img.pay-visa(='/img/theeone.svg' alt='')
+                                p.text-thinny Pay later in 30 days
+                            .payment-methods-content-pay-types-item-single1-item3
+                                button.btn-black-pay PAY WITH KLARNA
+                .payment-methods-content-btn-back
+                    button.search-again  &lt; BACK 
+    .secure-suppurt
+        .checkout-page-2-container-support
+            .checkout-page-2-container-support-title
+                p.title-support QUESTION OR SUPPORT?
+                p.sub-support
+                    | Send us an email to: 
+                    b ask@rubaccine.com
+                p.sub-support(style='margin-bottom: 0rem;') Where a member of our Customer Experience team will be happy to assist you.
+                p.sub-support-1 We are open 9am-11pm BST Monday to Friday.
+            .checkout-page-2-container-support-methods
+                img.pay-icon(='/img/visa-logo@logotyp.us.svg' alt='icons')
+                img.pay-icon(='/img/mastercard-maestro-logo@logotyp.us.svg' alt='icons')
+                img.pay-icon(='/img/american-express-logo@logotyp.us.svg' alt='icons')
+                img.pay-icon(='/img/paypal-logo@logotyp.us.svg' alt='icons')
+                img.pay-icon(='/img/mastercard-4.svg' alt='icons')
+                img.pay-icon6(='/img/klarna 1.svg' alt='icons')

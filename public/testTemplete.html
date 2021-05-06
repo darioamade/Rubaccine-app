@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="src/img/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <!-- <script defer src="src/js/helpers.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+
+    <title>RUBACCINE||ITALIAN FASHION BRAND</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="create-account ">  
+      <form class="signin-account-container">
+        <div class="signin-account-container-left">
+          <p class="text-main">Sign In</p>
+          <div class="form-email">
+             <input id="first_name" type="name" class="create__field" placeholder="*Enter First Name" autofocus required/>
+              <input id="last_name" type="name" class="create__field" placeholder="*Enter Last Name" required />
+             <input id="create_email" type="email" class="create__field" placeholder="*Enter Email Address" autofocus required/>
+             <input id="create_email*" type="email" class="create__field" placeholder="*Re-Enter Email " autofocus required/>
+          </div>
+        </div>
+        <div class="signin-account-container-right">
+          <div class="form-email">
+           <input id="create_password" type="password" class="create__field" placeholder="*Enter Password" autofocus required/>
+            <input id="create_password*" type="password" class="create__field" placeholder="*Re-Enter Password " autofocus required/>
+            </div>
+            <div class="bill-address">
+                <input type="checkbox" name="billAdress" value="billAdress" >
+                <label for="billAdress">Subscribe to Rubaccine updates</label>   
+            </div>
+               <p class="text-normal">privice policy</p>
+          <div class="create">
+            <a href="">
+              <p class="text-normal">CREATE ACCOUNT</p>
+            </a>
+          </div>
+        </div>
+      </form>
+
+      </div>
+      
+     
+   <!-- <div class="secure">
+        <div class="secure-email">
+          <p class="the-title">Rubaccine</p>
+          <div class="secure-email-back">
+            <svg class="icon-title">
+              <use href="/img/sprite.svg#icon-arrow_back_ios"></use>
+            </svg>
+            <a href="">
+              <p class="sub-title">BACK TO SHOP</p>
+            </a>
+          </div>
+          <form class="secure-email-field">
+            <p class="the-title">SECURE CHECKOUT</p>
+            <div class="secure-email-field-box">
+              <div class="secure-email-field-box-form">
+                <label for="login-email" class="control-label"
+                  >Enter your email address</label
+                >
+                <input
+                  id="login-email"
+                  class="form-control"
+                  type="email"
+                  name="login-email"
+                  aria-required="true"
+                  autocomplete="off"
+                />
+                <p class="form-secure-email error-email-val">
+                  Please enter a valid email address
+                </p>
+              </div>
+              <div class="secure-email-field-box-form quote">
+       
+                <label for="login-email" class="control-label">Password</label>
+                <input
+                  id="login-email"
+                  class="form-control"
+                  type="password"
+                  name="password"
+                  aria-required="true"
+                  autocomplete="off"
+                />
+                <p class="form-secure-email error-email-val">
+                  Please enter a valid password
+                </p>
+                <div class="loader hidden">
+                  <img
+                    src="/img/Spinner-1s-50px.svg"
+                    alt="loading"
+                    class="loading-svg"
+                  />
+                </div>
+              </div>
+              <div class="secure-email-field-box-btn">
+                <a href=""
+                  ><button class="btn-continue-field">CONTINUE</button></a
+                >
+              </div>
+            </div>
+            <p class="sub-title" style="padding-top: 10px">OR</p>
+            <div id="AmazonPayButton" class="amazon-button-wrapper">
+              <img
+                class="amazonpay-button-inner-image"
+                style="cursor: pointer; max-height: 45px"
+                alt="AmazonPay"
+                id="OffAmazonPaymentsWidgets0"
+                src="https://d23yuld0pofhhw.cloudfront.net/default/uk/live/lwa/gold/medium/PwA.png"
+                tabindex="0"
+              />
+            </div>
+            <img
+              src="/img/amazon-prime-seeklogo.com.svg"
+              alt="svg"
+              class="prime-svg"
+            />
+          </form>
+        </div>
+        <div class="secure-suppurt">
+          <div class="checkout-page-2-container-support">
+            <div class="checkout-page-2-container-support-title">
+              <p class="title-support">QUESTION OR SUPPORT?</p>
+              <p class="sub-support">
+                Send us an email to: <b>ask@rubaccine.com</b>
+              </p>
+              <p class="sub-support" style="margin-bottom: 0rem">
+                Where a member of our Customer Experience team will be happy to
+                assist you.
+              </p>
+              <p class="sub-support-1">
+                We are open 9am-11pm BST Monday to Friday.
+              </p>
+            </div>
+            <div class="checkout-page-2-container-support-methods">
+              <img
+                src="/img/visa-logo@logotyp.us.svg"
+                alt="icons"
+                class="pay-icon"
+              />
+              <img
+                src="/img/mastercard-maestro-logo@logotyp.us.svg"
+                alt="icons"
+                class="pay-icon"
+              />
+              <img
+                src="/img/american-express-logo@logotyp.us.svg"
+                alt="icons"
+                class="pay-icon"
+              />
+              <img
+                src="/img/paypal-logo@logotyp.us.svg"
+                alt="icons"
+                class="pay-icon"
+              />
+              <img src="/img/mastercard-4.svg" alt="icons" class="pay-icon" />
+              <img src="/img/klarna 1.svg" alt="icons" class="pay-icon6" />
+            </div>
+          </div>
+        </div>
+      </div>  -->
+    </div>
+  </body>
+</html>

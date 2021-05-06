@@ -1,0 +1,1029 @@
+[
+  {
+    "id": 0,
+    "name": "RATHBONE BLAZER",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "Tailoring",
+    "price": 59,
+    "priceOld": 189,
+    "stock": 50,
+    "color": ["grey"],
+    "status": "OUTLET",
+    "summary": "Occasion wear: sorted. The Rathbone Blazer is a traditionally tailored jacket in all-over check. Pair with the matching trousers for a refined aesthetic.",
+    "description": [
+      "Peak lapel",
+      "Long sleeves",
+      "Button closure",
+      "Chest pocket",
+      "Lower front pockets",
+      "Five interior pockets",
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+      "Model is 190cm and size Medium"
+    ],
+    "detailsProduct": [
+      "Tailored fit",
+      "64% polyester, 34% viscose, 2% elastane ",
+      "Lining: 100% polyester",
+      "Delicate machine wash",
+      "Made in: China"
+    ],
+    "imageCover": "men-1-cover.jpg",
+    "images": [
+      "men-1-1.jpg",
+      "men-1-2.jpg",
+      "men-1-3.jpg",
+      "men-1-4.jpg",
+      "men-1-5.jpg"
+    ],
+    "size": ["UK 32", "UK 34", "UK 36", "UK 38", "UK 40"]
+  },
+  {
+    "id": 2,
+    "name": "MORTON SHERPA-LINED DENIM JACKET",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "COATS & JACKETS",
+    "price": 131,
+    "priceOld": 329,
+    "stock": 100,
+    "color": ["washed black"],
+    "status": "NEW",
+    "summary": "This is the Morton, a new trucker jacket shaped to a relaxed fit. Sherpa lining, it'll keep you warm. The body is black with light distressing throughout.",
+    "description": [
+      "Push stud closure",
+      "Sherpa collar",
+      "Long sleeve",
+      "Sherpa lining",
+      "Chest pockets",
+      "Light distressing",
+      "Two side pockets",
+      "This style uses 50% less water in washing and processing than conventional methods",
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+      "Model is 6'1.5/187cm and is wearing size Medium"
+    ],
+    "imageCover": "men-2-cover.jpg",
+    "images": [
+      "men-2-1.jpg",
+      "men-2-2.jpg",
+      "men-2-3.jpg",
+      "men-2-4.jpg",
+      "men-2-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "LX", "XXL"]
+  },
+  {
+    "id": 3,
+    "name": "STAMP LAMINATE LONG SLEEVE T-SHIRT",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "T-SHIRT",
+    "price": 164,
+    "priceOld": 329,
+    "stock": 100,
+    "color": ["optic white"],
+    "status": "NEW",
+    "summary": "We are AllSaints. An update on our popular graphic t-shirt. The Stamp Crew. Signature typography. Embroidered on the chest. It's different from the others.",
+    "description": [
+      "Pullover",
+      "Long sleeve",
+      "Crew neck",
+      "Laminate redaction overprint",
+      "Rubaccine typography on the chest",
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+      "Model is 6'1.5/187cm and is wearing size Medium"
+    ],
+    "imageCover": "men-3-cover.jpg",
+    "images": [
+      "men-3-1.jpg",
+      "men-3-2.jpg",
+      "men-3-3.jpg",
+      "men-3-4.jpg",
+      "men-3-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "LX", "XXL"]
+  },
+  {
+    "id": 4,
+    "name": "Milo Leather Biker Jacket",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": " LEATHER JACKET",
+    "price": 113,
+    "priceOld": 379,
+    "stock": 100,
+    "color": ["Black"],
+    "status": "Best Seller",
+    "summary": "The Milo Biker. Made from soft lamb leather. With biker jacket details. A ticket pocket. And hem loops. Just add the motorbike.",
+    "description": [
+      "Asymmetric zip front",
+      "Long sleeve",
+      "Two lower zip pockets",
+      "Ticket pocket",
+      "Hem loops",
+      "Model is 6'2.5/187cm and is wearing size Medium"
+    ],
+    "imageCover": "men-4-cover.jpg",
+    "images": [
+      "men-4-1.jpg",
+      "men-4-2.jpg",
+      "men-4-3.jpg",
+      "men-4-4.jpg",
+      "men-4-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "LX", "XXL"]
+  },
+  {
+    "id": 5,
+    "name": "SURVEY LEATHER BLAZER",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": " LEATHER JACKET",
+    "price": 164,
+    "priceOld": 329,
+    "stock": 100,
+    "color": ["Black"],
+    "status": "Best Seller",
+    "summary": "The Survey Leather Blazer takes instant styling into its own hands - two layers worked into one means no styling is necessary. Rugged, waxed goat suede contrasts the woolen double layer perfectly.",
+    "description": [
+      "Button up closure",
+      "Long sleeve",
+      "Two flat pockets",
+      "Leather elbow patches",
+      "Double layered collar",
+      "Herringbone wool blend inner-layer",
+      "Model is 6'2.5/188cm and is wearing size Medium"
+    ],
+    "imageCover": "men-5-cover.jpg",
+    "images": [
+      "men-5-1.jpg",
+      "men-5-2.jpg",
+      "men-5-3.jpg",
+      "men-5-4.jpg",
+      "men-5-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "LX", "XXL"]
+  },
+  {
+    "id": 6,
+    "name": "MODE MERINO HENLEY",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "Knitwear",
+    "price": 16,
+    "priceOld": 42,
+    "stock": 100,
+    "color": ["JET Black"],
+    "status": "NEW",
+    "summary": "Henley. But not as you know it. The Mode Merino Henley T-Shirt. Featuring a three button placket. And our hallmark Ramskull embroidered on the chest.",
+    "description": [
+      "Crew neck",
+      "Long sleeve",
+      "Ribbed trims",
+      "Three button placket",
+      "Ramskull embroidery",
+      "The dyeing process of the yarn used to make this style uses 40% less water than conventional methods",
+      "RWS certified wool (CU 870616). The Responsible Wool Standard (RWS) is an industry tool that ensures the wool comes from farms where the land has been managed and the sheep have been treated responsibly - find out more",
+      "Model is 6'2.5/188cm and is wearing size Medium"
+    ],
+    "imageCover": "men-6-cover.jpg",
+    "images": [
+      "men-6-1.jpg",
+      "men-6-2.jpg",
+      "men-6-3.jpg",
+      "men-6-4.jpg",
+      "men-6-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "LX", "XXL"]
+  },
+  {
+    "id": 7,
+    "name": "MODE MERINO BLUE",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "T-SHIRT",
+    "price": 12,
+    "priceOld": 32,
+    "stock": 10,
+    "color": ["GREY"],
+    "status": "NEW",
+    "summary": "Henley. But not as you know it. The Mode Merino Henley Blue T-Shirt. Featuring a three button placket. And our hallmark Ramskull embroidered on the chest.",
+    "description": [
+      "Crew neck",
+      "Long sleeve",
+      "Ribbed trims",
+      "Three button placket",
+      "Ramskull embroidery",
+      "The dyeing process of the yarn used to make this style uses 40% less water than conventional methods",
+      "RWS certified wool (CU 870616). The Responsible Wool Standard (RWS) is an industry tool that ensures the wool comes from farms where the land has been managed and the sheep have been treated responsibly - find out more",
+      "Model is 6'2.5/188cm and is wearing size Medium"
+    ],
+    "imageCover": "men-7-cover.jpg",
+    "images": [
+      "men-7-1.jpg",
+      "men-7-2.jpg",
+      "men-7-3.jpg",
+      "men-7-4.jpg",
+      "men-7-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "LX", "XXL"]
+  },
+  {
+    "id": 8,
+    "name": "CORA LEATHER METALIC JACKET",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "LEATHER JACKET",
+    "price": 131,
+    "priceOld": 329,
+    "stock": 10,
+    "color": ["JET BLACK"],
+    "status": "BEST SELLER",
+    "summary": "Traditional bomber jackets. Classic biker details. The Cora Jacket. It's a fusion. Crafted from soft leather. With minimalist detailing on the body and arms.",
+    "description": [
+      "Zip closure",
+      "Side zip pockets",
+      "Snap back collar",
+      "Shoulder panel detailing",
+      "Two interior slip pockets",
+      "Inspired by vintage members-only bomber jackets",
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more"
+    ],
+    "imageCover": "men-8-cover.jpg",
+    "images": [
+      "men-8-1.jpg",
+      "men-8-2.jpg",
+      "men-8-3.jpg",
+      "men-8-4.jpg",
+      "men-8-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "LX", "XXL"]
+  },
+  {
+    "id": 9,
+    "name": "CONROY LEATHER BIKER JACKET",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "LEATHER JACKET",
+    "price": 164,
+    "priceOld": 379,
+    "stock": 100,
+    "color": ["INK NAVY"],
+    "status": "BEST SELLER",
+    "summary": "The Conroy Biker Jacket is a classic leather outerwear piece, with traditional detailing including an asymmetric zip fastening, zip sleeves and quilted shoulders.",
+    "description": [
+      "Regular fit.",
+      "Zip closure",
+      "Side zip pockets",
+      "Snap back collar",
+      "Shoulder panel detailing",
+      "Two interior slip pockets",
+      "Inspired by vintage members-only bomber jackets",
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more"
+    ],
+    "imageCover": "men-9-cover.jpg",
+    "images": [
+      "men-9-1.jpg",
+      "men-9-2.jpg",
+      "men-9-3.jpg",
+      "men-9-4.jpg",
+      "men-9-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "LX", "XXL"]
+  },
+  {
+    "id": 10,
+    "name": "LIAM CUFFED REGULAR SWEATPANTS",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "Trousers",
+    "price": 74,
+    "priceOld": 248,
+    "stock": 100,
+    "color": ["washed black"],
+    "status": "BEST SELLER",
+    "summary": "Lounge about. In the Liam Joggers. They're pure cotton. And a regular fit. With cuffed hems. And a washed-out aesthetic.",
+    "description": [
+      "Mid-rise",
+      "Front pockets",
+      "Back pockets",
+      "Ribbed cuff hems",
+      "Loungewear",
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+      "Model is 6'2.5/188cm and is wearing size Medium"
+    ],
+    "imageCover": "men-10-cover.jpg",
+    "images": [
+      "men-10-1.jpg",
+      "men-10-2.jpg",
+      "men-10-3.jpg",
+      "men-10-4.jpg",
+      "men-10-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "LX", "XXL"]
+  },
+  {
+    "id": 11,
+    "name": "STATE SLIM CUFFED SWEATPANTS",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "Trousers",
+    "price": 42,
+    "priceOld": 85,
+    "stock": 75,
+    "color": ["jet black"],
+    "status": "NEw",
+    "summary": "To lounge about in. Or running errands. The State Sweatpants work. They're crafted from cotton. And shaped to a slim fit. With cuffed ankles.",
+    "description": [
+      "Ramskull embroidery",
+      "Cuffed ankles",
+      "Back pockets",
+      "Side pockets",
+      "Drawstring waist",
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+      "Model is 6'2.5/190cmm and is wearing size Medium"
+    ],
+    "imageCover": "men-11-cover.jpg",
+    "images": [
+      "men-11-1.jpg",
+      "men-11-2.jpg",
+      "men-11-3.jpg",
+      "men-11-4.jpg",
+      "men-11-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "LX", "XXL"]
+  },
+  {
+    "id": 12,
+    "name": "HATCH SHIRT",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "SHIRT",
+    "price": 44,
+    "priceOld": 88,
+    "stock": 75,
+    "color": ["jet black"],
+    "status": "CONSCIOUS",
+    "summary": "Heavyweight, wool blend fabric. The Hatch Shirt doubles as an overshirt. It features two chest pockets and large sclae checks. Chuck it on.",
+    "description": [
+      "Button closure",
+      "Camp collar ",
+      "Back pockets",
+      "Long sleeve",
+      "Two chest pockets",
+      "Checked",
+      "Recycled fabrics",
+      "Model is 6'2 /189cmm and is wearing size Medium"
+    ],
+    "detailsProduct": [
+      "Oversized fit",
+      "Heavyweight ",
+      "51% recycled polyester, 33% wool, 14% acrylic, 1% viscose, 1% polaymide",
+      "Dry clean only",
+      "Made in: China"
+    ],
+    "imageCover": "men-12-cover.jpg",
+    "images": [
+      "men-12-1.jpg",
+      "men-12-2.jpg",
+      "men-12-3.jpg",
+      "men-12-4.jpg",
+      "men-12-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "LX", "XXL"]
+  },
+  {
+    "id": 13,
+    "name": "BRACE TONIC CREW T-SHIRT",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "SHIRT",
+    "price": 22,
+    "priceOld": 32,
+    "stock": 75,
+    "color": ["baked clay pink"],
+    "status": "CONSCIOUS",
+    "summary": "Heavyweight, wool blend fabric. The Hatch Shirt doubles as an overshirt. It features two chest pockets and large sclae checks. Chuck it on.",
+    "description": [
+      "Pullover",
+      "Crew neck ",
+      "Short sleeve",
+      "Carbon brushed cotton",
+      "Ramskull embroidery",
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+      "Model is 6'2.5 /190cmm and is wearing size Medium"
+    ],
+    "detailsProduct": [
+      "Regular fit",
+      "100% cotton ",
+      "Machine wash inside out",
+      "Made in: Turkey"
+    ],
+    "imageCover": "men-13-cover.jpg",
+    "images": [
+      "men-13-1.jpg",
+      "men-13-2.jpg",
+      "men-13-3.jpg",
+      "men-13-4.jpg",
+      "men-13-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "XXL"]
+  },
+  {
+    "id": 14,
+    "name": "HELIX SWEAT SHORTS",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "SHORTS",
+    "price": 65,
+    "priceOld": 0,
+    "stock": 75,
+    "color": ["baked clay pink"],
+    "status": "CONSCIOUS",
+    "summary": "Sweat shorts. For chilled out days. The Helix Shorts are a relaxed pair, ideal for pairing with trainers and t-shirts.",
+    "description": [
+      "Elasticated waist",
+      "Drawstring adjusters",
+      "Side pockets",
+      "Knee length",
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+      "Model is 6'2.5 /190cmm and is wearing size Medium"
+    ],
+    "detailsProduct": [
+      " Relaxed fit",
+      "58% cotton, 25% modal, 17% polyester",
+      "Machine wash inside out",
+
+      "Made in: Turkey"
+    ],
+    "imageCover": "men-14-cover.jpg",
+    "images": [
+      "men-14-1.jpg",
+      "men-14-2.jpg",
+      "men-14-3.jpg",
+      "men-14-4.jpg",
+      "men-14-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "XL"]
+  },
+  {
+    "id": 15,
+    "name": "RAVEN HALF ZIP SWEATSHIRT",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "SWEATSHIRT",
+    "price": 65,
+    "priceOld": 0,
+    "stock": 75,
+    "color": ["white chalk"],
+    "status": "CONSCIOUS",
+    "summary": "Relax with us. The Raven Half Zip Funnel Sweatshirt. A new addition for your off-duty capsule. Crafted from cotton. For an extra soft finish. And detailed with our Ramskull on the chest.",
+    "description": [
+      "   Two pockets",
+      "Funnel neck",
+      "Long sleeve",
+      "Ramskull embroidery",
+      "Carbon brushed cotton fleece",
+      "Loungewear",
+
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+      "Model is 6'2.5 /190cmm and is wearing size Medium"
+    ],
+    "detailsProduct": [
+      "  Slim fit",
+      "100% cotton",
+      "Machine wash inside out",
+
+      "Made in: Turkey"
+    ],
+    "imageCover": "men-15-cover.jpg",
+    "images": [
+      "men-15-1.jpg",
+      "men-15-2.jpg",
+      "men-15-3.jpg",
+      "men-15-4.jpg",
+      "men-15-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "XL"]
+  },
+  {
+    "id": 16,
+    "name": "KYLO CREW T-SHIRT",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "T-SHIRT",
+    "price": 39,
+    "priceOld": 0,
+    "stock": 75,
+    "color": ["mangrove brown"],
+    "status": "CONSCIOUS",
+    "summary": "The Kylo Crew T-Shirt. Crafted from pure cotton. Shaped to a regular fit. It's got Ramskull embroidery. And contrast colour blocking. What's not to love?",
+    "description": [
+      " Pullover",
+      "Crew neck",
+      "Short sleeve",
+      "Contrast blocking",
+      "Ramskull embroidery",
+
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+      "Model is 6'2.5 /190cmm and is wearing size Medium"
+    ],
+    "detailsProduct": [
+      "   Regular fit",
+      "100% cotton",
+      "Machine wash inside out",
+
+      "Made in: Turkey"
+    ],
+    "imageCover": "men-16-cover.jpg",
+    "images": [
+      "men-16-1.jpg",
+      "men-16-2.jpg",
+      "men-16-3.jpg",
+      "men-16-4.jpg",
+      "men-16-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "XL"]
+  },
+  {
+    "id": 17,
+    "name": "HAWTHORNE STRETCH FIT SHIRT",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "SHIRT",
+    "price": 79,
+    "priceOld": 0,
+    "stock": 75,
+    "color": ["black"],
+    "status": "CONSCIOUS",
+    "summary": "The Hawthorne Shirt. It doesn't get more classic. Crafted from a stretch cotton fabric. In a slim fit. Our signature Ramskull sits on the chest. It's embroidered.",
+    "description": [
+      "  Long sleeve",
+      "Cuffed sleeves",
+      "Button closure",
+      "Ramskull embroidery",
+
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+      "Model is 6'2.5 /190cmm and is wearing size Medium"
+    ],
+    "detailsProduct": [
+      "   Slim fit",
+      "Midweight",
+      "98% cotton, 2% elastane",
+      "Machine wash inside out",
+
+      "Made in: Turkey"
+    ],
+    "imageCover": "men-17-cover.jpg",
+    "images": [
+      "men-17-1.jpg",
+      "men-17-2.jpg",
+      "men-17-3.jpg",
+      "men-17-4.jpg",
+      "men-17-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "XL"]
+  },
+  {
+    "id": 18,
+    "name": "THOR STRETCH FIT SHIRT",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "SHIRT",
+    "price": 69,
+    "priceOld": 0,
+    "stock": 75,
+    "color": ["white"],
+    "status": "CONSCIOUS",
+    "summary": "The Thor Shirt. It doesn't get more classic. Crafted from a stretch cotton fabric. In a slim fit. Our signature Ramskull sits on the chest. It's embroidered.",
+    "description": [
+      "  Long sleeve",
+      "Cuffed sleeves",
+      "Button closure",
+      "Ramskull embroidery",
+
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+      "Model is 6'2.5 /190cmm and is wearing size Medium"
+    ],
+    "detailsProduct": [
+      "   Slim fit",
+      "Midweight",
+      "98% cotton, 2% elastane",
+      "Machine wash inside out",
+
+      "Made in: Turkey"
+    ],
+    "imageCover": "men-18-cover.jpg",
+    "images": [
+      "men-18-1.jpg",
+      "men-18-2.jpg",
+      "men-18-3.jpg",
+      "men-18-4.jpg",
+      "men-18-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "XL"]
+  },
+  {
+    "id": 19,
+    "name": "TILDEN SHIRT",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "SHIRT",
+    "price": 79,
+    "priceOld": 0,
+    "stock": 75,
+    "color": ["black"],
+    "status": "CONSCIOUS",
+    "summary": "The Tilden Shirt, is a classic. Checks and Ramskull embroidery. On a wool blend fabric base. It's shaped to a refined slim fit. With a concealed button down collar.",
+    "description": [
+      "  Long sleeve",
+      "Cuffed sleeves",
+      "Button closure",
+      "Ramskull embroidery",
+      "Checked",
+
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+      "Model is 6'2.5 /190cmm and is wearing size Medium"
+    ],
+    "detailsProduct": [
+      "   Slim fit",
+      "  54% wool, 44% polyester, 2% elastane",
+      "Dry clean only",
+
+      "Made in: India"
+    ],
+    "imageCover": "men-19-cover.jpg",
+    "images": [
+      "men-19-1.jpg",
+      "men-19-2.jpg",
+      "men-19-3.jpg",
+      "men-19-4.jpg",
+      "men-19-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "XL"]
+  },
+  {
+    "id": 20,
+    "name": "MILO LEATHER BIKER JACKET",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "JACKET",
+    "price": 339,
+    "priceOld": 0,
+    "stock": 75,
+    "color": ["black"],
+    "status": "BEST SELLER",
+    "summary": "The Milo Biker. Made from soft lamb leather. With biker jacket details. A ticket pocket. And hem loops. Just add the motorbike.",
+    "description": [
+      "Asymmetric zip front",
+      "Two lower zip pockets",
+      "Long sleeve",
+      "Ticket pocket",
+      "Hem loops",
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+      "Model is 6'2.5 /200cmm and is wearing size Medium"
+    ],
+    "detailsProduct": [
+      "   Slim fit",
+      "Shell: 100% lamb leather",
+      "Lining: 100% polyester",
+      "Specialist leather clean only",
+      "Made in: Turkey"
+    ],
+    "imageCover": "men-20-cover.jpg",
+    "images": [
+      "men-20-1.jpg",
+      "men-20-2.jpg",
+      "men-20-3.jpg",
+      "men-20-4.jpg",
+      "men-20-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "XL"]
+  },
+  {
+    "id": 21,
+    "name": "CORA LEATHER  JACKET",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "JACKET",
+    "price": 339,
+    "priceOld": 0,
+    "stock": 75,
+    "color": ["jet black"],
+    "status": "CONSCIOUS",
+    "summary": "Traditional bomber jackets. Classic biker details. The Cora Jacket. It's a fusion. Crafted from soft leather. With minimalist detailing on the body and arms.",
+    "description": [
+      "     Zip closure",
+      "Side zip pockets",
+      "Snap back collar",
+      "Shoulder panel detailing",
+      "Two interior slip pockets",
+      "Inspired by vintage members-only bomber jackets",
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+      "Model is 6'2.5 /200cmm and is wearing size Medium"
+    ],
+    "detailsProduct": [
+      "   Slim fit",
+      "Shell: 100% lamb leather",
+      "Lining: 100% polyester",
+      "Specialist leather clean only",
+      "Made in: India"
+    ],
+    "imageCover": "men-21-cover.jpg",
+    "images": [
+      "men-21-1.jpg",
+      "men-21-2.jpg",
+      "men-21-3.jpg",
+      "men-21-4.jpg",
+      "men-21-5.jpg"
+    ],
+    "size": ["XS", "S", "M", "L", "XL"]
+  },
+  {
+    "id": 22,
+    "name": "Cigarette Skinny Jeans, Indigo",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "Jeans",
+    "price": 99,
+    "priceOld": 0,
+    "stock": 75,
+    "color": ["indigo"],
+    "status": "BEST SELLER",
+    "summary": "Skinny jeans. These are the Cigarette. They're our favourite. Skinny leg. Tapered ankle. Crafted from stretch denim. Clean indigo blue shade.",
+    "description": [
+      "    Fly clip",
+      "Unique AllSaints coffin pocket",
+      "High quality chain stitch hem",
+      "1800s workwear-inspired, reinforced belt loops",
+      "Traditional concealed rivets on back pockets",
+      "Reinforced fly button with leather washer",
+      "Back pockets with Ramskull horn stitching",
+      "Back pocket with extra fabric to hold necessities",
+      "Scoop pocket with interior taping for extra reinforcement",
+      "Inseam: 81cm/32in",
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+      "Model is 6'2.5 /200cmm and is wearing size Medium"
+    ],
+    "detailsProduct": [
+      "Stretch denim",
+      "96% cotton, 3% polyester, 1% elastane",
+      "Contains non-textile parts of animal origin",
+      "Machine wash inside out",
+      "Made in: Turkey"
+    ],
+    "imageCover": "men-22-cover.jpg",
+    "images": [
+      "men-22-1.jpg",
+      "men-22-2.jpg",
+      "men-22-3.jpg",
+      "men-22-4.jpg",
+      "men-22-5.jpg"
+    ],
+    "size": ["28 ", "30", "31", "32", "33", "34", "36"]
+  },
+  {
+    "id": 23,
+    "name": "CIGARETTE SKINNY JEANS, BLUE BLACK",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "Jeans",
+    "price": 98,
+    "priceOld": 0,
+    "stock": 75,
+    "color": ["indigo"],
+    "status": "BEST SELLER",
+    "summary": "The Cigarette is our standard skinny fit jean, tapering at the ankle for modern styling. Crafted from a comfortable stretch denim, delivered unpressed for a relaxed and creased finish.",
+    "description": [
+      "    Fly clip",
+      "Unique AllSaints coffin pocket",
+      "High quality chain stitch hem",
+      "1800s workwear-inspired, reinforced belt loops",
+      "Traditional concealed rivets on back pockets",
+      "Reinforced fly button with leather washer",
+      "Back pockets with Ramskull horn stitching",
+      "Back pocket with extra fabric to hold necessities",
+      "Scoop pocket with interior taping for extra reinforcement",
+      "Inseam: 81cm/32in",
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+      "Model is 6'2.5 /200cmm and is wearing size Medium"
+    ],
+    "detailsProduct": [
+      "Stretch denim",
+      "96% cotton, 3% polyester, 1% elastane",
+      "Contains non-textile parts of animal origin",
+      "Machine wash inside out",
+      "Made in: Turkey"
+    ],
+    "imageCover": "men-23-cover.jpg",
+    "images": [
+      "men-23-1.jpg",
+      "men-23-2.jpg",
+      "men-23-3.jpg",
+      "men-23-4.jpg",
+      "men-23-5.jpg"
+    ],
+    "size": ["28 ", "30"]
+  },
+  {
+    "id": 24,
+    "name": "RONNIE EXTRA SKINNY JEANS, WASHED INDIGO",
+    "category": "Men ",
+    "subCategory": "CLOTHING",
+    "categoryType": "Jeans",
+    "price": 99,
+    "priceOld": 0,
+    "stock": 75,
+    "color": ["indigo"],
+    "status": "BEST SELLER",
+    "summary": "Meet Ronnie. Our new jeans. Crafted from stretch denim. With an extra skinny leg. They're the skinniest ones we do. Try them out.",
+    "description": [
+      "    Fly clip",
+      "Unique AllSaints coffin pocket",
+      "High quality chain stitch hem",
+      "1800s workwear-inspired, reinforced belt loops",
+      "Traditional concealed rivets on back pockets",
+      "Reinforced fly button with leather washer",
+      "Back pockets with Ramskull horn stitching",
+      "Back pocket with extra fabric to hold necessities",
+      "Scoop pocket with interior taping for extra reinforcement",
+      "Inseam: 81cm/32in",
+      "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+      "Model is 6'2.5 /200cmm and is wearing size Medium"
+    ],
+    "detailsProduct": [
+      "Stretch denim",
+      "96% cotton, 3% polyester, 1% elastane",
+      "Contains non-textile parts of animal origin",
+      "Machine wash inside out",
+      "Made in: Turkey"
+    ],
+    "imageCover": "men-24-cover.jpg",
+    "images": [
+      "men-24-1.jpg",
+      "men-24-2.jpg",
+      "men-24-3.jpg",
+      "men-24-4.jpg",
+      "men-24-5.jpg"
+    ],
+    "size": ["28 ", "30", "32", "34", "36"]
+  },
+  {
+    "id": 25,
+    "name": "TOBIAS LEATHER BOOTS",
+    "category": "Men ",
+    "subCategory": " SHOES & ACCESSORIES ",
+    "categoryType": "BOOTS",
+    "price": 239,
+    "priceOld": 0,
+    "stock": 75,
+    "color": ["black"],
+    "status": "BEST SELLER",
+    "summary": "Any weather, anywhere. The Tobias Boots are a seasonal staple. Crafted from smooth leather in a classic military boot shape with a lace up front and sleek sole.",
+    "description": [
+      "     Military boots",
+      "Round toe",
+      "Rubber tread",
+      "Lace up",
+      "Leather pull tabs"
+    ],
+    "detailsProduct": [
+      " Upper: 100% goat leather",
+      "Sock: 100% goat leather",
+      "Lining: 100% goat leather",
+      "Sole: 100% crepe",
+      "Made in: Portugal"
+    ],
+    "imageCover": "men-24-cover.jpg",
+    "images": [
+      "men-24-1.jpg",
+      "men-24-2.jpg",
+      "men-24-3.jpg",
+      "men-24-4.jpg",
+      "men-24-5.jpg"
+    ],
+    "size": ["UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+  },
+  {
+    "id": 25,
+    "name": "ALTON LOW TOP LEATHER TRAINERS",
+    "category": "Men ",
+    "subCategory": " SHOES & ACCESSORIES ",
+    "categoryType": "TRAINERS",
+    "price": 159,
+    "priceOld": 0,
+    "stock": 75,
+    "color": ["black"],
+    "status": "NEW",
+    "summary": "The Alton Low Top Trainers. Crafted from smooth leather. With a chunky rubber sole. They go with just about anything.",
+    "description": [
+      "  Chunky trainers",
+      "Lace up",
+      "Round toe",
+      "Chunky tread"
+    ],
+    "detailsProduct": [
+      "  Sole height: 30mm",
+      "Upper: 100% goat leather",
+      "Lining: 100% goat leather",
+      "Sole: 100% rubber",
+      "Made in: Portugal"
+    ],
+    "imageCover": "men-25-cover.jpg",
+    "images": [
+      "men-25-1.jpg",
+      "men-25-2.jpg",
+      "men-25-3.jpg",
+      "men-25-4.jpg",
+      "men-25-5.jpg"
+    ],
+    "size": ["UK 7", "UK 8", "UK 9", "UK 10", "UK 11", "UK12"]
+  },
+  {
+    "id": 26,
+    "name": "RIVER LEATHER BOOTS",
+    "category": "Men ",
+    "subCategory": " SHOES & ACCESSORIES ",
+    "categoryType": "BOOTS",
+    "price": 299,
+    "priceOld": 0,
+    "stock": 75,
+    "color": ["black"],
+    "status": "NEW",
+    "summary": "Combat boots to stomp about in. Crafted from robust leather, and made in Britain. With long wrap-around laces and contrasting stitching. They're called The River.",
+    "description": [
+      "   Calf high boots",
+      "Lace up",
+      "Round toe",
+      "Low heel",
+      "Made in Britain",
+      "Leather pull tab"
+    ],
+    "detailsProduct": [
+      "  Upper: 100% cow leather",
+      "Lining: 100% cow leather",
+      "Sole: 100% rubber",
+      "Made in:  United Kingdom"
+    ],
+    "imageCover": "men-26-cover.jpg",
+    "images": [
+      "men-26-1.jpg",
+      "men-26-2.jpg",
+      "men-26-3.jpg",
+      "men-26-4.jpg",
+      "men-26-5.jpg"
+    ],
+    "size": ["UK 7", "UK 8", "UK 9", "UK 10", "UK 11", "UK12"]
+  },
+  {
+    "id": 27,
+    "name": "SUBTITLED VI KHAKI STAINLESS STEEL WATCH",
+    "category": "Men ",
+    "subCategory": " ACCESSORIES  ",
+    "categoryType": "Watch",
+    "price": 248,
+    "priceOld": 0,
+    "stock": 75,
+    "color": ["bronze"],
+    "status": "NEW",
+    "summary": "It's time. The AllSaints debut watch collection is here. Explore the urban landscape with the sporty Subtitled Collection. Subtitled VI features a brushed and polished khaki stainless steel case, with a muted gold finish alongside a complementary strap.",
+    "description": [
+      "     Push button closure",
+      "Eight removable links",
+      "PVD stainless steel bracelet",
+      "Matte black dial with khaki indexes",
+      "Indexes and numbers are double printed for high quality",
+      "Khaki high luminosity hands",
+      "Brushed and polished PVD solid stainless steel case"
+    ],
+    "detailsProduct": [
+      "   Face: 42mm x 46.5mm",
+      "Strap lug: 22mm",
+      "Bracelet circumference: 200mm",
+      "Eight links removed: 175mm",
+      "Buckle size: 20mm",
+      "Battery life: 5 years",
+      "Face: hardened mineral crystal to withstand scratches",
+      "Hands: three eye chronograph quartz movement for precise time keeping",
+      "Case: physical vapor deposition (PVD) plated case, creates a durbale, corrosion and tarnish resistant finish. Fine sandblasted khaki aluminum plate",
+      "Water resistance: 5 ATM, 160 feet/50 metres. Protected from light rain and perspiration, not suitable for showering. Do not swim or submerge in water",
+      "Bracelet: brushed and polished PVD khaki plated 316L stainless steel bracelet",
+      "Your Rubaccine watch is warranted by AllSaints under the terms and conditions of this warranty for two years from the date of its purchase",
+      "Instructions",
+      "Care guide",
+      "Warranty",
+      "Shipping and FAQs",
+      "Terms and conditions",
+      "Watch repair form"
+    ],
+    "imageCover": "men-27-cover.jpg",
+    "images": [
+      "men-27-1.jpg",
+      "men-27-2.jpg",
+      "men-27-3.jpg",
+      "men-27-4.jpg",
+      "men-27-5.jpg"
+    ],
+    "size": ["UK 7", "UK 8", "UK 9", "UK 10", "UK 11", "UK12"]
+  }
+]

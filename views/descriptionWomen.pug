@@ -1,0 +1,298 @@
+extends base
+
+block append head
+    //- script(src='/js/mapbox.js')
+
+block content 
+    .showcase-loads
+        .btn-add-wide
+            button.btn-add-wide__btn ADD TO BAG
+        .btn-size-option
+            .btn-size-option-close
+                p SELECT YOUR SIZE.
+                svg.icon-page
+                    use(href='/img/sprite.svg#icon-close')
+            //- each sizex in men.size
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p=`UK ${sizex}`
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        // <p><u>NOTIFY ME</u></p>
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 2
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 4
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 6
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 8
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 10
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 12
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+            .btn-size-option-sizes
+                .btn-size-option-sizes-square
+                    .btn-size-option-sizes-square-left
+                        p UK 14
+                    .btn-size-option-sizes-square-right
+                        p(style='color: #339966;') Available
+                        p
+                            u NOTIFY ME
+        .showcase-loads-container
+            .showcase-loads-container-nav
+                .showcase-loads-container-nav-left
+                    .description
+                        p=`${women.category}`  
+                        p=`/ ${women.subCategory}` 
+                        p=`/ ${women.categoryType}` 
+                        p=`/ ${women.name}`
+                    .loader-text
+                        span FREE DELIVERY ON ORDERS OVER &pound;150
+                        // <span>FREE RETURNS ON ALL UK ORDERS</span>
+                .showcase-loads-container-nav-right
+                    .showcase-loads-container-nav-right-prev
+                        .previous
+                            svg.icon-page
+                                use(href='/img/sprite.svg#icon-keyboard_arrow_left')
+                            p Previous
+                        .line
+                            p.vline
+                    .showcase-loads-container-nav-right-back
+                        p=` Back to ${women.category}  New Arrivals` 
+
+                    .showcase-loads-container-nav-right-next
+                        .previous
+                            p(style='cursor: pointer;') Next
+                            svg.icon-page.icon-page-color.color-active
+                                use(href='/img/sprite.svg#icon-keyboard_arrow_right')
+                        .line
+                            p.vline
+            .showcase-loads-container-gallery
+                .showcase-loads-container-gallery-left
+                    //- +overviewBox()
+                    each img, i in women.images
+                        .showcase-loads-container-gallery-left-content
+                            img.image-gallery-left(src=`/img/${img}` alt=`${i + 1}`)
+                .showcase-loads-container-gallery-right
+                    .showcase-loads-container-gallery-right-details
+                        p.new=women.status
+                        p.new-desc=women.name
+                        p.new-price
+                            span(style='color: #a90808;')=`£${women.price.toFixed(2)}  `
+                            span  was
+                            span=` £${women.price.toFixed(2)} `
+                            //- span=` £${women.priceOld.toFixed(2)} `
+                            
+                        .box-img-prev
+                            span.small-img
+                                img.size-img-prev(src=`/img/${women.imageCover}` alt='clothing')
+                            span.small-img
+                                each colors, i in women.color
+                                    p.text-color=`${colors}`
+                                        //- p.text-color=` ${men.color} `
+                    .showcase-loads-container-gallery-right-sizes
+                        .boxes-sizes
+                            each sizes in women.size
+                                //- .box-items-sizes.crossed UK 4
+                                .box-items-sizes.borderBlack=`${sizes}`
+                            //-     - if (!sizes ) ? .box-items-sizes.crossed=` UK ${sizes} ` : .box-items-sizes.borderBlack=` UK ${sizes} `
+                            //-     //- .box-items-sizes.crossed=` UK ${sizes} `
+
+                                
+                            // NOTES switch between crossed and border for avalibite
+                        p.underline is your size out of stock?
+                        p.text-color
+                            | Make 3 payments of &pound;38.00. Klarna.
+                            | No fees. 
+                            br
+                            | Learn more
+                        .btn-and-like
+                            button.btn-add.btn-not-clear ADD TO BAG
+                            span.btn-like
+                    .showcase-loads-container-gallery-right-notes
+                        .showcase-loads-container-gallery-right-notes-box
+                            .box-top
+                                .showcase-loads-container-gallery-right-notes-box-title
+                                    p NOTES
+                                .showcase-loads-container-gallery-right-notes-box-icon
+                                    span
+                            .slide-box1
+                                p
+                                | Made from supersoft and supple leather. The Estella
+                                | Biker has heavily quilted panels on the cuff,
+                                | shoulders and back yoke - taking inspiration
+                                | from true authentic biker jackets.
+                                p - Long sleeves
+                                p - Metal hardware
+                                p  - Zip pockets
+                                p   - Quilting to the arms and shoulders
+                                p   - Rollerbuckles on the sides
+                                p  - Model is 5&apos;10.5&quot; / 179cm and wearing a size UK 10
+                        .showcase-loads-container-gallery-right-notes-box
+                            .box-top
+                                .showcase-loads-container-gallery-right-notes-box-title
+                                    p DETAILS 
+                                .showcase-loads-container-gallery-right-notes-box-icon
+                                    span
+                            .slide-box
+                                p  &bull; Regular fit
+                                p  &bull; 100% sheep leather
+                                p  &bull; Lining: 100% polyester
+                                p   &bull; Sleeve lining: 100% polyester
+                                p   &bull; Specialist dry clean only
+                                p(style='margin-top: 2rem;')  Made in: India
+                        .sizeguide
+                            p SIZE GUIDE
+                        .share
+                            p SHARE 
+                            .share-icons
+                                svg.icon-footer
+                                    use(href='/img/sprite.svg#icon-social-facebook')
+                                svg.icon-footer
+                                    use(href='/img/sprite.svg#icon-social-twitter')
+                                svg.icon-footer
+                                    use(href='/img/sprite.svg#icon-pinterest')
+                    .showcase-loads-container-gallery-right-shares
+                        .showcase-loads-container-gallery-right-shares-pictures
+                            //- img.shares-pictures(src='/img/pic-31.jpg' alt='clothing')
+                            //- img.shares-pictures(src='/img/pic-32.jpg' alt='clothing')
+                            img.shares-pictures(src='/img/Women-3-1.jpg' alt='clothing')
+                            img.shares-pictures(src='/img/Women-4-3.jpg' alt='clothing')
+                        .showcase-loads-container-gallery-right-shares-content
+                            p.new-desc SHOW US YOUR STYLE
+                            p.new-desc1
+                                | Share your Rubaccine look and mention @AllSaints in the caption,
+                                | or upload here to be featured on rubaccine.com
+                            p.new-desc2  #RUBACCINE
+                    hr.hr8
+            .showcase-loads-container-alsoLike
+                .showcase-loads-container-alsoLike-title
+                    p YOU MAY ALSO LIKE
+                    span.showIconMinus
+                .showcase-loads-container-alsoLike-gallery.gallery-active
+                    .showcase-loads-container-alsoLike-gallery-content
+                        .showcase-loads-container-alsoLike-gallery-content-img
+                            img.alsoLike-img(src='/img/men-2-cover.jpg' alt='clothing')
+                            .description
+                                p.heading-title ELLIS LEATHER BIKER JACKET
+                                p
+                                | Our iconic best-seller. 
+                                br
+                                |  The Balfern Biker Jacket. 
+                                br
+                                |   Regular si...
+                                p.read Read more
+                                .details-hidden
+                                p
+                                | Our iconic best-seller.
+                                | The Balfern Biker Jacket. Regular silhouette.
+                                | Crafted from leather. it&apos;s gives after each wear. For a finish unique to you.
+                                | Classic metal hardware. And a waist belt. Your motor...
+                                button.btn-view-prod VIEW PRODUCT
+                    .showcase-loads-container-alsoLike-gallery-content-img
+                        img.alsoLike-img(src='/img/men-3-cover.jpg' alt='clothing')
+                        .description
+                            p.heading-title ELLIS LEATHER BIKER JACKET
+                            p
+                            | Our iconic best-seller. 
+                            br
+                            |                                                                                             The Balfern Biker Jacket. 
+                            br
+                            |                                                                                                 Regular si...
+                            p.read Read more
+                            .details-hidden
+                            p
+                            | Our iconic best-seller.
+                            | The Balfern Biker Jacket. Regular silhouette.
+                            | Crafted from leather. it&apos;s gives after each wear. For a finish unique to you.
+                            | Classic metal hardware. And a waist belt. Your motor...
+                            button.btn-view-prod VIEW PRODUCT
+                    .showcase-loads-container-alsoLike-gallery-content-img
+                        img.alsoLike-img(src='/img/men-6-cover.jpg' alt='clothing')
+                        .description
+                            p.heading-title ELLIS LEATHER BIKER JACKET
+                            p
+                            | Our iconic best-seller. 
+                            br
+                            |                                                                                                         The Balfern Biker Jacket. 
+                            br
+                            |                                                                                                             Regular si...
+                            p.read Read more
+                            .details-hidden
+                            p
+                            | Our iconic best-seller.
+                            | The Balfern Biker Jacket. Regular silhouette.
+                            | Crafted from leather. it&apos;s gives after each wear. For a finish unique to you.
+                            | Classic metal hardware. And a waist belt. Your motor...
+                            button.btn-view-prod VIEW PRODUCT
+                    .showcase-loads-container-alsoLike-gallery-content-img
+                        img.alsoLike-img(src='/img/men-7-cover.jpg' alt='clothing')
+                        .description
+                            p.heading-title ELLIS LEATHER BIKER JACKET
+                            p
+                            | Our iconic best-seller. 
+                            br
+                            |                                                                                                                     The Balfern Biker Jacket. 
+                            br
+                            |                                                                                                                         Regular si...
+                            p.read Read more
+                            .details-hidden
+                            p
+                            | Our iconic best-seller.
+                            | The Balfern Biker Jacket. Regular silhouette.
+                            | Crafted from leather. it&apos;s gives after each wear. For a finish unique to you.
+                            | Classic metal hardware. And a waist belt. Your motor...
+                            button.btn-view-prod VIEW PRODUCT
+                hr.hr8
+            .showcase-loads-container-alsoLike
+                .showcase-loads-container-alsoLike-title
+                    p RECENTLY VIEWED
+                    span.showIconMinus
+                .showcase-loads-container-alsoLike-gallery.gallery-four.gallery-active
+                    .showcase-loads-container-alsoLike-gallery-content
+                        .showcase-loads-container-alsoLike-gallery-content-img
+                            img.alsoLike-img2(src='/img/pic-34.jpg' alt='clothing')
+                    .showcase-loads-container-alsoLike-gallery-content-img
+                        img.alsoLike-img2(src='/img/pic-33.jpg' alt='clothing')
+                    .showcase-loads-container-alsoLike-gallery-content-img
+                        img.alsoLike-img2(src='/img/pic-36.jpg' alt='clothing')
+                    .showcase-loads-container-alsoLike-gallery-content-img
+                        img.alsoLike-img2(src='/img/pic-37.jpg' alt='clothing')

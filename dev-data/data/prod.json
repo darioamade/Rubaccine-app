@@ -1,0 +1,661 @@
+{
+  "boys": [
+    {
+      "id": 0,
+      "name": "RATHBONE BLAZER",
+      "category": "Men ",
+      "subCategory": "CLOTHING",
+      "categoryType": "Tailoring",
+      "price": 59,
+      "priceOld": 189,
+      "stock": 50,
+      "color": ["grey"],
+      "status": "OUTLET",
+      "summary": "Occasion wear: sorted. The Rathbone Blazer is a traditionally tailored jacket in all-over check. Pair with the matching trousers for a refined aesthetic.",
+      "description": [
+        "Peak lapel",
+        "Long sleeves",
+        "Button closure",
+        "Chest pocket",
+        "Lower front pockets",
+        "Five interior pockets",
+        "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+        "Model is 190cm and size Medium"
+      ],
+      "detailsProduct": [
+        "Tailored fit",
+        "64% polyester, 34% viscose, 2% elastane ",
+        "Lining: 100% polyester",
+        "Delicate machine wash",
+        "Made in: China"
+      ],
+      "imageCover": "men-1-cover.jpg",
+      "images": [
+        "men-1-1.jpg",
+        "men-1-2.jpg",
+        "men-1-3.jpg",
+        "men-1-4.jpg",
+        "men-1-5.jpg"
+      ],
+      "size": ["UK 32", "UK 34", "UK 36", "UK 38", "UK 40"]
+    },
+    {
+      "id": 2,
+      "name": "MORTON SHERPA-LINED DENIM JACKET",
+      "category": "Men ",
+      "subCategory": "CLOTHING",
+      "categoryType": "COATS & JACKETS",
+      "price": 131,
+      "priceOld": 329,
+      "stock": 100,
+      "color": ["washed black"],
+      "status": "NEW",
+      "summary": "This is the Morton, a new trucker jacket shaped to a relaxed fit. Sherpa lining, it'll keep you warm. The body is black with light distressing throughout.",
+      "description": [
+        "Push stud closure",
+        "Sherpa collar",
+        "Long sleeve",
+        "Sherpa lining",
+        "Chest pockets",
+        "Light distressing",
+        "Two side pockets",
+        "This style uses 50% less water in washing and processing than conventional methods",
+        "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+        "Model is 6'1.5/187cm and is wearing size Medium"
+      ],
+      "imageCover": "men-2-cover.jpg",
+      "images": [
+        "men-2-1.jpg",
+        "men-2-2.jpg",
+        "men-2-3.jpg",
+        "men-2-4.jpg",
+        "men-2-5.jpg"
+      ],
+      "size": ["XS", "S", "M", "L", "LX", "XXL"]
+    },
+    {
+      "id": 3,
+      "name": "STAMP LAMINATE LONG SLEEVE T-SHIRT",
+      "category": "Men ",
+      "subCategory": "CLOTHING",
+      "categoryType": "T-SHIRT",
+      "price": 164,
+      "priceOld": 329,
+      "stock": 100,
+      "color": ["optic white"],
+      "status": "NEW",
+      "summary": "We are AllSaints. An update on our popular graphic t-shirt. The Stamp Crew. Signature typography. Embroidered on the chest. It's different from the others.",
+      "description": [
+        "Pullover",
+        "Long sleeve",
+        "Crew neck",
+        "Laminate redaction overprint",
+        "Rubaccine typography on the chest",
+        "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+        "Model is 6'1.5/187cm and is wearing size Medium"
+      ],
+      "imageCover": "men-3-cover.jpg",
+      "images": [
+        "men-3-1.jpg",
+        "men-3-2.jpg",
+        "men-3-3.jpg",
+        "men-3-4.jpg",
+        "men-3-5.jpg"
+      ],
+      "size": ["XS", "S", "M", "L", "LX", "XXL"]
+    },
+    {
+      "id": 4,
+      "name": "Milo Leather Biker Jacket",
+      "category": "Men ",
+      "subCategory": "CLOTHING",
+      "categoryType": " LEATHER JACKET",
+      "price": 113,
+      "priceOld": 379,
+      "stock": 100,
+      "color": ["Black"],
+      "status": "Best Seller",
+      "summary": "The Milo Biker. Made from soft lamb leather. With biker jacket details. A ticket pocket. And hem loops. Just add the motorbike.",
+      "description": [
+        "Asymmetric zip front",
+        "Long sleeve",
+        "Two lower zip pockets",
+        "Ticket pocket",
+        "Hem loops",
+        "Model is 6'2.5/187cm and is wearing size Medium"
+      ],
+      "imageCover": "men-4-cover.jpg",
+      "images": [
+        "men-4-1.jpg",
+        "men-4-2.jpg",
+        "men-4-3.jpg",
+        "men-4-4.jpg",
+        "men-4-5.jpg"
+      ],
+      "size": ["XS", "S", "M", "L", "LX", "XXL"]
+    },
+    {
+      "id": 5,
+      "name": "SURVEY LEATHER BLAZER",
+      "category": "Men ",
+      "subCategory": "CLOTHING",
+      "categoryType": " LEATHER JACKET",
+      "price": 164,
+      "priceOld": 329,
+      "stock": 100,
+      "color": ["Black"],
+      "status": "Best Seller",
+      "summary": "The Survey Leather Blazer takes instant styling into its own hands - two layers worked into one means no styling is necessary. Rugged, waxed goat suede contrasts the woolen double layer perfectly.",
+      "description": [
+        "Button up closure",
+        "Long sleeve",
+        "Two flat pockets",
+        "Leather elbow patches",
+        "Double layered collar",
+        "Herringbone wool blend inner-layer",
+        "Model is 6'2.5/188cm and is wearing size Medium"
+      ],
+      "imageCover": "men-5-cover.jpg",
+      "images": [
+        "men-5-1.jpg",
+        "men-5-2.jpg",
+        "men-5-3.jpg",
+        "men-5-4.jpg",
+        "men-5-5.jpg"
+      ],
+      "size": ["XS", "S", "M", "L", "LX", "XXL"]
+    },
+    {
+      "id": 6,
+      "name": "MODE MERINO HENLEY",
+      "category": "Men ",
+      "subCategory": "CLOTHING",
+      "categoryType": "Knitwear",
+      "price": 16,
+      "priceOld": 42,
+      "stock": 100,
+      "color": ["JET Black"],
+      "status": "NEW",
+      "summary": "Henley. But not as you know it. The Mode Merino Henley T-Shirt. Featuring a three button placket. And our hallmark Ramskull embroidered on the chest.",
+      "description": [
+        "Crew neck",
+        "Long sleeve",
+        "Ribbed trims",
+        "Three button placket",
+        "Ramskull embroidery",
+        "The dyeing process of the yarn used to make this style uses 40% less water than conventional methods",
+        "RWS certified wool (CU 870616). The Responsible Wool Standard (RWS) is an industry tool that ensures the wool comes from farms where the land has been managed and the sheep have been treated responsibly - find out more",
+        "Model is 6'2.5/188cm and is wearing size Medium"
+      ],
+      "imageCover": "men-6-cover.jpg",
+      "images": [
+        "men-6-1.jpg",
+        "men-6-2.jpg",
+        "men-6-3.jpg",
+        "men-6-4.jpg",
+        "men-6-5.jpg"
+      ],
+      "size": ["XS", "S", "M", "L", "LX", "XXL"]
+    },
+    {
+      "id": 7,
+      "name": "MODE MERINO BLUE",
+      "category": "Men ",
+      "subCategory": "CLOTHING",
+      "categoryType": "T-SHIRT",
+      "price": 12,
+      "priceOld": 32,
+      "stock": 10,
+      "color": ["GREY"],
+      "status": "NEW",
+      "summary": "Henley. But not as you know it. The Mode Merino Henley Blue T-Shirt. Featuring a three button placket. And our hallmark Ramskull embroidered on the chest.",
+      "description": [
+        "Crew neck",
+        "Long sleeve",
+        "Ribbed trims",
+        "Three button placket",
+        "Ramskull embroidery",
+        "The dyeing process of the yarn used to make this style uses 40% less water than conventional methods",
+        "RWS certified wool (CU 870616). The Responsible Wool Standard (RWS) is an industry tool that ensures the wool comes from farms where the land has been managed and the sheep have been treated responsibly - find out more",
+        "Model is 6'2.5/188cm and is wearing size Medium"
+      ],
+      "imageCover": "men-7-cover.jpg",
+      "images": [
+        "men-7-1.jpg",
+        "men-7-2.jpg",
+        "men-7-3.jpg",
+        "men-7-4.jpg",
+        "men-7-5.jpg"
+      ],
+      "size": ["XS", "S", "M", "L", "LX", "XXL"]
+    },
+    {
+      "id": 8,
+      "name": "CORA LEATHER METALIC JACKET",
+      "category": "Men ",
+      "subCategory": "CLOTHING",
+      "categoryType": "LEATHER JACKET",
+      "price": 131,
+      "priceOld": 329,
+      "stock": 10,
+      "color": ["JET BLACK"],
+      "status": "BEST SELLER",
+      "summary": "Traditional bomber jackets. Classic biker details. The Cora Jacket. It's a fusion. Crafted from soft leather. With minimalist detailing on the body and arms.",
+      "description": [
+        "Zip closure",
+        "Side zip pockets",
+        "Snap back collar",
+        "Shoulder panel detailing",
+        "Two interior slip pockets",
+        "Inspired by vintage members-only bomber jackets",
+        "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more"
+      ],
+      "imageCover": "men-8-cover.jpg",
+      "images": [
+        "men-8-1.jpg",
+        "men-8-2.jpg",
+        "men-8-3.jpg",
+        "men-8-4.jpg",
+        "men-8-5.jpg"
+      ],
+      "size": ["XS", "S", "M", "L", "LX", "XXL"]
+    },
+    {
+      "id": 9,
+      "name": "CONROY LEATHER BIKER JACKET",
+      "category": "Men ",
+      "subCategory": "CLOTHING",
+      "categoryType": "LEATHER JACKET",
+      "price": 164,
+      "priceOld": 379,
+      "stock": 100,
+      "color": ["INK NAVY"],
+      "status": "BEST SELLER",
+      "summary": "The Conroy Biker Jacket is a classic leather outerwear piece, with traditional detailing including an asymmetric zip fastening, zip sleeves and quilted shoulders.",
+      "description": [
+        "Regular fit.",
+        "Zip closure",
+        "Side zip pockets",
+        "Snap back collar",
+        "Shoulder panel detailing",
+        "Two interior slip pockets",
+        "Inspired by vintage members-only bomber jackets",
+        "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more"
+      ],
+      "imageCover": "men-9-cover.jpg",
+      "images": [
+        "men-9-1.jpg",
+        "men-9-2.jpg",
+        "men-9-3.jpg",
+        "men-9-4.jpg",
+        "men-9-5.jpg"
+      ],
+      "size": ["XS", "S", "M", "L", "LX", "XXL"]
+    },
+    {
+      "id": 10,
+      "name": "LIAM CUFFED REGULAR SWEATPANTS",
+      "category": "Men ",
+      "subCategory": "CLOTHING",
+      "categoryType": "Trousers",
+      "price": 74,
+      "priceOld": 248,
+      "stock": 100,
+      "color": ["washed black"],
+      "status": "BEST SELLER",
+      "summary": "Lounge about. In the Liam Joggers. They're pure cotton. And a regular fit. With cuffed hems. And a washed-out aesthetic.",
+      "description": [
+        "Mid-rise",
+        "Front pockets",
+        "Back pockets",
+        "Ribbed cuff hems",
+        "Loungewear",
+        "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+        "Model is 6'2.5/188cm and is wearing size Medium"
+      ],
+      "imageCover": "men-10-cover.jpg",
+      "images": [
+        "men-10-1.jpg",
+        "men-10-2.jpg",
+        "men-10-3.jpg",
+        "men-10-4.jpg",
+        "men-10-5.jpg"
+      ],
+      "size": ["XS", "S", "M", "L", "LX", "XXL"]
+    },
+    {
+      "id": 11,
+      "name": "STATE SLIM CUFFED SWEATPANTS",
+      "category": "Men ",
+      "subCategory": "CLOTHING",
+      "categoryType": "Trousers",
+      "price": 42,
+      "priceOld": 85,
+      "stock": 75,
+      "color": ["jet black"],
+      "status": "NEw",
+      "summary": "To lounge about in. Or running errands. The State Sweatpants work. They're crafted from cotton. And shaped to a slim fit. With cuffed ankles.",
+      "description": [
+        "Ramskull embroidery",
+        "Cuffed ankles",
+        "Back pockets",
+        "Side pockets",
+        "Drawstring waist",
+        "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+        "Model is 6'2.5/190cmm and is wearing size Medium"
+      ],
+      "imageCover": "men-11-cover.jpg",
+      "images": [
+        "men-11-1.jpg",
+        "men-11-2.jpg",
+        "men-11-3.jpg",
+        "men-11-4.jpg",
+        "men-11-5.jpg"
+      ],
+      "size": ["XS", "S", "M", "L", "LX", "XXL"]
+    },
+    {
+      "id": 12,
+      "name": "HATCH SHIRT",
+      "category": "Men ",
+      "subCategory": "CLOTHING",
+      "categoryType": "SHIRT",
+      "price": 44,
+      "priceOld": 88,
+      "stock": 75,
+      "color": ["jet black"],
+      "status": "CONSCIOUS",
+      "summary": "Heavyweight, wool blend fabric. The Hatch Shirt doubles as an overshirt. It features two chest pockets and large sclae checks. Chuck it on.",
+      "description": [
+        "Button closure",
+        "Camp collar ",
+        "Back pockets",
+        "Long sleeve",
+        "Two chest pockets",
+        "Checked",
+        "Recycled fabrics",
+        "Model is 6'2 /189cmm and is wearing size Medium"
+      ],
+      "detailsProduct": [
+        "Oversized fit",
+        "Heavyweight ",
+        "51% recycled polyester, 33% wool, 14% acrylic, 1% viscose, 1% polaymide",
+        "Dry clean only",
+        "Made in: China"
+      ],
+      "imageCover": "men-12-cover.jpg",
+      "images": [
+        "men-12-1.jpg",
+        "men-12-2.jpg",
+        "men-12-3.jpg",
+        "men-12-4.jpg",
+        "men-12-5.jpg"
+      ],
+      "size": ["XS", "S", "M", "L", "LX", "XXL"]
+    }
+  ],
+    "girls": [
+    {
+      "id": 13,
+      "name": "BENNO 2-IN-1 DRESS",
+      "category": "Women ",
+      "subCategory": "CLOTHING",
+      "categoryType": "Tailoring",
+      "price": 64,
+      "priceOld": 129,
+      "stock": 50,
+      "color": ["mink", "grey"],
+      "status": "50% OFF APPLIED",
+      "summary": "Mixing and matching made easy. The Benno Long Sleeve Dress. Features a silky slip. Layered under a cropped t-shirt. An AllSaints bespoke silhouette.",
+      "description": [
+        "2-in-1 style",
+        "Removable slip",
+        "Removable t-shirt",
+        "Midi length",
+        "Long sleeve t-shirt",
+        "Sleeveless slip",
+        "Rubaccine  cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+        "Model is 177cm and wears size UK 10"
+      ],
+      "detailsProduct": [
+        "Relaxed fit",
+        "T-Shirt: 100% cotton",
+        "Woven: 98% polyester, 2% elastane",
+        "Machine wash inside out",
+        "Made in: Portugal"
+      ],
+      "imageCover": "women-1-cover.jpg",
+      "images": [
+        "women-1-1.jpg",
+        "women-1-2.jpg",
+        "women-1-3.jpg",
+        "women-1-4.jpg",
+        "women-1-5.jpg"
+      ],
+      "size": ["UK 6", "UK 8", "UK 12"]
+    },
+    {
+      "id": 14,
+      "name": "EIMEAR CULTIVAR DRESS",
+      "category": "Women ",
+      "subCategory": "CLOTHING",
+      "categoryType": "COATS & JACKETS",
+      "price": 74,
+      "priceOld": 249,
+      "stock": 100,
+      "color": ["black"],
+      "status": "70% OFF APPLIED",
+      "summary": "This is the Morton, a new trucker jacket shaped to a relaxed fit. Sherpa lining, it'll keep you warm. The body is black with light distressing throughout.",
+      "description": [
+        "Push stud closure",
+        "Sherpa collar",
+        "Long sleeve",
+        "Sherpa lining",
+        "Chest pockets",
+        "Light distressing",
+        "Two side pockets",
+        "This style uses 50% less water in washing and processing than conventional methods",
+        "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+        "Model is 6'1.5/187cm and is wearing size Medium"
+      ],
+      "imageCover": "women-2-cover.jpg",
+      "images": [
+        "women-2-1.jpg",
+        "women-2-2.jpg",
+        "women-2-3.jpg",
+        "women-2-4.jpg",
+        "women-2-5.jpg"
+      ],
+      "size": ["UK 2", "UK 4", "UK 6", "UK 8", "UK 10", "UK 12", "UK 14"]
+    },
+    {
+      "id": 15,
+      "name": "FRANCESCO RAMSKULL LONG SLEEVE T-SHIRT",
+      "category": "Women ",
+      "subCategory": "CLOTHING",
+      "categoryType": "T-SHIRT",
+      "price": 19,
+      "priceOld": 39,
+      "stock": 100,
+      "color": ["optic white"],
+      "status": "NEW",
+      "summary": "We are AllSaints. An update on our popular graphic t-shirt. The Stamp Crew. Signature typography. Embroidered on the chest. It's different from the others.",
+      "description": [
+        "Pullover",
+        "Long sleeve",
+        "Crew neck",
+        "Laminate redaction overprint",
+        "Rubaccine typography on the chest",
+        "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more",
+        "Model is 6'1.5/187cm and is wearing size Medium"
+      ],
+      "imageCover": "women-3-cover.jpg",
+      "images": [
+        "women-3-1.jpg",
+        "women-3-2.jpg",
+        "women-3-3.jpg",
+        "women-3-4.jpg",
+        "women-3-5.jpg"
+      ],
+      "size": ["XS", "S", "M", "L", "LX", "XXL"]
+    },
+    {
+      "id": 16,
+      "name": "JORA RIB RUANA WOOL BLEND SCARF",
+      "category": "Women ",
+      "subCategory": "CLOTHING",
+      "categoryType": " LEATHER JACKET",
+      "price": 54,
+      "priceOld": 109,
+      "stock": 100,
+      "color": ["Black"],
+      "status": "50% OFF APPLIED",
+      "summary": "The Milo Biker. Made from soft lamb leather. With biker jacket details. A ticket pocket. And hem loops. Just add the motorbike.",
+      "description": [
+        "Asymmetric zip front",
+        "Long sleeve",
+        "Two lower zip pockets",
+        "Ticket pocket",
+        "Hem loops",
+        "Model is 6'2.5/187cm and is wearing size Medium"
+      ],
+      "imageCover": "women-4-cover.jpg",
+      "images": [
+        "women-4-1.jpg",
+        "women-4-2.jpg",
+        "women-4-3.jpg",
+        "women-4-4.jpg",
+        "women-4-5.jpg"
+      ],
+      "size": ["ONE SIZE"]
+    },
+    {
+      "id": 17,
+      "name": "CELESTE DRESS",
+      "category": "Women ",
+      "subCategory": "CLOTHING",
+      "categoryType": " LEATHER JACKET",
+      "price": 50,
+      "priceOld": 169,
+      "stock": 100,
+      "color": ["chalk white"],
+      "status": "70% OFF APPLIED",
+      "summary": "Summer sun. The Celeste Dress is an easy option for warm weather days. Crafted from a floaty, lightweight fabric. With a drawcord waist, for cinching you in.",
+      "description": [
+        "Button up closure",
+        "Long sleeve",
+        "Two flat pockets",
+        "Leather elbow patches",
+        "Double layered collar",
+        "Herringbone wool blend inner-layer",
+        "Model is 6'2.5/188cm and is wearing size Medium"
+      ],
+      "imageCover": "women-5-cover.jpg",
+      "images": [
+        "women-5-1.jpg",
+        "women-5-2.jpg",
+        "women-5-3.jpg",
+        "women-5-4.jpg",
+        "women-5-5.jpg"
+      ],
+      "size": ["UK 2", "UK 4", "UK 8", "UK 10", "UK 12", "UK 14"]
+    },
+    {
+      "id": 18,
+      "name": "FINA SNAKE DRESS",
+      "category": "Women ",
+      "subCategory": "CLOTHING",
+      "categoryType": "Knitwear",
+      "price": 68,
+      "priceOld": 229,
+      "stock": 100,
+      "color": ["Black"],
+      "status": "70% OFF APPLIED",
+      "summary": "Henley. But not as you know it. The Mode Merino Henley T-Shirt. Featuring a three button placket. And our hallmark Ramskull embroidered on the chest.",
+      "description": [
+        "Crew neck",
+        "Long sleeve",
+        "Ribbed trims",
+        "Three button placket",
+        "Ramskull embroidery",
+        "The dyeing process of the yarn used to make this style uses 40% less water than conventional methods",
+        "RWS certified wool (CU 870616). The Responsible Wool Standard (RWS) is an industry tool that ensures the wool comes from farms where the land has been managed and the sheep have been treated responsibly - find out more",
+        "Model is 6'2.5/188cm and is wearing size Medium"
+      ],
+      "imageCover": "women-6-cover.jpg",
+      "images": [
+        "women-6-1.jpg",
+        "women-6-2.jpg",
+        "women-6-3.jpg",
+        "women-6-4.jpg",
+        "women-6-5.jpg"
+      ],
+      "size": ["UK 2", "UK 4", "UK 8", "UK 8", "UK 10", "UK 12", "UK 14"]
+    },
+    {
+      "id": 19,
+      "name": "MODE MERINO",
+      "category": "Women ",
+      "subCategory": "CLOTHING",
+      "categoryType": "T-SHIRT",
+      "price": 12,
+      "priceOld": 32,
+      "stock": 10,
+      "color": ["GREY"],
+      "status": "NEW",
+      "summary": "Henley. But not as you know it. The Mode Merino Henley T-Shirt. Featuring a three button placket. And our hallmark Ramskull embroidered on the chest.",
+      "description": [
+        "Crew neck",
+        "Long sleeve",
+        "Ribbed trims",
+        "Three button placket",
+        "Ramskull embroidery",
+        "The dyeing process of the yarn used to make this style uses 40% less water than conventional methods",
+        "RWS certified wool (CU 870616). The Responsible Wool Standard (RWS) is an industry tool that ensures the wool comes from farms where the land has been managed and the sheep have been treated responsibly - find out more",
+        "Model is 6'2.5/188cm and is wearing size Medium"
+      ],
+      "imageCover": "women-7-cover.jpg",
+      "images": [
+        "women-7-1.jpg",
+        "women-7-2.jpg",
+        "women-7-3.jpg",
+        "women-7-4.jpg",
+        "women-7-5.jpg"
+      ],
+      "size": ["XS", "S", "M", "L", "LX", "XXL"]
+    },
+    {
+      "id": 20,
+      "name": "CORA LEATHER METALIC JACKET",
+      "category": "Women ",
+      "subCategory": "CLOTHING",
+      "categoryType": "LEATHER JACKET",
+      "price": 131,
+      "priceOld": 329,
+      "stock": 10,
+      "color": ["JET BLACK"],
+      "status": "BEST SELLER",
+      "summary": "Traditional bomber jackets. Classic biker details. The Cora Jacket. It's a fusion. Crafted from soft leather. With minimalist detailing on the body and arms.",
+      "description": [
+        "Zip closure",
+        "Side zip pockets",
+        "Snap back collar",
+        "Shoulder panel detailing",
+        "Two interior slip pockets",
+        "Inspired by vintage members-only bomber jackets",
+        "Rubaccine cotton products support more sustainable cotton farming. Better Cotton is sourced via a system of Mass Balance - find out more"
+      ],
+      "imageCover": "women-8-cover.jpg",
+      "images": [
+        "women-8-1.jpg",
+        "women-8-2.jpg",
+        "women-8-3.jpg",
+        "women-8-4.jpg",
+        "women-8-5.jpg"
+      ],
+      "size": ["XS", "S", "M", "L", "LX", "XXL"]
+    }
+  ]
+}
+
+
